@@ -1,0 +1,162 @@
+.register_banner{
+	background: url(../images/login_banner.jpg) top center no-repeat;
+	background-size: 100% 100%;
+}
+.register_banner .container{
+	padding: 1.15rem 1.25rem 1rem;
+	box-sizing: border-box;
+}
+.register_banner .register_box{
+	background: #fff;
+	padding: .4rem .5rem;
+	box-sizing: border-box;
+	border-radius: .1rem;
+}
+.register_box .sex_box{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-bottom: .12rem;
+	border-bottom: 1px solid #eee;
+	margin-bottom: .5rem;
+	box-sizing: border-box;
+}
+.register_box .sex_box span{
+	color: #2a2a2a;
+	font-size: .18rem;
+	margin-top: .12rem;
+}
+.register_box .sex_box div{
+	overflow: hidden;
+}
+.register_box .sex_box div input{
+	float: left;
+	margin-left: .4rem;
+	width: 1.6rem;
+	height: .55rem;
+	position: relative;
+}
+.register_box .sex_box div input:after{
+	content: "";
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 3;
+	background: #e1e1e1;
+	border-radius: .05rem;
+	color: #555;
+	font-size: .18rem;
+	text-align: center;
+	line-height: .55rem;
+	font-weight: normal;
+	outline: none;
+	cursor: pointer;
+	/* opacity: .1; */
+}
+.register_box .sex_box div input:checked:after{
+	background: #cb1a39;
+	color: #fff;
+}
+.register_box .sex_box div input:first-child:after{
+	content: "男";
+}
+.register_box .sex_box div input:last-child:after{
+	content: "女";
+}
+
+.register_box .input_box{
+	padding: .1rem .45rem .08rem .15rem;
+	box-sizing: border-box;
+	background: #f3f3f3;
+	overflow: hidden;
+	margin-bottom: .2rem;
+	border-radius: .1rem;
+}
+.register_box .input_box .left_icon{
+	display: inline-block;
+	vertical-align: middle;
+	width: .34rem;
+	height: .36rem;
+	margin: 0 .15rem .05rem 0;
+}
+.register_box .input_box input[type='text'],.register_box .input_box input[type='password']{
+	width: 50%;
+	height: .5rem;
+	outline: none;
+	border: 0;
+	background: none;
+	color: #5b5b5b;
+	font-size: .18rem;
+	-webkit-box-shadow: 0 0 0px 1000px #f3f3f3 inset;
+}
+.register_box .input_box .right_icon{
+	float: right;
+	width: .21rem;
+	height: .21rem;
+	margin-top: .15rem;
+	cursor: pointer;
+	display: none;
+}
+.register_box .input_box .right_eye{
+	float: right;
+	width: .32rem;
+	height: .31rem;	
+	margin-top: .1rem;
+	cursor: pointer;
+	display: none;
+}
+.register_box .input_box .right_icon.active,.register_box .input_box .right_eye.active{
+	display: block;
+}
+.register_box .input_box .getCode{
+	float: right;
+	color: #212121;
+	font-size: .18rem;
+	background: none;
+	border: 0;
+	margin: 0;
+	padding: 0;
+	outline: none;
+	margin-top: .15rem;
+}
+
+.register_box .agree_p{
+	margin: .5rem 0;
+	text-align: center;
+	color: #212121;
+	font-size: .16rem;
+}
+.register_box .agree_p input{
+	display: inline-block;
+	vertical-align: middle;
+	margin: 0 .12rem 0 0;
+	transform: scale(1.5);
+	outline: none;
+}
+.register_box .agree_p a{
+	color: #cc0000;
+}
+.register_box .reg_btn{
+	display: block;
+	width: 6rem;
+	height: .8rem;
+	line-height: .8rem;
+	text-align: center;
+	color: #fff;
+	font-size: .24rem;
+	background: #cb1a39;
+	outline: none;
+	border: 0;
+	border-radius: .1rem;
+	margin: 0 auto .3rem;
+}
+.register_box .to_login{
+	text-align: right;
+	color: #777;
+	font-size: .16rem;
+}
+.register_box .to_login a{
+	color: #cc0000;
+}

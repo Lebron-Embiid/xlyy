@@ -1,0 +1,194 @@
+/* 公共头部 */
+.header,.header_nav{
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	background: #fff;
+	z-index: 50;
+	box-shadow: 0 .03rem .1rem #999;
+}
+.header .container{
+	overflow: hidden;
+	padding: 0 1rem;
+}
+.header_login .container{
+	padding: 0;
+}
+.header_nav .container{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: nowrap;
+}
+.header .logo{
+	float: left;
+	margin-top: .15rem;
+}
+.header_nav .logo{
+	/* margin-top: .15rem; */
+}
+.header .logo img,.header_nav .logo img{
+	display: block;
+	width: 1.97rem;
+}
+.header .ul{
+	float: right;
+	overflow: hidden;
+}
+.header .ul.ul_box{
+	float: left;
+	margin-left: 1.2rem;
+}
+.header .ul li{
+	float: left;
+	margin-left: .3rem;
+}
+.header .ul li:first-child{
+	margin-left: 0;
+}
+.header .ul li a{
+	display: block;
+	height: .92rem;
+	line-height: .92rem;
+	padding: 0 .2rem;
+	color: #2e2e2e;
+	font-size: .16rem;
+}
+.header .ul li a:hover{
+	color: #c50023;
+	background: #eee;
+}
+.header .ul li a img{
+	display: inline-block;
+	width: .22rem;
+	height: .24rem;
+	vertical-align: middle;
+	margin: 0 .1rem .05rem 0;
+}
+
+
+.login_box{
+	float: right;
+	height: .92rem;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+}
+.login_box li a{
+	color: #232323;
+	font-size: .18rem;
+	display: block;
+}
+.login_box li.active a{
+	padding: .1rem .5rem;
+	border: 1px solid #DE6C80;
+	border-radius: .05rem;
+	margin-left: .4rem;
+}
+.login_box li a:hover{
+	color: #C50023;
+}
+
+
+/* 头部-带导航 */
+.header_nav .nav_ul{
+	overflow: hidden;
+}
+.header_nav .nav_ul li{
+	float: left;
+}
+.header_nav .nav_ul li a{
+	display: block;
+	height: .92rem;
+	padding: .2rem .3rem;
+	box-sizing: border-box;
+	color: #2e2e2e;
+	font-size: .16rem;
+}
+.header_nav .nav_ul li a:hover{
+	background: #eee;
+	color: #cc3300;
+}
+.header_nav .nav_ul li a .icon{
+	position: relative;
+	display: block;
+	width: .34rem;
+	height: .31rem;
+	margin-bottom: .03rem;
+}
+/* 头部导航icon */
+.header_nav .nav_ul li:first-child a .icon{
+	background: url(../images/header_icon.png) left top no-repeat;
+	background-size: auto .65rem;
+	background-position: .04rem .03rem;
+}
+.header_nav .nav_ul li:first-child:hover a .icon,.header_nav .nav_ul li:first-child.active a .icon{
+	background-position: .04rem -.33rem;
+}
+.header_nav .nav_ul li:nth-child(2) a .icon{
+	background: url(../images/header_icon.png) left top no-repeat;
+	background-size: auto .65rem;
+	background-position: -.33rem .03rem;
+}
+.header_nav .nav_ul li:nth-child(2):hover a .icon,.header_nav .nav_ul li:nth-child(2).active a .icon{
+	background-position: -.33rem -.326rem;
+}
+.header_nav .nav_ul li:nth-child(3) a .icon{
+	background: url(../images/header_icon.png) left top no-repeat;
+	background-size: auto .65rem;
+	background-position: -.73rem .03rem;
+}
+.header_nav .nav_ul li:nth-child(3):hover a .icon,.header_nav .nav_ul li:nth-child(3).active a .icon{
+	background-position: -.73rem -.30rem;
+}
+.header_nav .nav_ul li:nth-child(4) a .icon{
+	background: url(../images/header_icon.png) left top no-repeat;
+	background-size: auto .65rem;
+	background-position: -1.13rem .03rem;
+}
+.header_nav .nav_ul li:nth-child(4):hover a .icon,.header_nav .nav_ul li:nth-child(4).active a .icon{
+	background-position: -1.13rem -.30rem;
+}
+.header_nav .nav_ul li:last-child a .icon{
+	background: url(../images/header_icon.png) left top no-repeat;
+	background-size: auto .65rem;
+	background-position: -1.53rem .03rem;
+}
+.header_nav .nav_ul li:last-child:hover a .icon,.header_nav .nav_ul li:last-child.active a .icon{
+	background-position: -1.53rem -.31rem;
+}
+
+.header_nav .nav_ul li a .icon .badge{
+	position: absolute;
+	right: 0;
+	top: 0;
+	background: #ba0f2e;
+	color: #fff;
+	width: .15rem;
+	min-width: .15rem;
+	padding: 0;
+	height: .15rem;
+	line-height: .16rem;
+	text-align: center;
+	border-radius: 50%;
+}
+.vip_box{
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+}
+.vip_box a{
+	color: #cc3300;
+	font-size: .16rem;
+}
+.vip_box .vip{
+	margin-left: .15rem;
+	border: .03rem solid #bfbfbf;
+	padding: .05rem;
+}
+.vip_box .vip img{
+	display: block;
+	width: .34rem;
+	height: .36rem;
+}
