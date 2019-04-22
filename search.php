@@ -9,12 +9,14 @@
 	<meta name="renderer" content="webkit">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/pick-pcc.css"/>
 	<link rel="stylesheet" href="css/common.css">
 	<link rel="stylesheet" href="css/header.css">
 	<link rel="stylesheet" href="css/search.css">
 	<script src="js/rem.js"></script>
 	<script src="js/jquery-2.1.4.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/pick-pcc.js"></script>
 </head>
 <body>
 	<?php include 'header_nav.php'; ?>
@@ -24,11 +26,12 @@
 				<div class="search_left">
 					<div class="search_item">
 						<span>所在地</span>
-						<div class="box">
-							<select name="" id="">
+						<!-- <div class="box"> -->
+							<div class="pick-area pick-area2" name=""></div>
+							<!-- <select name="" id="">
 								<option value="">广州市</option>
-							</select>
-						</div>
+							</select> -->
+						<!-- </div> -->
 					</div>
 					<div class="search_item">
 						<span>年龄</span>
@@ -237,4 +240,25 @@
 	</div>
 	<?php include 'footer.php'; ?>
 </body>
+<script>
+	$(".pick-area2").pickArea({
+	    "format":"北京市/市辖区", //格式
+	    "width":"300",
+	    "borderColor":"#7b68ee",//文本边框的色值
+	    "arrowColor":"#7b68ee",//箭头颜色
+	    "listBdColor":"#7b68ee",//下拉框父元素ul的border色值
+	    "color":"#7b68ee",//字体颜色
+	    "fontSize":"16px",//字体大小
+	    "hoverColor":"#7b68ee",
+	    "paddingLeft":"10px",
+	    "arrowRight":"10px",
+	    //"preSet":"北京市/市辖区/东城区",
+	    "getVal":function(){
+	        //console.log($(".pick-area-hidden").val())
+	        //console.log($(".pick-area-dom").val())
+	        var thisdom = $("."+$(".pick-area-dom").val());
+	        thisdom.next().val($(".pick-area-hidden").val());
+	    }
+	});
+</script>
 </html>

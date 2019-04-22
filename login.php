@@ -20,7 +20,7 @@
 	<?php include 'header.php'; ?>
 	<div class="login_form_box">
 		<div class="container">
-			<form action="">
+			<form action="vip_index.php">
 				<div class="input_box white">
 					<img src="images/form_icon2.png" class="left_icon" alt="">
 					<input type="text" class="input phone_txt" placeholder="手机号码" name="phone">

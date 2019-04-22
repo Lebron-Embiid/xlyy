@@ -38,6 +38,14 @@
 	border: 1px solid #E3E3E3;
 	overflow: hidden;
 }
+.search_item .pick-area{
+	width: 2.3rem !important;
+	height: .45rem;
+}
+.pick-list{
+	width: 2.3rem !important;
+	border-color: #E3E3E3 !important;
+}
 .search_item select{
 	font-size: .16rem;
 	width: 2.3rem;
@@ -47,13 +55,45 @@
 	box-sizing: border-box;
 	border: 0;
 }
+.pick-show{
+	height: .45rem !important;
+	border-color: #E3E3E3 !important;
+	position: relative !important;
+}
+.pick-show span,.pick-show i{
+	margin-top: 0 !important;
+	height: .45rem !important;
+	line-height: .45rem !important;
+	color: #2e2e2e !important;
+	background: none !important;
+}
+.pick-show span.pressActive{
+	background: none !important;
+	color: #2e2e2e !important;
+}
+.pick-list li{
+	color: #000 !important;
+	line-height: 1.5 !important;
+}
+.pick-list li:hover,.pick-list li.pick-selectedLi{
+	background: #1E90FF !important;
+	font-weight: normal !important;
+	color: #fff !important;
+}
+.pick-show span:hover{
+	color: #2e2e2e !important;
+	background: none !important;
+}
+.pick-show em.pick-arrow{
+	display: none !important;
+}
 
 .search_item select{
 	appearance:none;
 	-moz-appearance:none;
 	-webkit-appearance:none;
 }
-.search_item .box:after{
+.search_item .box:after,.pick-show:after{
 	content: "";
 	width: .17rem;
 	height: .11rem;

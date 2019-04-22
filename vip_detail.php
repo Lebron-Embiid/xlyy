@@ -219,7 +219,7 @@
 									<p>这个姑娘的叫醒服务很及时，下次再继续使用！</p>
 								</div>
 								<div class="right">
-									<img src="images/down1.png" alt="">
+									<img src="images/down1.png" class="down_icon" alt="">
 									<p>2018-10-23 09:50</p>
 								</div>
 							</div>
@@ -233,7 +233,7 @@
 									<p>这个姑娘的叫醒服务很及时，下次再继续使用！</p>
 								</div>
 								<div class="right">
-									<img src="images/down1.png" alt="">
+									<img src="images/down1.png" class="down_icon" alt="">
 									<p>2018-10-23 09:50</p>
 								</div>
 							</div>
@@ -247,7 +247,7 @@
 									<p>这个姑娘的叫醒服务很及时，下次再继续使用！</p>
 								</div>
 								<div class="right">
-									<img src="images/down1.png" alt="">
+									<img src="images/down1.png" class="down_icon" alt="">
 									<p>2018-10-23 09:50</p>
 								</div>
 							</div>
@@ -269,6 +269,19 @@
 						</li>
 					</ul>
 				</div>
+				<script>
+					$(function(){
+						$(".comment_ul").on("click",".down_icon",function(){
+							if($(this).parent().parent().parent().hasClass("active")){
+								$(this).parent().parent().parent().removeClass("active");
+								$(this).parent().parent().siblings().stop().slideUp();
+							}else{
+								$(this).parent().parent().parent().addClass("active");
+								$(this).parent().parent().siblings().stop().slideDown();
+							}
+						})
+					})
+				</script>
 				<div class="her_complaint_box">
 					<h5>邀约投诉</h5>
 					<ul>
