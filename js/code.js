@@ -19,8 +19,12 @@ $(function(){
 		}
 	}
 	$(".getCode").click(function(){
-		setTimeout(function(){
-			invokeSettime(".getCode");
-		},500)
+		if($(".phone_txt").val() != ""){
+			setTimeout(function(){
+				invokeSettime(".getCode");
+			},500)
+		}else{
+			alert("请输入手机号！")
+		}
 	})
 })
