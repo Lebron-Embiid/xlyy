@@ -300,3 +300,10 @@
 	font-size: .36rem;
 	margin-left: .05rem;
 }
+
+
+@media(max-width: 1500px) {
+	.trait_box .fixed_men{
+		display: none;
+	}
+}
