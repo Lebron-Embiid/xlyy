@@ -37,7 +37,7 @@
 					</div>
 					<div class="input_box">
 						<img src="images/form_icon2.png" class="left_icon" alt="">
-						<input type="text" class="input" placeholder="手机号码" name="phone">
+						<input type="text" class="input phone_txt" placeholder="手机号码" name="phone">
 						<img src="images/close.png" class="right_icon right_close" alt="">
 					</div>
 					<div class="input_box">
@@ -50,7 +50,7 @@
 						<input type="password" class="input" placeholder="密码" name="password">
 						<img src="images/eye.png" class="right_eye" alt="">
 					</div>
-					<p class="agree_p"><input type="checkbox" name="agree">同意本网站的<a href="">用户协议</a>，<a href="">隐私声明</a>和<a href="">平台协议</a></p>
+					<p class="agree_p"><input type="checkbox" name="agree">同意本网站的<a href="">用户协议</a>，<a href="privacy_policy.php">隐私声明</a>和<a href="platform_agreement.php">平台协议</a></p>
 					<input type="submit" value="注册" class="reg_btn">
 					<p class="to_login">已有账号？<a href="login.php">登录</a></p>
 				</form>

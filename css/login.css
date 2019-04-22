@@ -66,7 +66,7 @@
 	content: "女";
 }
 
-.register_box .input_box{
+.input_box{
 	padding: .1rem .45rem .08rem .15rem;
 	box-sizing: border-box;
 	background: #f3f3f3;
@@ -74,14 +74,17 @@
 	margin-bottom: .2rem;
 	border-radius: .1rem;
 }
-.register_box .input_box .left_icon{
+.input_box.white{
+	background: #fff;
+}
+.input_box .left_icon{
 	display: inline-block;
 	vertical-align: middle;
 	width: .34rem;
 	height: .36rem;
 	margin: 0 .15rem .05rem 0;
 }
-.register_box .input_box input[type='text'],.register_box .input_box input[type='password']{
+.input_box input[type='text'],.input_box input[type='password']{
 	width: 50%;
 	height: .5rem;
 	outline: none;
@@ -91,7 +94,10 @@
 	font-size: .18rem;
 	-webkit-box-shadow: 0 0 0px 1000px #f3f3f3 inset;
 }
-.register_box .input_box .right_icon{
+.input_box.white input[type='text'],.input_box.white input[type='password']{
+	-webkit-box-shadow: 0 0 0px 1000px #fff inset;	
+}
+.input_box .right_icon{
 	float: right;
 	width: .21rem;
 	height: .21rem;
@@ -99,7 +105,7 @@
 	cursor: pointer;
 	display: none;
 }
-.register_box .input_box .right_eye{
+.input_box .right_eye{
 	float: right;
 	width: .32rem;
 	height: .31rem;	
@@ -107,10 +113,10 @@
 	cursor: pointer;
 	display: none;
 }
-.register_box .input_box .right_icon.active,.register_box .input_box .right_eye.active{
+.input_box .right_icon.active,.input_box .right_eye.active{
 	display: block;
 }
-.register_box .input_box .getCode{
+.input_box .getCode{
 	float: right;
 	color: #212121;
 	font-size: .18rem;
@@ -128,17 +134,22 @@
 	color: #212121;
 	font-size: .16rem;
 }
-.register_box .agree_p input{
+.register_box .agree_p input,.remember_box input{
 	display: inline-block;
 	vertical-align: middle;
 	margin: 0 .12rem 0 0;
 	transform: scale(1.5);
 	outline: none;
 }
+.remember_box label{
+	outline: none;
+	font-weight: normal;
+	margin-left: .2rem;
+}
 .register_box .agree_p a{
 	color: #cc0000;
 }
-.register_box .reg_btn{
+.reg_btn,.login_btn{
 	display: block;
 	width: 6rem;
 	height: .8rem;
@@ -159,4 +170,55 @@
 }
 .register_box .to_login a{
 	color: #cc0000;
+}
+
+
+
+.login_form_box{
+	background: #eee;
+}
+.login_form_box .container{
+	padding: 1.3rem 1.8rem 1rem;
+	overflow: hidden;
+}
+.remember_box{
+	overflow: hidden;
+	margin: .3rem 0 1rem
+}
+.remember_box span{
+	float: right;
+}
+.forget{
+	width: 6rem;
+	margin: .3rem auto .6rem;
+	overflow: hidden;
+	display: flex;
+	justify-content: space-between;
+}
+.forget a{
+	color: #777;
+	font-size: .16rem;
+}
+.new{
+	text-align: center;
+}
+.new a{
+	color: #212121;
+	font-size: .16rem;
+}
+.new span{
+	margin: 0 .3rem;
+}
+
+
+.warn{
+	margin: .3rem 0 1rem;
+	color: #616060;
+}
+.warn img{
+	display: inline-block;
+	vertical-align: middle;
+	width: .3rem;
+	height: .26rem;
+	margin: 0 .1rem .05rem .2rem;
 }
