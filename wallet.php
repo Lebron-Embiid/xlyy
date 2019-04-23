@@ -15,6 +15,7 @@
 	<script src="js/rem.js"></script>
 	<script src="js/jquery-2.1.4.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.knob.js"></script>
 </head>
 <body>
 	<?php include 'header_nav.php'; ?>
@@ -41,6 +42,7 @@
 						</div>
 					</div>
 					<div class="over_rate">
+						<input class="knob" data-fgColor="#f00" data-thickness=".1" data-readOnly="true" value="70">
 						<p>超过70%的平台用户</p>
 					</div>
 				</div>
@@ -49,4 +51,9 @@
 	</div>
 	<?php include 'footer.php'; ?>
 </body>
+<script>
+	$(function(){
+		$(".knob").knob();
+	})
+</script>
 </html>

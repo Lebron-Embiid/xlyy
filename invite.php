@@ -15,6 +15,7 @@
 	<script src="js/rem.js"></script>
 	<script src="js/jquery-2.1.4.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
+	<script src="js/laydate.js"></script>
 </head>
 <body>
 	<?php include 'header_nav.php'; ?>
@@ -44,8 +45,8 @@
 								<span>起始日期</span>
 							</div>
 							<div class="right">
-								<input type="text" name="start_date" value="2019-03-05">
-								<div class="date_icon"><img src="images/date.png" alt=""></div>
+								<input type="text" name="start_date" value="" readonly id="date1">
+								<div class="date_icon" onClick="laydate({elem: '#date1'});"><img src="images/date.png" alt=""></div>
 							</div>
 						</div>
 						<div class="invite_item">
@@ -54,8 +55,8 @@
 								<span>截止日期</span>
 							</div>
 							<div class="right">
-								<input type="text" name="end_date" value="2019-03-05">
-								<div class="date_icon"><img src="images/date.png" alt=""></div>
+								<input type="text" name="end_date" value="" readonly id="date2">
+								<div class="date_icon" onClick="laydate({elem: '#date2'});"><img src="images/date.png" alt=""></div>
 							</div>
 						</div>
 						<div class="invite_item">
