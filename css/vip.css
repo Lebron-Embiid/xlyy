@@ -713,6 +713,7 @@
 .comment_item .right img{
 	display: inline-block;
 	margin: .12rem 0 .8rem;
+	cursor: pointer;
 	transition: all .3s ease;
 }
 .comment_item.active .right img{

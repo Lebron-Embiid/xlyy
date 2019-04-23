@@ -144,28 +144,28 @@
 							<span>可以</span>
 							<span>线上支付</span>
 							<span>10元</span>
-							<a href="">预约</a>
+							<a href="invite.php">预约</a>
 						</div>
 						<div class="table_item">
 							<div class="box"><img src="images/offer_icon2.png" alt=""><div><span>假扮女友</span></div></div>
 							<span>可以</span>
 							<span>线上支付</span>
 							<span>100元/1天</span>
-							<a href="">预约</a>
+							<a href="invite.php">预约</a>
 						</div>
 						<div class="table_item">
 							<div class="box"><img src="images/offer_icon3.png" alt=""><div><span>旅游伴侣</span></div></div>
 							<span>可以</span>
 							<span>线上支付</span>
 							<span>10元</span>
-							<a href="">预约</a>
+							<a href="invite.php">预约</a>
 						</div>
 						<div class="table_item">
 							<div class="box"><img src="images/offer_icon4.png" alt=""><div><span>出席商务场合</span></div></div>
 							<span>可以</span>
 							<span>线上支付</span>
 							<span>10元</span>
-							<a href="">预约</a>
+							<a href="invite.php">预约</a>
 						</div>
 						<div class="table_item">
 							<div class="box"><img src="images/offer_icon5.png" alt=""><div><span>叫醒服务</span><span>(VIP会员可见)</span></div></div>
@@ -269,19 +269,6 @@
 						</li>
 					</ul>
 				</div>
-				<script>
-					$(function(){
-						$(".comment_ul").on("click",".down_icon",function(){
-							if($(this).parent().parent().parent().hasClass("active")){
-								$(this).parent().parent().parent().removeClass("active");
-								$(this).parent().parent().siblings().stop().slideUp();
-							}else{
-								$(this).parent().parent().parent().addClass("active");
-								$(this).parent().parent().siblings().stop().slideDown();
-							}
-						})
-					})
-				</script>
 				<div class="her_complaint_box">
 					<h5>邀约投诉</h5>
 					<ul>
@@ -355,4 +342,17 @@
 	</div>
 	<?php include 'footer.php'; ?>
 </body>
+<script>
+	$(function(){
+		$(".comment_ul").on("click",".down_icon",function(){
+			if($(this).parent().parent().parent().hasClass("active")){
+				$(this).parent().parent().parent().removeClass("active");
+				$(this).parent().parent().siblings().stop().slideUp();
+			}else{
+				$(this).parent().parent().parent().addClass("active");
+				$(this).parent().parent().siblings().stop().slideDown();
+			}
+		})
+	})
+</script>
 </html>

@@ -1,0 +1,124 @@
+.vip_top_info{
+	background: #666;
+	overflow: hidden;
+	padding: .15rem 0;
+}
+.vip_top_info .profile{
+	color: #fff;
+	overflow: hidden;
+}
+.vip_top_info .profile .avatar{
+	display: block;
+	width: 1.4rem;
+	height: 1.68rem;
+	float: left;
+	margin-right: .4rem;
+}
+.vip_top_info .profile h4{
+	font-size: .3rem;
+	margin: .15rem 0;
+}
+.vip_top_info .profile h4 span{
+	font-size: .24rem;
+	margin-left: .2rem;
+}
+.vip_top_info .profile h6{
+	font-size: .18rem;
+	margin: 0 0 .2rem;
+}
+.vip_top_info .profile h6 img{
+	display: inline-block;
+	vertical-align: middle;
+	margin: 0 .1rem .05rem 0;
+}
+
+
+.invite_content{
+	overflow: hidden;
+	padding: .3rem 0 1.7rem;
+	background: #eee;
+}
+.invite_process_box{
+	overflow: hidden;
+	background: #fff;
+	padding: .3rem .4rem .6rem;
+	box-sizing: border-box;
+	margin-bottom: .3rem;
+}
+.write_invite_mess{
+	overflow: hidden;
+	background: #fff;
+	padding: .3rem .3rem 1.2rem;
+	box-sizing: border-box;
+}
+.invite_process_box h4,.write_invite_mess h4{
+	color: #242424;
+	font-size: .2rem;
+	padding-bottom: .1rem;
+	border-bottom: 1px solid #EAEAEA;
+}
+.invite_process_box img{
+	display: block;
+	width: 100%;
+	margin: .8rem auto .3rem;
+}
+
+.invite_box{
+	padding: .2rem;
+	box-sizing: border-box;
+}
+.invite_item{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: .2rem 0;
+	border-bottom: 1px solid #eee;
+}
+.invite_item .left{
+	width: 2rem;
+	color: 242424;
+	font-size: .18rem;
+}
+.invite_item .left img{
+	display: inline-block;
+	vertical-align: middle;
+	width: .55rem;
+	height: .6rem;
+	margin: 0 .1rem .05rem 0;
+}
+.invite_item .right{
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+.invite_item .right input{
+	width: 3.6rem;
+	height: .6rem;
+	line-height: .6rem;
+	padding: 0 .2rem;
+	border-radius: .05rem;
+	border: 1px solid #E7E7E7;
+	box-sizing: border-box;
+	outline: none;
+}
+.invite_item .right.number input{
+	width: 2.75rem;
+	margin-left: .3rem;
+}
+.invite_item .right.single input{
+	width: 4.37rem;
+}
+.invite_item .right .date_icon{
+	height: .6rem;
+	padding: 0 .1rem;
+	border: 1px solid #E7E7E7;
+	margin-left: .05rem;
+	border-radius: .05rem;
+	cursor: pointer;
+}
+.invite_item .right .date_icon img{
+	display: block;
+	width: .5rem;
+	height: .35rem;
+	margin: .12rem auto 0;
+}

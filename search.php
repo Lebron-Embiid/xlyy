@@ -252,7 +252,6 @@
 	    "hoverColor":"#7b68ee",
 	    "paddingLeft":"10px",
 	    "arrowRight":"10px",
-	    //"preSet":"北京市/市辖区/东城区",
 	    "getVal":function(){
 	        //console.log($(".pick-area-hidden").val())
 	        //console.log($(".pick-area-dom").val())
