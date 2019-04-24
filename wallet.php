@@ -22,14 +22,7 @@
 	<div class="wallet_box">
 		<div class="container">
 			<div class="left">
-				<h4>我的钱包</h4>
-				<ul>
-					<li><a href="">绑定微信/支付宝帐号</a></li>
-					<li><a href="">账单记录</a></li>
-					<li><a href="">预约历史</a></li>
-					<li><a href="">提现</a></li>
-					<li><a href="">充值</a></li>
-				</ul>
+				<?php include 'wallet_left.php'; ?>
 			</div>
 			<div class="right">
 				<h4>我的钱包</h4>
@@ -42,7 +35,7 @@
 						</div>
 					</div>
 					<div class="over_rate">
-						<input class="knob" data-fgColor="#f00" data-thickness=".1" data-readOnly="true" value="70">
+						<input class="knob" data-fgColor="#be0020" style="outline: none;" data-thickness=".05" data-readOnly="true" value="70">
 						<p>超过70%的平台用户</p>
 					</div>
 				</div>
@@ -53,7 +46,9 @@
 </body>
 <script>
 	$(function(){
-		$(".knob").knob();
+		$(".knob").knob({
+			'width': '180'
+		});
 	})
 </script>
 </html>

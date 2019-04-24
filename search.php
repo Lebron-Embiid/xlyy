@@ -244,12 +244,12 @@
 	$(".pick-area2").pickArea({
 	    "format":"北京市/市辖区", //格式
 	    "width":"300",
-	    "borderColor":"#7b68ee",//文本边框的色值
-	    "arrowColor":"#7b68ee",//箭头颜色
-	    "listBdColor":"#7b68ee",//下拉框父元素ul的border色值
-	    "color":"#7b68ee",//字体颜色
+	    "borderColor":"#E3E3E3",//文本边框的色值
+	    "arrowColor":"#E3E3E3",//箭头颜色
+	    "listBdColor":"#E3E3E3",//下拉框父元素ul的border色值
+	    "color":"#E3E3E3",//字体颜色
 	    "fontSize":"16px",//字体大小
-	    "hoverColor":"#7b68ee",
+	    "hoverColor":"#E3E3E3",
 	    "paddingLeft":"10px",
 	    "arrowRight":"10px",
 	    "getVal":function(){

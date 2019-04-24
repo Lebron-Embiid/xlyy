@@ -1,32 +1,32 @@
-.vip_top_info{
+.invite_top_info{
 	background: #666;
 	overflow: hidden;
 	padding: .15rem 0;
 }
-.vip_top_info .profile{
+.invite_top_info .profile{
 	color: #fff;
 	overflow: hidden;
 }
-.vip_top_info .profile .avatar{
+.invite_top_info .profile .avatar{
 	display: block;
 	width: 1.4rem;
 	height: 1.68rem;
 	float: left;
 	margin-right: .4rem;
 }
-.vip_top_info .profile h4{
+.invite_top_info .profile h4{
 	font-size: .3rem;
 	margin: .15rem 0;
 }
-.vip_top_info .profile h4 span{
+.invite_top_info .profile h4 span{
 	font-size: .24rem;
 	margin-left: .2rem;
 }
-.vip_top_info .profile h6{
+.invite_top_info .profile h6{
 	font-size: .18rem;
 	margin: 0 0 .2rem;
 }
-.vip_top_info .profile h6 img{
+.invite_top_info .profile h6 img{
 	display: inline-block;
 	vertical-align: middle;
 	margin: 0 .1rem .05rem 0;
@@ -46,7 +46,7 @@
 	margin-bottom: .3rem;
 }
 .write_invite_mess{
-	overflow: hidden;
+	/* overflow: hidden; */
 	background: #fff;
 	padding: .3rem .3rem 1.2rem;
 	box-sizing: border-box;
@@ -73,6 +73,7 @@
 	align-items: center;
 	padding: .2rem 0;
 	border-bottom: 1px solid #eee;
+	position: relative;
 }
 .invite_item .left{
 	width: 2rem;
@@ -91,7 +92,7 @@
 	justify-content: flex-end;
 	align-items: center;
 }
-.invite_item .right input{
+.invite_item .right .input{
 	width: 3.6rem;
 	height: .6rem;
 	line-height: .6rem;
@@ -101,11 +102,11 @@
 	box-sizing: border-box;
 	outline: none;
 }
-.invite_item .right.number input{
+.invite_item .right.number .input{
 	width: 2.75rem;
 	margin-left: .3rem;
 }
-.invite_item .right.single input{
+.invite_item .right.single .input{
 	width: 4.37rem;
 }
 .invite_item .right .date_icon{
@@ -121,4 +122,152 @@
 	width: .5rem;
 	height: .35rem;
 	margin: .12rem auto 0;
+}
+
+.invite_item .warning{
+	position: absolute;
+	right: -4rem;
+	top: .4rem;
+	color: #be0020;
+	font-size: .16rem;
+}
+.invite_item .warning.default{
+	right: -.48rem;
+}
+.invite_item .warning img{
+	display: inline-block;
+	width: .29rem;
+	height: .25rem;
+	vertical-align: middle;
+	margin: 0 .1rem .03rem 0;
+}
+
+.laydate_body .laydate_ym .laydate_yms{
+	box-sizing: border-box !important; 
+}
+.laydate_body .laydate_bottom{
+	height: 34px !important;
+}
+.laydate_body .laydate_top{
+	height: 36px !important;
+}
+.laydate_body .laydate_ym{
+	height: 26px !important;
+}
+.laydate_body .laydate_ym input,.laydate_body .laydate_bottom .laydate_btn a{
+	height: 22px !important;
+}
+.laydate_body .laydate_y .laydate_yms ul li{
+	width: 59.5px !important;
+}
+
+.pick-area{
+	width: 4.5rem !important;
+}
+.pick-area,.pick-show,.pick-show span, .pick-show i{
+	height: .6rem !important;
+}
+.pick-show span, .pick-show i{
+	line-height: .6rem !important;
+}
+.pick-show:after{
+	top: .25rem !important;
+}
+
+
+.invite_item .box{
+	width: 1.5rem;
+	position: relative;
+	overflow: hidden;
+}
+.invite_item select{
+	font-size: .16rem;
+	width: 100%;
+	height: .45rem;
+	outline: none;
+	padding: 0 .1rem 0 .12rem;
+	box-sizing: border-box;
+	border: 0;
+	appearance:none;
+	-moz-appearance:none;
+	-webkit-appearance:none;
+}
+.invite_item .box:after{
+	content: "";
+	width: .17rem;
+	height: .11rem;
+	background: url(../images/down.png) top center no-repeat;
+	position: absolute;
+	right: .15rem;
+	top: .18rem;
+}
+
+
+.price_box{
+	display: flex;
+	align-items: center;
+}
+.price_box .input_btn{
+	color: #a0a0a0;
+	font-size: .5rem;
+	outline: none;
+	border: 0;
+	background: none;
+	margin: 0;
+	padding: 0;
+}
+.price_box .input_btn:first-child{
+	margin-right: .25rem;
+	vertical-align: middle;
+	margin-bottom: .07rem;
+}
+.price_box .input_btn:last-child{
+	margin-left: .25rem;
+}
+.price_box .price_input{
+	border: 0;
+	outline: none;
+	width: .6rem;
+}
+
+
+.invite_item .noborder{
+	border: 0;
+	text-align: right;
+	outline: none;
+	-webkit-box-shadow: 0 0 0px 1000px white inset;
+}
+
+.invite_remark{
+	overflow: hidden;
+	margin-bottom: .7rem;
+}
+.invite_remark span{
+	display: block;
+	margin: .6rem 0 .1rem
+}
+.invite_remark textarea{
+	display: block;
+	width: 100%;
+	height: 1.9rem;
+	border: 1px solid #F2F2F2;
+	outline: none;
+	resize: none;
+	padding: .2rem;
+	box-sizing: border-box;
+}
+
+.submit_btn{
+	display: block;
+	width: 4.5rem;
+	height: .76rem;
+	line-height: .76rem;
+	text-align: center;
+	border: 0;
+	color: #fff;
+	font-size: .2rem;
+	background: #be0020;
+	border-radius: .05rem;
+	margin: 0 auto;
+	outline: none;
 }

@@ -7,7 +7,7 @@
 		</ul>
 		<ul class="login_box">
 			<li><a href="register.php">注册</a></li>
-			<li class="active"><a href="">登录</a></li>
+			<li class="active"><a href="login.php">登录</a></li>
 		</ul>
 	</div>
 </div>

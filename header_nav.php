@@ -15,14 +15,14 @@
 				<a href="">升级会员</a>
 			</div>
 			<div class="my_vip">
-				<a href="vip_index.php" class="avatar_nav_img">
+				<a href="person.php" class="avatar_nav_img">
 					<img src="images/avatar_default1.jpg" alt="">
 				</a>
 				<ul>
-					<li><a href="vip_index.php">我的会员</a></li>
+					<li><a href="my_vip.php">我的会员</a></li>
 					<li><a href="wallet.php">我的钱包</a></li>
-					<li><a href="">设置</a></li>
-					<li><a href="">退出登录</a></li>
+					<li><a href="setting.php">设置</a></li>
+					<li><a href="login.php">退出登录</a></li>
 				</ul>
 			</div>
 		</div>
