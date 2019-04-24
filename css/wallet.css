@@ -141,3 +141,6 @@
 	width: .26rem;
 	margin-left: .1rem;
 }
+.load_more:focus,.load_more:hover{
+	color: #414141;
+}

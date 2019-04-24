@@ -52,26 +52,26 @@
 				<div class="my_power_box">
 					<h5>我的特权</h5>
 					<ul class="power_box">
-						<li><a href=""><img src="images/power_icon1.png" alt=""><p>浏览</p></a></li>
-						<li><a href=""><img src="images/power_icon2.png" alt=""><p>无限关注</p></a></li>
-						<li><a href=""><img src="images/power_icon3.png" alt=""><p>搜索</p></a></li>
-						<li><a href=""><img src="images/power_icon4.png" alt=""><p>转发</p></a></li>
-						<li><a href=""><img src="images/power_icon5.png" alt=""><p>发红包</p></a></li>
-						<li><a href=""><img src="images/power_icon6.png" alt=""><p>谁看过我</p></a></li>
-						<li><a href=""><img src="images/power_icon7.png" alt=""><p>我的粉丝</p></a></li>
-						<li><a href=""><img src="images/power_icon8.png" alt=""><p>投诉</p></a></li>
-						<li><a href=""><img src="images/power_icon9.png" alt=""><p>隐私设置</p></a></li>
-						<li><a href=""><img src="images/power_icon10.png" alt=""><p>充值提现</p></a></li>
+						<li><a href="javascript:void(0);"><img src="images/power_icon1.png" alt=""><p>浏览</p></a></li>
+						<li><a href="javascript:void(0);"><img src="images/power_icon2.png" alt=""><p>无限关注</p></a></li>
+						<li><a href="javascript:void(0);"><img src="images/power_icon3.png" alt=""><p>搜索</p></a></li>
+						<li><a href="javascript:void(0);"><img src="images/power_icon4.png" alt=""><p>转发</p></a></li>
+						<li><a href="javascript:void(0);"><img src="images/power_icon5.png" alt=""><p>发红包</p></a></li>
+						<li><a href="javascript:void(0);"><img src="images/power_icon6.png" alt=""><p>谁看过我</p></a></li>
+						<li><a href="javascript:void(0);"><img src="images/power_icon7.png" alt=""><p>我的粉丝</p></a></li>
+						<li><a href="javascript:void(0);"><img src="images/power_icon8.png" alt=""><p>投诉</p></a></li>
+						<li><a href="javascript:void(0);"><img src="images/power_icon9.png" alt=""><p>隐私设置</p></a></li>
+						<li><a href="javascript:void(0);"><img src="images/power_icon10.png" alt=""><p>充值提现</p></a></li>
 					</ul>
 				</div>
 				<div class="can_buy_box">
 					<h5>可以购买</h5>
 					<ul>
-						<li><a href=""><img src="images/offer_icon1.png" alt=""><p>叫醒服务</p></a></li>
-						<li><a href=""><img src="images/offer_icon2.png" alt=""><p>假扮女友</p></a></li>
-						<li><a href=""><img src="images/offer_icon3.png" alt=""><p>旅游陪伴</p></a></li>
-						<li><a href=""><img src="images/offer_icon4.png" alt=""><p>出席商务场合</p></a></li>
-						<li><a href=""><img src="images/offer_icon5.png" alt=""><p>更多服务</p></a></li>
+						<li><a href="javascript:void(0);"><img src="images/offer_icon1.png" alt=""><p>叫醒服务</p></a></li>
+						<li><a href="javascript:void(0);"><img src="images/offer_icon2.png" alt=""><p>假扮女友</p></a></li>
+						<li><a href="javascript:void(0);"><img src="images/offer_icon3.png" alt=""><p>旅游陪伴</p></a></li>
+						<li><a href="javascript:void(0);"><img src="images/offer_icon4.png" alt=""><p>出席商务场合</p></a></li>
+						<li><a href="javascript:void(0);"><img src="images/offer_icon5.png" alt=""><p>更多服务</p></a></li>
 					</ul>
 				</div>
 			</div>

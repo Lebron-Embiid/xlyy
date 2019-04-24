@@ -242,7 +242,7 @@
 </body>
 <script>
 	$(".pick-area2").pickArea({
-	    "format":"北京市/市辖区", //格式
+	    "format":"province/city", //格式
 	    "width":"300",
 	    "borderColor":"#E3E3E3",//文本边框的色值
 	    "arrowColor":"#E3E3E3",//箭头颜色
@@ -257,6 +257,7 @@
 	        //console.log($(".pick-area-dom").val())
 	        var thisdom = $("."+$(".pick-area-dom").val());
 	        thisdom.next().val($(".pick-area-hidden").val());
+			console.log($(".pick-area-hidden").val())
 	    }
 	});
 </script>
