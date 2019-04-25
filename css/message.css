@@ -1,0 +1,86 @@
+.message_box{
+	padding: .4rem .5rem 1rem;
+	background: #fff;
+	border-top: 1px solid #D0D0D0;
+}
+
+.mess_default{
+	/* overflow: hidden; */
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+.mess_default .h_left{
+	width: 70%;
+	/* float: left; */
+}
+
+.mess_default .h_left .img{
+	float: left;
+	display: block;
+	width: 1.44rem;
+	height: 1.7rem;
+	margin-right: .25rem;
+}
+.mess_default .h_left .info h5{
+	color: #202020;
+	font-size: .2rem;
+	margin: .25rem 0 .2rem;
+}
+.mess_default .h_left .info h5 img{
+	display: inline-block;
+	width: .15rem;
+	height: .21rem;
+	vertical-align: middle;
+	margin: 0 .05rem .05rem 0;
+}
+.mess_default .h_left .info h5 span{
+	margin-right: .5rem;
+}
+.mess_default .h_left .info h5 span:last-child{
+	margin-right: 0;
+	display: inline-block;
+	vertical-align: middle;
+	width: 2.8rem;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	margin-bottom: .03rem;
+}
+.mess_default .h_left .info h5 .name{
+	display: inline-block;
+	vertical-align: middle;
+	width: .8rem;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	margin-bottom: .03rem;
+}
+.mess_default .h_left .info p{
+	color: #202020;
+	font-size: .18rem;
+}
+
+.mess_default .h_down{
+	margin: .5rem 0 .3rem;
+}
+.mess_default .h_new{
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	color: #202020;
+	font-size: .16rem;
+}
+.mess_default .h_new .new{
+	display: block;
+	width: .33rem;
+	height: .33rem;
+	line-height: .33rem;
+	color: #fff;
+	font-size: .16rem;
+	text-align: center;
+	background: #be0020;
+}
+.mess_default .h_new div{
+	margin-left: .25rem;
+}

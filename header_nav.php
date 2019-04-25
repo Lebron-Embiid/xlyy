@@ -4,9 +4,9 @@
 		<ul class="nav_ul">
 			<li><a href="vip_index.php"><span class="icon"></span><p>首页</p></a></li>
 			<li><a href="search.php"><span class="icon"></span>搜索</a></li>
-			<li><a href=""><span class="icon"><span class="badge">7</span></span>消息</a></li>
+			<li><a href="message.php"><span class="icon"><span class="badge">7</span></span>消息</a></li>
 			<li><a href=""><span class="icon"></span>关注</a></li>
-			<li><a href=""><span class="icon"></span>我的</a></li>
+			<li><a href="person.php"><span class="icon"></span>我的</a></li>
 		</ul>
 		<div class="vip_box">
 			<div class="info">

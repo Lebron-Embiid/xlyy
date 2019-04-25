@@ -29,7 +29,8 @@
 				<div class="input_box white">
 					<img src="images/form_icon4.png" class="left_icon" alt="">
 					<input type="password" class="input" placeholder="密码" name="password">
-					<img src="images/eye.png" class="right_eye" alt="">
+					<img src="images/eye.png" class="right_eye active" alt="">
+					<img src="images/eye1.png" class="right_eye" alt="">
 				</div>
 				<div class="remember_box">
 					<label for="remember"><input type="checkbox" name="remember" id="remember">记住我</label>

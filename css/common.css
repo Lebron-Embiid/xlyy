@@ -356,6 +356,9 @@
 	margin: .5rem auto 0;
 	text-decoration: none;
 }
+.modal_box a.last{
+	background: #a6a6a6;
+}
 .recharge_modal{
 	padding: .3rem .35rem .6rem;
 	width: 40%;
@@ -366,7 +369,7 @@
 	margin-top: .2rem;
 }
 .recharge_modal .box{
-	padding: .5rem 1.3rem 0;
+	padding: .5rem 1rem 0;
 }
 .recharge_modal img{
 	float: right;
@@ -375,6 +378,56 @@
 .recharge_modal ul{
 	display: flex;
 	justify-content: space-between;
+}
+
+
+.h_right{
+	/* float: right; */
+	/* width: 30%; */
+	text-align: right;
+	position: relative;
+}
+.h_right .set_img{
+	cursor: pointer;
+	display: block;
+	width: .27rem;
+	height: .27rem;
+	background: url(../images/setting.png) center center no-repeat;
+	background-size: 100% 100%;
+	margin-bottom: .1rem;
+}
+.set_box{
+	overflow: hidden;
+	float: right;
+}
+.set_box.active .set_img{
+	background: url(../images/setting1.png) center center no-repeat;
+	background-size: 100% 100%;	
+}
+.setting_layer{
+	position: absolute;
+	right: 0;
+	top: .35rem;
+	width: 1rem;
+	z-index: 3;
+	border: 1px solid #BE0020;
+	display: none;
+}
+.setting_layer.active{
+	display: block;
+}
+.setting_layer div a{
+	display: block;
+	overflow: hidden;
+	padding: .08rem 0;
+	background: #fff;
+	color: #303030;
+	font-size: .16rem;
+	text-align: center;
+}
+.setting_layer div.active a,.setting_layer div:hover a{
+	background: #BE0020;
+	color: #fff;
 }
 
 

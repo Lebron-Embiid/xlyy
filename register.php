@@ -48,7 +48,8 @@
 					<div class="input_box">
 						<img src="images/form_icon4.png" class="left_icon" alt="">
 						<input type="password" class="input" placeholder="密码" name="password">
-						<img src="images/eye.png" class="right_eye" alt="">
+						<img src="images/eye.png" class="right_eye active" alt="">
+						<img src="images/eye1.png" class="right_eye" alt="">
 					</div>
 					<p class="agree_p"><input type="checkbox" name="agree">同意本网站的<a href="">用户协议</a>，<a href="privacy_policy.php">隐私声明</a>和<a href="platform_agreement.php">平台协议</a></p>
 					<input type="submit" value="注册" class="reg_btn">

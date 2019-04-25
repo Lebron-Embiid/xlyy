@@ -51,7 +51,7 @@
 			<p>您确认从微信账号245-689充值8000元吗？</p>
 			<ul>
 				<li><a href="javascript:void(0);">确认</a></li>
-				<li><a href="javascript:void(0);">取消</a></li>
+				<li><a href="javascript:void(0);" class="last">取消</a></li>
 			</ul>
 		</div>
 	</div>

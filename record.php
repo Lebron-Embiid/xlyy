@@ -28,7 +28,7 @@
 				<h4><a href="wallet.php">我的钱包</a>&gt;&gt;<span>账单记录</span></h4>
 				<div class="record_box">
 					<div class="title"><span>账单</span><span>金额</span><span>时间日期</span></div>
-					<ul class="record_ul list">
+					<ul class="record_ul">
 						<li><span>我发送红包给“小青”50元</span><span>-50元</span><span>2018-10-19 15：25</span></li>
 						<li><span>我发送红包给“小青”50元</span><span>-50元</span><span>2018-10-19 15：25</span></li>
 						<li><span>我发送红包给“小青”50元</span><span>-50元</span><span>2018-10-19 15：25</span></li>
@@ -58,9 +58,9 @@
 			_loading:6,  //每次点击按钮后加载的个数
 			init:function(){
 				var lis = $(".record_ul li");
-				$(".record_ul.list").html("");
+				$(".record_ul").html("");
 				for(var n=0;n<jq22._default;n++){
-					lis.eq(n).appendTo(".record_ul.list");
+					lis.eq(n).appendTo(".record_ul");
 				}
 				for(var i=jq22._default;i<lis.length;i++){
 					_content.push(lis.eq(i));
@@ -68,14 +68,14 @@
 				$(".record_ul.hidden").html("");
 			},
 			loadMore:function(){
-				var mLis = $(".record_ul.list li").length;
+				var mLis = $(".record_ul li").length;
 				for(var i =0;i<jq22._loading;i++){
 					var target = _content.shift();
 					if(!target){
 						$('.load_more').html("全部加载完毕...");
 						break;
 					}
-					$(".record_ul.list").append(target);
+					$(".record_ul").append(target);
 				}
 			}
 		}

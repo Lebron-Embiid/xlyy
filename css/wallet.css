@@ -98,7 +98,7 @@
 }
 
 
-.record_box{
+.record_box,.history_box{
 	padding: .4rem .25rem 0;
 }
 .record_box ul{
@@ -143,4 +143,108 @@
 }
 .load_more:focus,.load_more:hover{
 	color: #414141;
+}
+
+
+.history_box{
+	background: #fff;
+	padding: .4rem 0 0;
+	border-top: 1px solid #D0D0D0;
+}
+.history_box h5{
+	color: #242424;
+	font-size: .18rem;
+	padding: 0 .25rem .1rem;
+	border-bottom: 1px solid #F1F1F1;
+}
+.history_ul{
+	overflow: hidden;
+}
+.history_ul .history_item{
+	padding: .3rem .25rem;
+	box-sizing: border-box;
+	position: relative;
+	border-bottom: 1px solid #e5e5e5;
+}
+.history_ul .history_item.active{
+	background: #e5e5e5;
+}
+.history_ul .history_item.active:after{
+	content: "";
+	width: 1.47rem;
+	height: 1.15rem;
+	background: url(../images/finish.png) center center no-repeat;
+	background-size: 100% 100%;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	z-index: 3;
+}
+.history_info{
+	/* overflow: hidden; */
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+.history_info .h_left{
+	width: 60%;
+	/* float: left; */
+}
+.history_info .h_left img{
+	display: block;
+	width: .91rem;
+	height: 1.08rem;
+	float: left;
+	margin-right: .15rem;
+}
+.history_info .h_left h6{
+	color: #262626;
+	font-size: .2rem;
+	margin: .05rem 0 .1rem;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.history_info .h_left p{
+	color: #262626;
+	font-size: .16rem;
+	margin-bottom: .1rem;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+
+.history_list{
+	display: flex;
+	justify-content: flex-start;
+	align-items: stretch;
+	flex-wrap: wrap;
+}
+.history_list .hl_item{
+	width: 50%;
+	margin-top: .2rem;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	color: #303030;
+	font-size: .16rem;
+}
+.history_list .hl_item img{
+	display: block;
+	width: .33rem;
+	height: .33rem;
+	margin-right: .15rem;
+}
+.history_list .hl_item span{
+	display: block;
+	width: .7rem;
+	margin-right: .15rem;
+}
+.history_list .hl_item p{
+	width: 2.8rem;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
 }

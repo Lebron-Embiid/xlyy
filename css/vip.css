@@ -248,6 +248,21 @@
 	font-size: .2rem;
 	margin-bottom: .1rem;
 }
+.wallet_box.message h4 label{
+	float: right;
+	color: #414141;
+	font-size: .14rem;
+	font-weight: normal;
+	margin: .05rem 0 0;
+	display: flex;
+	align-items: center;
+}
+.wallet_box.message h4 label input[type='checkbox']{
+	transform: scale(1.5);
+	display: inline-block;
+	vertical-align: middle;
+	margin: 0 .1rem 0 0;
+}
 .wallet_box .left ul,.wallet_box .right .box{
 	overflow: hidden;
 	padding: .15rem;
@@ -261,6 +276,17 @@
 	padding: .1rem 0;
 	color: #242424;
 	font-size: .16rem;
+}
+.wallet_box.message .left ul li a span{
+	float: right;
+	width: .21rem;
+	height: .21rem;
+	border-radius: 50%;
+	color: #fff;
+	font-size: .14rem;
+	line-height: .21rem;
+	text-align: center;
+	background: #be0020;
 }
 .wallet_box .left ul li.active a,.wallet_box .left ul li:hover a{
 	color: #be0020;
