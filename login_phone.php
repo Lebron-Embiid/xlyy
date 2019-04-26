@@ -26,7 +26,7 @@
 	</style>
 </head>
 <body>
-	<?php include 'header.php'; ?>
+	<?php include 'header_login.php'; ?>
 	<div class="login_form_box">
 		<div class="container">
 			<form action="vip_index.php">

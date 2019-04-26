@@ -310,10 +310,10 @@
 		$(".comment_ul").on("click",".down_icon",function(){
 			if($(this).parent().parent().parent().hasClass("active")){
 				$(this).parent().parent().parent().removeClass("active");
-				$(this).parent().parent().siblings().stop().slideUp();
+				$(this).parent().parent().siblings().removeClass("active");
 			}else{
 				$(this).parent().parent().parent().addClass("active");
-				$(this).parent().parent().siblings().stop().slideDown();
+				$(this).parent().parent().siblings().addClass("active");
 			}
 		})
 	})

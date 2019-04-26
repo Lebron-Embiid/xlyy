@@ -18,7 +18,7 @@
 	<script src="js/code.js"></script>
 </head>
 <body>
-	<?php include 'header.php'; ?>
+	<?php include 'header_login.php'; ?>
 	<div class="register_banner">
 		<div class="container">
 			<div class="register_box">

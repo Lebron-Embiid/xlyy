@@ -67,7 +67,7 @@
 }
 .service_type{
 	display: flex;
-	justify-content: space-between;
+	justify-content: flex-end;
 }
 .service_type h5{
 	color: #2e2e2e;
@@ -93,6 +93,7 @@
 	text-align: center;
 	background: #be0020;
 	border-radius: .05rem;
+	margin-left: .8rem;
 }
 
 .filter_box{

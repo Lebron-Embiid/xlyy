@@ -17,7 +17,7 @@
 	<script src="js/bootstrap.min.js"></script>
 </head>
 <body>
-	<?php include 'header.php'; ?>
+	<?php include 'header_login.php'; ?>
 	<div class="about_box">
 		<div class="container">
 			<h2>关于我们</h2>

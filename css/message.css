@@ -1,14 +1,17 @@
-.message_box{
-	padding: .4rem .5rem 1rem;
+.message_box,.window_box{
 	background: #fff;
 	border-top: 1px solid #D0D0D0;
 }
-
+.message_item.active{
+	background: #e4e4e4;
+}
 .mess_default{
 	/* overflow: hidden; */
 	display: flex;
 	justify-content: space-between;
-	align-items: flex-start;
+	align-items: stretch;
+	padding: .3rem;
+	border-bottom: 1px solid #F4F4F4;
 }
 .mess_default .h_left{
 	width: 70%;
@@ -41,7 +44,7 @@
 	margin-right: 0;
 	display: inline-block;
 	vertical-align: middle;
-	width: 2.8rem;
+	width: 1.8rem;
 	overflow: hidden;
 	text-overflow: ellipsis;
 	white-space: nowrap;
@@ -59,19 +62,60 @@
 .mess_default .h_left .info p{
 	color: #202020;
 	font-size: .18rem;
+	overflow : hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 4;
+	-webkit-box-orient: vertical;
+	word-wrap: break-word;
+	word-break: break-all;
 }
-
+.mess_default .set_box{
+	display: none;
+}
+.mess_default .set_box.active{
+	display: block;
+}
+.message_item.active .mess_default .set_box,.message_item.active .mess_default .h_down,.message_item.active .mess_default .new{
+	display: none;
+}
+.mess_default .cancle{
+	text-align: right;
+	margin: .15rem 0 .6rem;
+	display: none;
+}
+.message_item.active .mess_default .cancle{
+	display: block;
+}
+.mess_default .cancle a{
+	display: inline-block;
+	width: 1.4rem;
+	height: .4rem;
+	line-height: .4rem;
+	color: #fff;
+	font-size: .16rem;
+	background: #959595;
+	text-align: center;
+	border-radius: .05rem;
+}
 .mess_default .h_down{
-	margin: .5rem 0 .3rem;
+	margin: .7rem 0 .4rem;
 }
-.mess_default .h_new{
+.mess_default .h_down img{
+	cursor: pointer;
+	transition: all .3s ease;
+}
+.mess_default .h_down.active img{
+	transform: rotate(180deg);
+}
+.mess_default .h_new,.window_item .w_right .w_new{
 	display: flex;
 	justify-content: flex-end;
 	align-items: center;
 	color: #202020;
 	font-size: .16rem;
 }
-.mess_default .h_new .new{
+.mess_default .h_new .new,.window_item .w_right .w_new .new{
 	display: block;
 	width: .33rem;
 	height: .33rem;
@@ -81,6 +125,506 @@
 	text-align: center;
 	background: #be0020;
 }
-.mess_default .h_new div{
+.mess_default .h_new div,.window_item .w_right .w_new div{
 	margin-left: .25rem;
+}
+.mess_default .h_new .del_img,.window_item .w_right .w_new .del_img{
+	display: inline-block;
+	vertical-align: middle;
+	margin-bottom: .05rem;
+	cursor: pointer;
+}
+
+
+.open_mess_box{
+	overflow: hidden;
+	display: none;
+}
+.open_mess_box.active{
+	display: block;
+}
+.mess_scroll{
+	padding: .3rem .3rem .5rem;
+	overflow-y: scroll;
+	max-height: 4rem;
+}
+.my_invite_box .mess_scroll{
+	max-height: 10rem;
+}
+.mess_scroll .mess_item{
+	overflow: hidden;
+	margin-bottom: .3rem;
+}
+.mess_scroll .mess_item .time{
+	text-align: center;
+	color: #6b6b6b;
+	font-size: .14rem;
+	margin-bottom: .2rem;
+}
+.mess_scroll .mess_item .send_mess{
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
+	width: 70%;
+}
+.mess_scroll .mess_item .invite_mess{
+	width: 100%;
+}
+.mess_scroll .mess_item.me .invite_mess{
+	width: 70%;
+	float: right;
+}
+.mess_scroll .mess_item.me .send_mess{
+	justify-content: flex-start;
+	float: right;
+	flex-direction: row-reverse;
+}
+.mess_scroll .mess_item .send_mess .head{
+	display: block;
+	width: .84rem;
+	height: .99rem;
+	margin-right: .08rem;
+}
+.mess_scroll .mess_item.me .send_mess .head{
+	margin: 0 0 0 .08rem;
+}
+.mess_scroll .mess_item .send_mess .content{
+	width: 4rem;
+	padding: .21rem .5rem .21rem .2rem;
+	box-sizing: border-box;
+	background: #f5f5f5;
+	color: #414141;
+	font-size: .2rem;
+	border-radius: .05rem;
+	min-height: .98rem;
+	position: relative;
+}
+.mess_scroll .mess_item .send_mess .content:after{
+	content: "";
+	width: .87rem;
+	height: .87rem;
+	position: absolute;
+	right: .5rem;
+	top: .05rem;
+}
+.mess_scroll .mess_item .send_mess.agree .content:after{
+	background: url(../images/agree.png) center center no-repeat;
+	background-size: 100%;
+}
+.mess_scroll .mess_item .send_mess.complaint .content:after{
+	background: url(../images/complaint.png) center center no-repeat;
+	background-size: 100%;
+}
+.mess_scroll .mess_item .send_mess .com_box h4{
+	color: #414141;
+	font-size: .16rem;
+	margin-bottom: .2rem;
+}
+.mess_scroll .mess_item.me .send_mess .content{
+	background: #ffc928;
+}
+.mess_scroll .mess_item h6{
+	width: 50%;
+	text-align: right;
+	color: #262626;
+	font-size: .18rem;
+	margin-bottom: .1rem;
+}
+
+
+.reply_mess_box,.wee_pay_box{
+	padding: .3rem;
+	box-sizing: border-box;
+	background: #ddd;
+}
+.reply_mess_box p{
+	color: #303030;
+	font-size: .16rem;
+	margin-bottom: .3rem;
+}
+.reply_mess_box textarea{
+	background: #fff;
+	border: 0;
+	outline: none;
+	resize: none;
+	display: block;
+	width: 100%;
+	height: 1.9rem;
+	padding: .1rem;
+	box-sizing: border-box;
+}
+.reply_mess_box .submit_btn,.wee_pay_box .submit_btn{
+	display: block;
+	width: 1.95rem;
+	height: .6rem;
+	line-height: .6rem;
+	color: #fff;
+	font-size: .2rem;
+	text-align: center;
+	background: #be0020;
+	border-radius: .05rem;
+	border: 0;
+	margin: .4rem auto .2rem;
+	outline: none;
+}
+.reply_mess_box .cancle_btn,.wee_pay_box .cancle_btn{
+	background: #959595;
+}
+.wee_pay_box .submit_btn{
+	margin-top: 0;
+}
+.price_btn_box{
+	display: flex;
+	justify-content: space-between;
+	padding: 0 1.5rem;
+}
+
+.wee_pay_box{
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+.wee_pay_box .wp_left{
+	width: 70%;
+	background: #fff;
+	padding: .3rem;
+	box-sizing: border-box;
+	border-radius: .05rem;
+	color: #303030;
+	font-size: .16rem;
+}
+.wee_pay_box .wp_left h5{
+}
+.wee_pay_box .wp_left p{
+	margin: .6rem 0 .25rem
+}
+.wee_pay_box .wp_left label{
+	font-weight: normal;
+}
+.wee_pay_box .wp_left label input{
+	transform: scale(1.4);
+	display: inline-block;
+	vertical-align: middle;
+	margin: 0 .1rem .03rem 0;
+}
+
+
+.price_box{
+	margin-bottom: .1rem;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+.price_box .title{
+	color: #303030;
+	font-size: .16rem;
+	margin-right: 1rem;
+}
+.price_math{
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+.price_math span{
+	font-size: .5rem;
+	color: #7d7d7d;
+	cursor: pointer;
+}
+.price_math .pm_minus{
+	margin-bottom: .06rem;
+}
+.price_math div{
+	margin: 0 .15rem;
+	padding: .1rem .15rem;
+	box-sizing: border-box;
+	background: #fff;
+}
+.price_math div input{
+	background: none;
+	border: 0;
+	outline: none;
+	width: .6rem;
+	text-align: right;
+}
+
+.eval_box{
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	margin-bottom: .15rem;
+}
+.eval_box span{
+	display: block;
+	margin-right: .25rem;
+}
+#star{overflow: hidden;}
+#star li{float:left;width:.35rem;height: .33rem;cursor:pointer;background:url(../images/star1.png) no-repeat;background-size: 100%;margin-right: .15rem;}
+#star li.on{background-position:0 -.45rem;}
+
+
+.report_modal .label_box{
+	margin-top: .3rem;
+}
+.report_modal label{
+	display: block;
+	width: 4.5rem;
+	height: .65rem;
+	line-height: .65rem;
+	text-align: center;
+	color: #272727;
+	font-size: .16rem;
+	font-weight: normal;
+	background: #eee;
+	border-radius: .05rem;
+	margin: 0 auto .1rem;
+	position: relative;
+}
+.report_modal label input{
+	position: absolute;
+	display: block;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	opacity: 0;
+	filter: alpha(opacity=0);
+	cursor: pointer;
+	outline: none;
+}
+.report_modal label.active{
+	color: #fff;
+	background: #f3992e;
+}
+
+
+.window_box{
+	padding: .3rem;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+.window_item{
+	overflow: hidden;
+	padding-bottom: .1rem;
+	border-bottom: 1px solid #F1F1F1;
+	margin-bottom: .3rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+.window_item:last-child{
+	margin-bottom: 0;
+	border-bottom: 0;
+	padding-bottom: 0;
+}
+.window_item .w_left{
+	overflow: hidden;
+}
+.window_item .w_right{
+	width: 82%;
+	background: #eee;
+	padding: .2rem .2rem .1rem .2rem;
+	box-sizing: border-box;
+	border-radius: .05rem;
+	overflow: hidden;
+}
+.window_item .w_left img{
+	display: block;
+	width: 1.27rem;
+	height: 1.27rem;
+	margin-bottom: .1rem;
+}
+.window_item .w_left p{
+	color: #1b1b1b;
+	font-size: .18rem;
+	text-align: center;
+}
+.window_item .w_right p{
+	color: #1b1b1b;
+	font-size: .16rem;
+}
+.window_item .w_right p a{
+	display: inline-block;
+	color: #be0020;
+	margin-left: .5rem;
+}
+.window_item .w_right .w_new{
+	margin-top: .4rem;
+}
+
+
+.vip_email_box .window_item{
+	align-items: center;
+}
+.vip_email_box .window_item .w_left img{
+	width: 1.3rem;
+	height: 1.27rem;
+	margin-bottom: 0;
+}
+.love_box .window_item .w_left img{
+	width: 1.27rem;
+	height: 1.5rem;
+}
+
+
+
+.my_invite_box .message_item{
+	position: relative;
+	z-index: 1;
+}
+.my_invite_box .message_item.pay:after{
+	content: "";
+	position: absolute;
+	width: .78rem;
+	height: .85rem;
+	background: url(../images/no_pay.png) center center no-repeat;
+	background-size: 100%;
+	right: 0;
+	top: 0;
+	z-index: -1;
+}
+.my_invite_box .message_item.finish .mess_default{
+	background: #e5e5e5;
+	position: relative;
+}
+.my_invite_box .message_item.finish .mess_default:after{
+	content: "";
+	display: block;
+	width: 1.47rem;
+	height: 1.15rem;
+	background: url(../images/finish.png) center center no-repeat;
+	background-size: 100%;
+	position: absolute;
+	left: 55%;
+	top: 50%;
+	transform: translateY(-50%);
+	z-index: 3;
+}
+.my_invite_box .mess_default{
+	padding-right: .6rem;
+}
+.my_invite_box .mess_default .h_left .info h5{
+	margin: 0 0 .1rem;
+}
+.my_invite_box .mess_default .h_left .info p{
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	display: block;
+}
+.my_invite_box .mess_default .h_left .info h6{
+	color: #1b1b1b;
+	font-size: .16rem;
+	margin: .2rem 0 .3rem;
+}
+.my_invite_box .mess_default .h_left .info h6 img{
+	display: inline-block;
+	vertical-align: middle;
+	width: .29rem;
+	height: .29rem;
+	margin: 0 .1rem .05rem 0;
+}
+.my_invite_box .mess_default .h_left .info .progress{
+	width: 40%;
+	height: .15rem;
+	border-radius: .1rem;
+	margin: 0;
+	border: 1px solid #7D7D7D;
+	box-sizing: border-box;
+	background: #fff;
+}
+.my_invite_box .mess_default .h_left .info .progress .progress-bar{
+	background: #959595;
+}
+
+
+.mess_item .invite_mess{
+	padding: .25rem .2rem;
+	background: #E6E6E6;
+	color: #393939;
+	font-size: .18rem;
+}
+.mess_item .invite_mess h5{
+	padding-bottom: .1rem;
+	font-size: .18rem;
+	border-bottom: 1px solid #E1E1E1;
+	margin-bottom: .3rem;
+}
+.mess_item.me .invite_mess{
+	background: #F3992E;
+	color: #fff;
+}
+.mess_item.me .invite_mess h5{
+	border-color: #fff;
+}
+.mess_item .invite_mess h5 a{
+	color: #be0020;
+	float: right;
+}
+
+.im_box{
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	margin-bottom: .3rem;
+}
+.im_box .im_date_box{
+	width: 100%;
+}
+.mess_item.me .im_box .im_date_box{
+	width: 75%;
+}
+.invite_mess .im_item{
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	margin-bottom: .15rem;
+}
+.mess_item .invite_mess .im_item.remark{
+	align-items: flex-start;
+	margin-top: .4rem;
+}
+.mess_item .invite_mess .im_item.remark span{
+	margin-top: .1rem;
+}
+.mess_item .invite_mess .im_item.remark p{
+	height: 1rem;
+	white-space: normal;
+	overflow: hidden;
+}
+.invite_mess .im_item span{
+	display: block;
+	width: .8rem;
+	margin-right: .1rem;
+}
+.mess_item .invite_mess .im_item p{
+	display: block;
+	width: 4.6rem;
+	height: .37rem;
+	/* line-height: .37rem; */
+	background: #fff;
+	padding-left: .15rem;
+	box-sizing: border-box;
+	color: #393939;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	display: flex;
+	align-items: center;
+}
+.mess_item .invite_mess .im_box .im_item p{
+	width: 4.2rem;
+	margin-right: 0;
+}
+.mess_item.me .invite_mess .im_box .im_item p{
+	width: 2.8rem;
+	margin-right: .1rem;
+}
+.im_box .im_avatar{
+	width: .94rem;
+	height: 1.12rem;
+}
+.im_box .im_avatar img{
+	display: block;
+	width: 100%;
+	height: 100%;
 }

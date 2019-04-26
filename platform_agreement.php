@@ -17,7 +17,7 @@
 	<script src="js/bootstrap.min.js"></script>
 </head>
 <body>
-	<?php include 'header.php'; ?>
+	<?php include 'header_login.php'; ?>
 	<div class="platform_box">
 		<div class="container">
 			<h2>平台协议</h2>
