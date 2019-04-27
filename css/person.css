@@ -1,10 +1,10 @@
-.vip_card_box,.my_power_box,.can_buy_box,.write_data_box,.my_person_info,.my_self_info,.my_find_info{
+.vip_card_box,.my_power_box,.can_buy_box,.write_data_box,.my_person_info,.my_self_info,.my_find_info,.my_top_box{
 	background: #fff;
 	margin-bottom: .2rem;
 	padding: .3rem .3rem .5rem;
 	box-sizing: border-box;
 }
-.vip_card_box h5,.my_power_box h5,.can_buy_box h5,.my_person_info h5,.my_self_info h5,.my_find_info h5{
+.vip_card_box h5,.my_power_box h5,.can_buy_box h5,.my_person_info h5,.my_self_info h5,.my_find_info h5,.my_top_box h5{
 	color: #242424;
 	font-size: .2rem;
 	padding-bottom: .1rem;
@@ -152,4 +152,204 @@
 	margin-bottom: .3rem;
 	color: #3d3d3d;
 	font-size: .16rem;
+}
+
+
+.my_top_box ul{
+	overflow: hidden;
+}
+.my_top_box ul li{
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	color: #3d3d3d;
+	font-size: .18rem;
+	padding: .2rem 0;
+}
+.my_top_box ul li .icon{
+	display: inline-block;
+	vertical-align: middle;
+	width: .59rem;
+	height: .49rem;
+	margin: 0 .2rem .05rem 0;
+}
+.my_top_box ul li span{
+	display: block;
+	width: 3.10rem;
+}
+.my_top_box ul li p{
+	width: 3.2rem;
+}
+.my_top_box ul li p img{
+	display: inline-block;
+	vertical-align: middle;
+	width: .34rem;
+	height: .34rem;
+	margin: 0 .15rem .05rem 0;
+}
+.my_top_box ul li a{
+	display: block;
+	width: 1.35rem;
+	height: .55rem;
+	line-height: .55rem;
+	text-align: center;
+	color: #fff;
+	font-size: .16rem;
+	background: #BE0020;
+	border-radius: .05rem;
+}
+
+
+
+.person_box{
+	background: #eee;
+	padding: .35rem 0 .9rem;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+.person_box h3{
+	color: #2e2e2e;
+	font-size: .3rem;
+	text-align: center;
+	margin-bottom: .2rem;
+}
+.vip_select,.vip_buy,.pay_money{
+	background: #fff;
+	border-radius: .05rem;
+	margin-bottom: .1rem;
+	overflow: hidden;
+}
+.vip_select .box,.vip_buy .box,.pay_money .box{
+	width: 5.5rem;
+	margin: .4rem auto;
+}
+.vip_select label{
+	display: flex;
+	font-weight: normal;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: .4rem;
+}
+.vip_select label p{
+	color: #2e2e2e;
+	font-size: .2rem;
+}
+.vip_select label p span{
+	margin-right: .1rem;
+	text-decoration: line-through;
+}
+.vip_select label input{
+	transform: scale(1.5);
+	outline: none;
+	margin-right: .3rem;
+}
+.pay_money ul{
+	overflow: hidden;
+}
+.pay_money ul li{
+	margin-bottom: .4rem;
+	overflow: hidden;
+	color: #2e2e2e;
+	font-size: .2rem;
+}
+.pay_money ul li span{
+	float: right;
+}
+.vip_buy .vip{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	color: #2e2e2e;
+	font-size: .2rem;
+}
+.vip_buy.primary .vip .right{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.vip_buy.primary .vip .right div{
+	text-align: center;
+}
+.vip_buy.primary .vip .right div img{
+	margin-bottom: .1rem;
+}
+.vip_buy.primary .vip .right span{
+	margin-left: .3rem;
+}
+.vip_buy.high .vip ul li{
+	position: relative;
+	margin-bottom: .4rem;
+}
+.vip_buy.high .vip ul li img{
+	position: absolute;
+}
+.vip_buy.high .vip .left ul li img{
+	left: -.42rem;
+	top: -.12rem;
+}
+.vip_buy.high .vip .right ul li img{
+	left: -.72rem;
+	top: -.12rem;
+}
+.vip_buy.high .vip .right ul li{
+	text-align: right;
+}
+.vip_select label:last-child,.pay_money ul li:last-child,.vip_buy.high .vip ul li:last-child{
+	margin-bottom: 0;
+}
+
+
+.buy_btn{
+	display: block;
+	width: 4.45rem;
+	height: .72rem;
+	line-height: .72rem;
+	color: #fff;
+	font-size: .2rem;
+	background: #BE0020;
+	border-radius: .05rem;
+	text-align: center;
+	margin: .4rem auto;
+}
+.buy_btn:focus,.buy_btn:hover{
+	color: #fff;
+}
+
+.pay_till,.pay_care{
+	color: #424242;
+	font-size: .18rem;
+	text-align: center;
+}
+.pay_care{
+	font-size: .16rem;
+	margin-top: .05rem;
+}
+
+
+.pay_modal{
+	width: 30%;
+}
+.pay_modal .box{
+	padding: .5rem 0 0;
+}
+.pay_modal h4{
+	text-align: left;
+	margin-bottom: .5rem;
+}
+.pay_modal h4 span{
+	float: right;
+	margin-right: 1.2rem;
+}
+.pay_modal .pay_ul{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-right: .2rem;
+}
+.pay_modal .pay_ul label input{
+	transform: scale(1.5);
+	outline: none;
+}
+.pay_modal .pay_ul label img{
+	margin: 0 .3rem;
 }

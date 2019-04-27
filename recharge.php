@@ -46,7 +46,7 @@
 	</div>
 	<div class="modal_layer"></div>
 	<div class="modal_box recharge_modal">
-		<img src="images/close.png" alt="">
+		<img src="images/close.png" class="close_img" alt="">
 		<div class="box">
 			<p>您确认从微信账号245-689充值8000元吗？</p>
 			<ul>

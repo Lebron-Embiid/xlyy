@@ -160,6 +160,20 @@
 	color: #6b6b6b;
 	font-size: .14rem;
 	margin-bottom: .2rem;
+	display: flex;
+	justify-content: center;
+}
+.mess_scroll .mess_item.me .time{
+	flex-direction: row-reverse;
+}
+.mess_scroll .mess_item .time img{
+	display: inline-block;
+	vertical-align: middle;
+	margin: 0 .1rem 0 0;
+}
+.mess_scroll .mess_item.me .time img{
+	float: right;
+	margin: 0 0 0 .1rem;
 }
 .mess_scroll .mess_item .send_mess{
 	display: flex;
@@ -358,8 +372,9 @@
 	margin-right: .25rem;
 }
 #star{overflow: hidden;}
-#star li{float:left;width:.35rem;height: .33rem;cursor:pointer;background:url(../images/star1.png) no-repeat;background-size: 100%;margin-right: .15rem;}
-#star li.on{background-position:0 -.45rem;}
+#star li{float:left;overflow: hidden;padding-right: .15rem;}
+#star li a{display: block;width:.35rem;height: .33rem;cursor:pointer;background:url(../images/star1.png) no-repeat;background-size: 100%;}
+#star li.on a{background-position:0 -.45rem;}
 
 
 .report_modal .label_box{

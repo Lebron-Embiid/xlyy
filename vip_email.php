@@ -79,7 +79,7 @@
 	</div>
 	<div class="modal_layer"></div>
 	<div class="modal_box recharge_modal del_modal">
-		<img src="images/close.png" alt="">
+		<img src="images/close.png" class="close_img" alt="">
 		<div class="box">
 			<p>您确定要删除该消息吗？</p>
 			<ul>

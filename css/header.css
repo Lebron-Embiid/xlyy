@@ -196,9 +196,19 @@
 .vip_box .info p{
 	margin-bottom: .05rem;
 }
+.vip_box .info p span{
+	display: none;
+}
+.vip_box .info p span.active{
+	display: block;
+}
 .vip_box .info a{
 	color: #be0020;
 	font-size: .16rem;
+	display: none;
+}
+.vip_box .info a.active{
+	display: block;
 }
 .vip_box .my_vip{
 	position: relative;

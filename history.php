@@ -219,7 +219,7 @@
 	</div>
 	<div class="modal_layer"></div>
 	<div class="modal_box recharge_modal history_modal">
-		<img src="images/close.png" alt="">
+		<img src="images/close.png" class="close_img" alt="">
 		<div class="box">
 			<p>您将要删除此条邀请记录，确认吗？</p>
 			<ul>

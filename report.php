@@ -60,14 +60,14 @@
 	</div>
 	<div class="modal_layer"></div>
 	<div class="modal_box recharge_modal feedback_modal">
-		<img src="images/close.png" alt="">
+		<img src="images/close.png" class="close_img" alt="">
 		<div class="box">
 			<p>感谢您的宝贵意见，如有需要，我们可能会与您联系，再次感谢！</p>
 			<a href="javascript:void(0);">确认</a>
 		</div>
 	</div>
 	<div class="modal_box recharge_modal photo_modal">
-		<img src="images/close.png" alt="">
+		<img src="images/close.png" class="close_img" alt="">
 		<div class="box">
 			<p>确定要删除该图片？</p>
 			<ul>

@@ -371,7 +371,7 @@
 .recharge_modal .box{
 	padding: .5rem 1rem 0;
 }
-.recharge_modal img{
+.recharge_modal .close_img{
 	float: right;
 	cursor: pointer;
 }

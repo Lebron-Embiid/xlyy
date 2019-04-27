@@ -46,7 +46,7 @@
 	</div>
 	<div class="modal_layer"></div>
 	<div class="modal_box recharge_modal">
-		<img src="images/close.png" alt="">
+		<img src="images/close.png" class="close_img" alt="">
 		<div class="box">
 			<p>您将提现8000元到微信账号245*669</p>
 			<h6>(手续费xxx元)</h6>

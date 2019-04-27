@@ -262,7 +262,7 @@
 	</div>
 	<div class="modal_layer"></div>
 	<div class="modal_box recharge_modal screen_modal">
-		<img src="images/close.png" alt="">
+		<img src="images/close.png" class="close_img" alt="">
 		<div class="box">
 			<p>屏蔽该会员后，她将被禁止给您发私信，您确定要屏蔽她吗？</p>
 			<ul>
@@ -272,7 +272,7 @@
 		</div>
 	</div>
 	<div class="modal_box recharge_modal del_modal">
-		<img src="images/close.png" alt="">
+		<img src="images/close.png" class="close_img" alt="">
 		<div class="box">
 			<p>您确定要删除该消息吗？</p>
 			<ul>
@@ -282,7 +282,7 @@
 		</div>
 	</div>
 	<div class="modal_box recharge_modal report_modal">
-		<img src="images/close.png" alt="">
+		<img src="images/close.png" class="close_img" alt="">
 		<div class="box">
 			<p>您确定要删除该消息吗？</p>
 			<h6 style="color: #939393;">请选择举报该会员的理由：</h6>

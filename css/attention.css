@@ -1,0 +1,139 @@
+.attention_box{
+	background: #eee;
+	padding: .35rem 0 .9rem;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+.attention_content{
+	background: #fff;
+}
+.atten_nav{
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	overflow: hidden;
+	border-bottom: 1px solid #EDEDED;
+}
+.atten_nav li a{
+	display: block;
+	padding: .2rem .8rem;
+	color: #2f2f2f;
+	font-size: .18rem;
+	transition: all .3s ease;
+}
+.atten_nav li:hover a,.atten_nav li.active a{
+	background: #BE0020;
+	color: #fff;
+}
+
+
+.atten_list{
+	overflow: hidden;
+}
+.atten_item{
+	padding: .3rem .4rem .25rem .25rem;
+	box-sizing: border-box;
+	border-bottom: .1rem solid #eee;
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
+}
+.atten_item .img{
+	width: 1.7rem;
+	height: 1.84rem;
+	margin-right: .25rem;
+}
+.atten_item .img img{
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+.atten_item .profile{
+	width: 3.5rem;
+	margin-right: .3rem;
+}
+.atten_item .profile h5{
+	color: #2c2c2c;
+	font-size: .2rem;
+	margin: .05rem 0 .1rem;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.atten_item .profile h6{
+	color: #515151;
+	font-size: .16rem;
+	margin-bottom: .1rem;
+}
+.atten_item .profile h6 img{
+	display: inline-block;
+	vertical-align: middle;
+	margin: 0 .1rem .05rem 0;
+}
+.atten_item .profile p{
+	color: #303030;
+	font-size: .2rem;
+	height: .88rem;
+	overflow : hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 3;
+	-webkit-box-orient: vertical;
+	word-wrap: break-word;
+	word-break: break-all;
+}
+.atten_item .profile span{
+	color: #6b6b6b;
+	font-size: .14rem;
+}
+.atten_item .info{
+	width: 4rem;
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
+	flex-wrap: wrap;
+	margin-right: .15rem;
+}
+.atten_item .info li{
+	width: 50%;
+	color: #303030;
+	font-size: .16rem;
+	margin-bottom: .2rem;
+}
+.atten_item .btn_box{
+	display: none;
+	overflow: hidden;
+}
+.atten_item .btn_box.active{
+	display: block;
+}
+.atten_item .btn_box a,.please_vip a{
+	display: block;
+	width: 1.4rem;
+	height: .6rem;
+	line-height: .6rem;
+	text-align: center;
+	color: #fff;
+	font-size: .16rem;
+	background: #a6a6a6;
+	border-radius: .05rem;
+	margin-top: .5rem;
+}
+
+.please_vip{
+	color: #303030;
+	font-size: .16rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: #eee;
+	padding-bottom: .4rem;
+}
+.please_vip a{
+	display: inline-block;
+	width: 1.65rem;
+	height: .5rem;
+	line-height: .5rem;
+	background: #BE0020;
+	margin: 0 0 0 .15rem;
+}
