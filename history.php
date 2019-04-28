@@ -43,8 +43,8 @@
 									<div class="set_box">
 										<span class="set_img"></span>
 										<div class="setting_layer">
-											<div><a href="javascript:void(0);">再次邀约</a></div>
-											<div><a href="javascript:void(0);">删除</a></div>
+											<div class="again_a"><a href="javascript:void(0);">再次邀约</a></div>
+											<div class="del_a"><a href="javascript:void(0);">删除</a></div>
 										</div>
 									</div>
 								</div>
@@ -87,10 +87,12 @@
 									</div>
 								</div>
 								<div class="h_right">
-									<span class="set_img"></span>
-									<div class="setting_layer">
-										<div><a href="javascript:void(0);">再次邀约</a></div>
-										<div><a href="javascript:void(0);">删除</a></div>
+									<div class="set_box">
+										<span class="set_img"></span>
+										<div class="setting_layer">
+											<div class="again_a"><a href="javascript:void(0);">再次邀约</a></div>
+											<div class="del_a"><a href="javascript:void(0);">删除</a></div>
+										</div>
 									</div>
 								</div>
 							</div>
@@ -132,10 +134,12 @@
 									</div>
 								</div>
 								<div class="h_right">
-									<span class="set_img"></span>
-									<div class="setting_layer">
-										<div><a href="javascript:void(0);">再次邀约</a></div>
-										<div><a href="javascript:void(0);">删除</a></div>
+									<div class="set_box">
+										<span class="set_img"></span>
+										<div class="setting_layer">
+											<div class="again_a"><a href="javascript:void(0);">再次邀约</a></div>
+											<div class="del_a"><a href="javascript:void(0);">删除</a></div>
+										</div>
 									</div>
 								</div>
 							</div>
@@ -177,10 +181,12 @@
 									</div>
 								</div>
 								<div class="h_right">
-									<span class="set_img"></span>
-									<div class="setting_layer">
-										<div><a href="javascript:void(0);">再次邀约</a></div>
-										<div><a href="javascript:void(0);">删除</a></div>
+									<div class="set_box">
+										<span class="set_img"></span>
+										<div class="setting_layer">
+											<div class="again_a"><a href="javascript:void(0);">再次邀约</a></div>
+											<div class="del_a"><a href="javascript:void(0);">删除</a></div>
+										</div>
 									</div>
 								</div>
 							</div>
@@ -218,20 +224,31 @@
 		</div>
 	</div>
 	<div class="modal_layer"></div>
-	<div class="modal_box recharge_modal history_modal">
+	<div class="modal_box history_modal fix">
 		<img src="images/close.png" class="close_img" alt="">
 		<div class="box">
 			<p>您将要删除此条邀请记录，确认吗？</p>
 			<ul>
-				<li><a href="javascript:void(0);">确认</a></li>
-				<li><a href="javascript:void(0);">取消</a></li>
+				<li><a href="javascript:void(0);" class="modal_confirm_btn">确认</a></li>
+				<li><a href="javascript:void(0);" class="modal_cancle_btn last">取消</a></li>
 			</ul>
 		</div>
 	</div>
 	<?php include 'footer.php'; ?>
 </body>
 <script>
-	$(function(){		
+	$(function(){
+		var modal = new LModal();
+		var index = "";
+		$(".history_ul").on("click",".del_a",function(){
+			index = $(this).parents(".history_item").index();
+			modal.showModal(".history_modal");
+		})
+		$(".modal_confirm_btn").click(function(){
+			alert("ok"+index);
+			modal.cancleModal(".history_modal")
+		})
+				
 		var _content = []; //临时存储li循环内容
 		var jq22 = {
 			_default:4, //默认显示图片个数

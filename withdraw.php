@@ -38,7 +38,7 @@
 							<div><span>￥</span><input type="number" name="price" placeholder="10-10000"></div>
 							<p>当前余额1989.00元，提现手续费2%，扣除后余额1949.22元</p>
 						</div>
-						<div class="rb_right"><a href="">提现</a></div>
+						<div class="rb_right"><a href="javascript:void(0);" class="recharge_a">提现</a></div>
 					</div>
 				</div>
 			</div>
@@ -51,8 +51,8 @@
 			<p>您将提现8000元到微信账号245*669</p>
 			<h6>(手续费xxx元)</h6>
 			<ul>
-				<li><a href="javascript:void(0);">确认</a></li>
-				<li><a href="javascript:void(0);" class="last">取消</a></li>
+				<li><a href="javascript:void(0);" class="modal_confirm_btn">确认</a></li>
+				<li><a href="javascript:void(0);" class="modal_cancle_btn last">取消</a></li>
 			</ul>
 		</div>
 	</div>
@@ -60,6 +60,15 @@
 </body>
 <script>
 	$(function(){
+		var modal = new LModal();
+		$(".recharge_a").click(function(){
+			modal.showModal(".recharge_modal");
+		})
+		$(".modal_confirm_btn").click(function(){
+			alert("ok");
+			modal.cancleModal(".recharge_modal")
+		})
+		
 		$(".withdraw_type").on("click",".acc_btn",function(){
 			$(this).parent().removeClass("active").siblings().addClass("active");
 		})

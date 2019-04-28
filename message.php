@@ -42,9 +42,9 @@
 								<div class="set_box">
 									<span class="set_img"></span>
 									<div class="setting_layer">
-										<div><a href="javascript:void(0);">屏蔽她</a></div>
-										<div><a href="javascript:void(0);">删除她</a></div>
-										<div><a href="javascript:void(0);">删除此消息</a></div>
+										<div class="screen_a"><a href="javascript:void(0);">屏蔽她</a></div>
+										<div class="del_ta"><a href="javascript:void(0);">删除她</a></div>
+										<div class="del_img"><a href="javascript:void(0);">删除此消息</a></div>
 									</div>
 								</div>
 								<div class="h_down">
@@ -99,9 +99,9 @@
 								<div class="set_box">
 									<span class="set_img"></span>
 									<div class="setting_layer">
-										<div><a href="javascript:void(0);">屏蔽她</a></div>
-										<div><a href="javascript:void(0);">删除她</a></div>
-										<div><a href="javascript:void(0);">删除此消息</a></div>
+										<div class="screen_a"><a href="javascript:void(0);">屏蔽她</a></div>
+										<div class="del_ta"><a href="javascript:void(0);">删除她</a></div>
+										<div class="del_img"><a href="javascript:void(0);">删除此消息</a></div>
 									</div>
 								</div>
 								<div class="h_down">
@@ -156,9 +156,9 @@
 								<div class="set_box">
 									<span class="set_img"></span>
 									<div class="setting_layer">
-										<div><a href="javascript:void(0);">屏蔽她</a></div>
-										<div><a href="javascript:void(0);">删除她</a></div>
-										<div><a href="javascript:void(0);">删除此消息</a></div>
+										<div class="screen_a"><a href="javascript:void(0);">屏蔽她</a></div>
+										<div class="del_ta"><a href="javascript:void(0);">删除她</a></div>
+										<div class="del_img"><a href="javascript:void(0);">删除此消息</a></div>
 									</div>
 								</div>
 								<div class="h_down">
@@ -213,9 +213,9 @@
 								<div class="set_box">
 									<span class="set_img"></span>
 									<div class="setting_layer">
-										<div><a href="javascript:void(0);">屏蔽她</a></div>
-										<div><a href="javascript:void(0);">删除她</a></div>
-										<div><a href="javascript:void(0);">删除此消息</a></div>
+										<div class="screen_a"><a href="javascript:void(0);">屏蔽她</a></div>
+										<div class="del_ta"><a href="javascript:void(0);">删除她</a></div>
+										<div class="del_img"><a href="javascript:void(0);">删除此消息</a></div>
 									</div>
 								</div>
 								<div class="h_down">
@@ -261,30 +261,40 @@
 		</div>
 	</div>
 	<div class="modal_layer"></div>
-	<div class="modal_box recharge_modal screen_modal">
+	<div class="modal_box screen_modal fix">
 		<img src="images/close.png" class="close_img" alt="">
 		<div class="box">
 			<p>屏蔽该会员后，她将被禁止给您发私信，您确定要屏蔽她吗？</p>
 			<ul>
-				<li><a href="javascript:void(0);">确认</a></li>
-				<li><a href="javascript:void(0);">取消</a></li>
+				<li><a href="javascript:void(0);" class="modal_screen_btn">确认</a></li>
+				<li><a href="javascript:void(0);" class="modal_cancle_btn last">取消</a></li>
 			</ul>
 		</div>
 	</div>
-	<div class="modal_box recharge_modal del_modal">
+	<div class="modal_box del_person_modal fix">
+		<img src="images/close.png" class="close_img" alt="">
+		<div class="box">
+			<p>您确定要删除她吗？</p>
+			<ul>
+				<li><a href="javascript:void(0);" class="modal_delete_btn">确认</a></li>
+				<li><a href="javascript:void(0);" class="modal_cancle_btn last">取消</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="modal_box del_modal fix">
 		<img src="images/close.png" class="close_img" alt="">
 		<div class="box">
 			<p>您确定要删除该消息吗？</p>
 			<ul>
-				<li><a href="javascript:void(0);">确认</a></li>
-				<li><a href="javascript:void(0);">取消</a></li>
+				<li><a href="javascript:void(0);" class="modal_del_mess_btn">确认</a></li>
+				<li><a href="javascript:void(0);" class="modal_cancle_btn last">取消</a></li>
 			</ul>
 		</div>
 	</div>
-	<div class="modal_box recharge_modal report_modal">
+	<div class="modal_box report_modal">
 		<img src="images/close.png" class="close_img" alt="">
 		<div class="box">
-			<p>您确定要删除该消息吗？</p>
+			<p>您确定要举报她吗？</p>
 			<h6 style="color: #939393;">请选择举报该会员的理由：</h6>
 			<div class="label_box">
 				<label for="reason1"><input type="radio" name="reason[]" id="reason1">怀疑是妓女</label>
@@ -295,8 +305,8 @@
 				<label for="reason6"><input type="radio" name="reason[]" id="reason6">不合适的行为举止</label>
 			</div>
 			<ul>
-				<li><a href="javascript:void(0);">确认</a></li>
-				<li><a href="javascript:void(0);">取消</a></li>
+				<li><a href="javascript:void(0);" class="modal_report_btn">确认</a></li>
+				<li><a href="javascript:void(0);" class="modal_cancle_btn last">取消</a></li>
 			</ul>
 		</div>
 	</div>
@@ -304,6 +314,45 @@
 </body>
 <script>
 	$(function(){
+		var modal = new LModal();
+		var index = "";
+		$(".message_box").on("click",".screen_a",function(){
+			index = $(this).parents(".message_item").index();
+			modal.showModal(".screen_modal");
+		})
+		$(".message_box").on("click",".del_ta",function(){
+			index = $(this).parents(".message_item").index();
+			modal.showModal(".del_person_modal");
+		})
+		$(".message_box").on("click",".del_img",function(){
+			index = $(this).parents(".message_item").index();
+			modal.showModal(".del_modal");
+		})
+		$(".message_box").on("click",".screen_a",function(){
+			index = $(this).parents(".message_item").index();
+			modal.showModal(".report_modal");
+		})
+		// 屏蔽确定
+		$(".modal_screen_btn").click(function(){
+			alert("ok"+index);
+			modal.cancleModal(".screen_modal")
+		})
+		// 删除她确定
+		$(".modal_delete_btn").click(function(){
+			alert("ok"+index);
+			modal.cancleModal(".del_person_modal")
+		})
+		// 删除消息确定
+		$(".modal_del_mess_btn").click(function(){
+			alert("ok"+index);
+			modal.cancleModal(".del_modal")
+		})
+		// 举报确定
+		$(".modal_report_btn").click(function(){
+			alert("ok"+index);
+			modal.cancleModal(".report_modal")
+		})
+		
 		$(".message_item").on("click",".h_down",function(e){
 			if($(this).hasClass("active")){
 				// 隐藏

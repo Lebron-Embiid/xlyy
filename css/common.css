@@ -78,7 +78,7 @@
 }
 .footer_top .footer_right_ul li{
 	float: left;
-	margin-left: .7rem;;
+	margin-left: .7rem;
 }
 .footer_top li a{
 	color: #a5a5a5;
@@ -327,24 +327,29 @@
 }
 .modal_box{
 	background: #fff;
-	padding: .5rem 1rem .6rem;
+	padding: .5rem .35rem .6rem;
+	width: 40%;
+	/* padding: .5rem 1rem .6rem; */
 	border-radius: .05rem;
-	position: fixed;
+	position: absolute;
 	left: 50%;
-	top: 50%;
-	transform: translate(-50%,-50%);
+	top: 20%;
+	transform: translateX(-50%);
 	z-index: 60;
 	color: #3d3d3d;
 	font-size: .16rem;
 	text-align: center;
 	display: none;
 }
+.modal_box.fix{
+	position: fixed;
+}
 .modal_layer.active,.modal_box.active{
 	display: block;
 }
 .modal_box a{
 	display: block;
-	width: 1.95rem;
+	width: 1.45rem;
 	height: .55rem;
 	line-height: .55rem;
 	text-align: center;
@@ -359,23 +364,23 @@
 .modal_box a.last{
 	background: #a6a6a6;
 }
-.recharge_modal{
+/* .recharge_modal{
 	padding: .3rem .35rem .6rem;
 	width: 40%;
-}
-.recharge_modal h6{
+} */
+.modal_box h6{
 	color: #383838;
 	font-size: .16rem;
 	margin-top: .2rem;
 }
-.recharge_modal .box{
-	padding: .5rem 1rem 0;
+.modal_box .box{
+	padding: .5rem .6rem 0;
 }
-.recharge_modal .close_img{
+.modal_box .close_img{
 	float: right;
 	cursor: pointer;
 }
-.recharge_modal ul{
+.modal_box ul{
 	display: flex;
 	justify-content: space-between;
 }

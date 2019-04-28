@@ -107,7 +107,7 @@
 .atten_item .btn_box.active{
 	display: block;
 }
-.atten_item .btn_box a,.please_vip a{
+.atten_item .btn_box .btn_a,.please_vip a{
 	display: block;
 	width: 1.4rem;
 	height: .6rem;
@@ -118,6 +118,9 @@
 	background: #a6a6a6;
 	border-radius: .05rem;
 	margin-top: .5rem;
+}
+.atten_item .btn_box .btn_a.active,.please_vip a.active{
+	background: #BE0020;
 }
 
 .please_vip{

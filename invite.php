@@ -157,14 +157,24 @@
 		</div>
 	</div>
 	<div class="modal_layer"></div>
-	<div class="modal_box">
+	<div class="modal_box invite_modal fix">
 		<p>您的邀约已经发送给对方，请等待对方回复！</p>
-		<a href="javascript:void(0);">确认</a>
+		<a href="javascript:void(0);" class="modal_cancle_btn">确认</a>
 	</div>
 	<?php include 'footer.php'; ?>
 </body>
 <script>
 	$(function(){
+		var modal = new LModal();
+		$("form").submit(function(){
+			modal.showModal(".invite_modal");
+			return false;
+		})
+		$(".modal_confirm_btn").click(function(){
+			alert("ok");
+			modal.cancleModal(".invite_modal")
+		})
+		
 		var price = $(".price_input").val()
 		$(".minus").click(function(){
 			price-=100;

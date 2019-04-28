@@ -36,7 +36,7 @@
 								<p>27、上海市普陀区</p>
 								<p>寻找梦中的白马王子</p>
 							</div>
-							<a href="">取消分享</a>
+							<a href="javascript:void(0);" class="cancle_a">取消分享</a>
 						</li>
 						<li>
 							<div class="img"><img src="images/secrecy_photo2.jpg" alt=""></div>
@@ -45,7 +45,7 @@
 								<p>27、上海市普陀区</p>
 								<p>寻找梦中的白马王子</p>
 							</div>
-							<a href="">取消分享</a>
+							<a href="javascript:void(0);" class="cancle_a">取消分享</a>
 						</li>
 						<li>
 							<div class="img"><img src="images/secrecy_photo3.jpg" alt=""></div>
@@ -54,7 +54,7 @@
 								<p>27、上海市普陀区</p>
 								<p>寻找梦中的白马王子</p>
 							</div>
-							<a href="">取消分享</a>
+							<a href="javascript:void(0);" class="cancle_a">取消分享</a>
 						</li>
 						<li>
 							<div class="img"><img src="images/secrecy_photo4.jpg" alt=""></div>
@@ -63,7 +63,7 @@
 								<p>27、上海市普陀区</p>
 								<p>寻找梦中的白马王子</p>
 							</div>
-							<a href="">取消分享</a>
+							<a href="javascript:void(0);" class="cancle_a">取消分享</a>
 						</li>
 						<li>
 							<div class="img"><img src="images/secrecy_photo5.jpg" alt=""></div>
@@ -72,7 +72,7 @@
 								<p>27、上海市普陀区</p>
 								<p>寻找梦中的白马王子</p>
 							</div>
-							<a href="">取消分享</a>
+							<a href="javascript:void(0);" class="cancle_a">取消分享</a>
 						</li>
 					</ul>
 				</div>
@@ -80,16 +80,30 @@
 		</div>
 	</div>
 	<div class="modal_layer"></div>
-	<div class="modal_box recharge_modal">
+	<div class="modal_box cancle_modal fix">
 		<img src="images/close.png" class="close_img" alt="">
 		<div class="box">
 			<p>您将取消给会员“小青”查看您隐私照片的权限，您确定吗？</p>
 			<ul>
-				<li><a href="javascript:void(0);">确认</a></li>
-				<li><a href="javascript:void(0);" class="last">取消</a></li>
+				<li><a href="javascript:void(0);" class="modal_confirm_btn">确认</a></li>
+				<li><a href="javascript:void(0);" class="modal_cancle_btn last">取消</a></li>
 			</ul>
 		</div>
 	</div>
 	<?php include 'footer.php'; ?>
 </body>
+<script>
+	$(function(){
+		var modal = new LModal();
+		var index = "";
+		$(".secrecy_photo_box").on('click',".cancle_a",function(){
+			index = $(this).parents("li").index();
+			modal.showModal(".cancle_modal");
+		})
+		$(".modal_confirm_btn").click(function(){
+			alert("ok"+index);
+			modal.cancleModal(".cancle_modal")
+		})
+	})
+</script>
 </html>

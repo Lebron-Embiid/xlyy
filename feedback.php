@@ -41,12 +41,13 @@
 						<div class="feed_item">
 							<h6>请上传相关照片</h6>
 							<ul class="photo_ul">
-								<li>
-									<img src="images/delete.png" class="delete_icon" alt="">
-								</li>
+								<!-- <li>
+									<img src="images/delete.png" class="delete_icon delete_pic1" alt="">
+								</li> -->
 							</ul>
 							<div class="add_box">
 								<div class="add_photo">
+									<input type="file" id="file1" accept="image/*" />
 									<span>+</span>
 									<p>添加照片</p>
 								</div>
@@ -59,23 +60,64 @@
 		</div>
 	</div>
 	<div class="modal_layer"></div>
-	<div class="modal_box recharge_modal feedback_modal">
+	<div class="modal_box feedback_modal fix">
 		<img src="images/close.png" class="close_img" alt="">
 		<div class="box">
 			<p>感谢您的宝贵意见，如有需要，我们可能会与您联系，再次感谢！</p>
-			<a href="javascript:void(0);">确认</a>
+			<a href="javascript:void(0);" class="modal_cancle_btn">确认</a>
 		</div>
 	</div>
-	<div class="modal_box recharge_modal photo_modal">
+	<div class="modal_box photo_modal fix">
 		<img src="images/close.png" class="close_img" alt="">
 		<div class="box">
 			<p>确定要删除该图片？</p>
 			<ul>
-				<li><a href="javascript:void(0);">确认</a></li>
-				<li><a href="javascript:void(0);" class="last">取消</a></li>
+				<li><a href="javascript:void(0);" class="modal_confirm_btn">确认</a></li>
+				<li><a href="javascript:void(0);" class="modal_cancle_btn last">取消</a></li>
 			</ul>
 		</div>
 	</div>
 	<?php include 'footer.php'; ?>
 </body>
+<link rel="stylesheet" href="css/photo.css">
+<script src="js/jquery-2.1.4.min.js"></script>
+<script src="js/LocalResizeIMG.js"></script>
+<script>
+$(function(){
+	var modal = new LModal();
+	$("form").submit(function(){
+		modal.showModal(".feedback_modal");
+		return false;
+	})
+		
+	var picArr1 = new Array();// 存储图片
+	var aa = "";
+	var that = "";
+	$('#file1').localResizeIMG({
+		width:800,// 宽度
+		quality: 1, // 压缩参数 1 不压缩 越小清晰度越低
+		success: function (result) {
+			var img = new Image();
+			img.src = result.base64;
+			var _str = "<li class='pic_look'><img src='"+img.src+"' class='img'/><img src='images/delete.png' class='delete_icon delete_pic1' alt=''></li>";
+			$('.photo_ul').append(_str);
+			var _i =  picArr1.length;
+			picArr1[_i] = result.base64;
+			console.log(picArr1)
+		}
+	});
+	// 删除
+	$(document).on('click', '.delete_pic1', function(event) {
+		aa = $(this).parents(".pic_look").index();
+		that = $(this).parents(".pic_look");
+		modal.showModal(".photo_modal");
+	}); 
+	$(".modal_confirm_btn").click(function(){
+		picArr1.splice(aa,1);
+		that.remove();
+		console.log(picArr1);
+		modal.cancleModal(".photo_modal")
+	})
+})
+</script>
 </html>

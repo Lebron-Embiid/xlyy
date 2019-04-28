@@ -37,6 +37,7 @@
 						<span>年龄</span>
 						<div class="box">
 							<select name="" id="">
+								<option value="">请选择年龄</option>
 								<option value="">18</option>
 							</select>
 						</div>
@@ -45,6 +46,7 @@
 						<span>身高</span>
 						<div class="box">
 							<select name="" id="">
+								<option value="">请选择身高</option>
 								<option value="">155cm以下</option>
 								<option value="">160-165cm</option>
 								<option value="">165-170cm</option>
@@ -56,6 +58,7 @@
 						<span>发型</span>
 						<div class="box">
 							<select name="" id="">
+								<option value="">请选择发型</option>
 								<option value="">直发</option>
 								<option value="">卷发</option>
 							</select>
@@ -65,6 +68,7 @@
 						<span>身材</span>
 						<div class="box">
 							<select name="" id="">
+								<option value="">请选择身材</option>
 								<option value=""></option>
 							</select>
 						</div>
@@ -73,6 +77,7 @@
 						<span>发色</span>
 						<div class="box">
 							<select name="" id="">
+								<option value="">请选择发色</option>
 								<option value="">黑色</option>
 								<option value="">棕色</option>
 							</select>
@@ -82,6 +87,7 @@
 						<span>体重</span>
 						<div class="box">
 							<select name="" id="">
+								<option value="">请选择体重</option>
 								<option value=""></option>
 							</select>
 						</div>
@@ -90,7 +96,9 @@
 						<span>是否抽烟</span>
 						<div class="box">
 							<select name="" id="">
-								<option value=""></option>
+								<option value="">请选择是否抽烟</option>
+								<option value="">抽烟</option>
+								<option value="">不抽烟</option>
 							</select>
 						</div>
 					</div>
@@ -98,6 +106,7 @@
 						<span>职业</span>
 						<div class="box">
 							<select name="" id="">
+								<option value="">请选择职业</option>
 								<option value=""></option>
 							</select>
 						</div>
@@ -106,6 +115,7 @@
 						<span>是否喝酒</span>
 						<div class="box">
 							<select name="" id="">
+								<option value="">请选择否喝酒</option>
 								<option value=""></option>
 							</select>
 						</div>
@@ -114,6 +124,7 @@
 						<span>净值</span>
 						<div class="box">
 							<select name="" id="">
+								<option value="">请选择净值</option>
 								<option value=""></option>
 							</select>
 						</div>
@@ -122,6 +133,7 @@
 						<span>年收入</span>
 						<div class="box">
 							<select name="" id="">
+								<option value="">请选择年收入</option>
 								<option value=""></option>
 							</select>
 						</div>
@@ -144,7 +156,7 @@
 				<div class="filter_box">
 					<span class="span">筛选条件</span>
 					<div class="filter_ul">
-						<div class="filter_item">
+						<!-- <div class="filter_item">
 							<span>所在地：广州市</span><img src="images/close.png" alt="">
 						</div>
 						<div class="filter_item">
@@ -158,7 +170,7 @@
 						</div>
 						<div class="filter_item">
 							<span>服务类型：假扮女友</span><img src="images/close.png" alt="">
-						</div>
+						</div> -->
 					</div>
 				</div>
 			</div>
@@ -257,8 +269,27 @@
 	        //console.log($(".pick-area-dom").val())
 	        var thisdom = $("."+$(".pick-area-dom").val());
 	        thisdom.next().val($(".pick-area-hidden").val());
-			console.log($(".pick-area-hidden").val())
+			console.log($(".pick-area-hidden").val());
 	    }
 	});
+	
+	// select选中事件筛选条件
+	var filter_arr = [];
+	$(".search_left").on("change","select",function(){
+		var idx = $(this).parents(".search_item").index();
+		var select_title = $(this).parents(".search_item").find("span").html();
+		var select_val = $(this).parents(".search_item").find("select option:selected").html();
+		var str = "<div class='filter_item'><span>"+select_title+"："+select_val+"</span><img src='images/close.png' class='close_select' alt=''></div>";
+		filter_arr[idx] = str;
+		$(".filter_ul").html(filter_arr);
+		console.log(filter_arr);
+	})
+	
+	// 删除筛选条件
+	$(".filter_ul").on("click",".close_select",function(){
+		var s_idx = $(this).parents(".filter_item").index();
+		filter_arr[s_idx] = "";
+		$(".filter_ul").html(filter_arr);
+	})
 </script>
 </html>

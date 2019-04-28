@@ -78,13 +78,13 @@
 		</div>
 	</div>
 	<div class="modal_layer"></div>
-	<div class="modal_box recharge_modal del_modal">
+	<div class="modal_box del_modal fix">
 		<img src="images/close.png" class="close_img" alt="">
 		<div class="box">
 			<p>您确定要删除该消息吗？</p>
 			<ul>
-				<li><a href="javascript:void(0);">确认</a></li>
-				<li><a href="javascript:void(0);">取消</a></li>
+				<li><a href="javascript:void(0);" class="modal_confirm_btn">确认</a></li>
+				<li><a href="javascript:void(0);" class="modal_cancle_btn last">取消</a></li>
 			</ul>
 		</div>
 	</div>
@@ -92,7 +92,16 @@
 </body>
 <script>
 	$(function(){
-		
+		var modal = new LModal();
+		var index = "";
+		$(".vip_email_box").on('click',".del_img",function(){
+			index = $(this).parents(".window_item").index();
+			modal.showModal(".del_modal");
+		})
+		$(".modal_confirm_btn").click(function(){
+			alert("ok"+index);
+			modal.cancleModal(".del_modal")
+		})
 	})
 </script>
 </html>

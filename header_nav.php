@@ -23,7 +23,7 @@
 					<li><a href="my_vip.php">我的会员</a></li>
 					<li><a href="wallet.php">我的钱包</a></li>
 					<li><a href="setting.php">设置</a></li>
-					<li><a href="login.php">退出登录</a></li>
+					<li class="login_out_btn"><a href="javascript:void(0);">退出登录</a></li>
 				</ul>
 			</div>
 		</div>
@@ -32,21 +32,27 @@
 <div class="mt92"></div>
 
 <div class="modal_layer"></div>
-<div class="modal_box recharge_modal login_out">
+<div class="modal_box login_modal fix">
 	<img src="images/close.png" class="close_img" alt="">
 	<div class="box">
 		<p>退出登录</p>
 		<h6 style="color: #aaa;font-size: .14rem;">您确定要退出登录吗？</h6>
 		<ul>
-			<li><a href="javascript:void(0);">确认</a></li>
-			<li><a href="javascript:void(0);">取消</a></li>
+			<li><a href="javascript:void(0);" class="modal_confirm_btn">确认</a></li>
+			<li><a href="javascript:void(0);" class="modal_cancle_btn last">取消</a></li>
 		</ul>
 	</div>
 </div>
 
 
+<script src="js/modal.js"></script>
 <script>
 	$(function(){
+		var modal = new LModal();
+		$(".login_out_btn").click(function(){
+			modal.showModal(".login_modal");
+		})
+	
 		$(".my_vip").mouseover(function(){
 			$(".my_vip ul").stop().slideDown(300)
 		})

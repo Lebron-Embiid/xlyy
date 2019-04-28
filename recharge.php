@@ -34,7 +34,7 @@
 							<div><span>￥</span><input type="number" name="price" placeholder="10-10000"></div>
 							<p>此处可以手动填入金额</p>
 						</div>
-						<div class="rb_right"><a href="">充值</a></div>
+						<div class="rb_right"><a href="javascript:void(0);" class="recharge_a">充值</a></div>
 					</div>
 					<div class="account_box">
 						<p class="active"><span>使用账户</span><img src="images/wechat.png" alt=""><span>微信到账</span><span>(9851*235)</span><a href="javascript:void(0);" class="acc_btn">换成支付宝充值</a></p>
@@ -45,13 +45,13 @@
 		</div>
 	</div>
 	<div class="modal_layer"></div>
-	<div class="modal_box recharge_modal">
+	<div class="modal_box recharge_modal fix">
 		<img src="images/close.png" class="close_img" alt="">
 		<div class="box">
 			<p>您确认从微信账号245-689充值8000元吗？</p>
 			<ul>
-				<li><a href="javascript:void(0);">确认</a></li>
-				<li><a href="javascript:void(0);" class="last">取消</a></li>
+				<li><a href="javascript:void(0);" class="modal_confirm_btn">确认</a></li>
+				<li><a href="javascript:void(0);" class="modal_cancle_btn last">取消</a></li>
 			</ul>
 		</div>
 	</div>
@@ -59,6 +59,15 @@
 </body>
 <script>
 	$(function(){
+		var modal = new LModal();
+		$(".recharge_a").click(function(){
+			modal.showModal(".recharge_modal");
+		})
+		$(".modal_confirm_btn").click(function(){
+			alert("ok");
+			modal.cancleModal(".recharge_modal")
+		})
+		
 		$(".account_box").on("click",".acc_btn",function(){
 			$(this).parent().removeClass("active").siblings().addClass("active");
 		})

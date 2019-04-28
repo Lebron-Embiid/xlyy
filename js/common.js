@@ -1,6 +1,6 @@
 $(function(){
 	// 显示弹框
-	$(".modal_box a,.modal_box .close_img,.modal_layer").click(function(){
+	$(".modal_cancle_btn,.modal_box .close_img,.modal_layer").click(function(){
 		$(".modal_layer,.modal_box").hide();
 	})
 	

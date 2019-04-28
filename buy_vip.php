@@ -75,13 +75,13 @@
 					</ul>
 				</div>
 			</div>
-			<a href="" class="buy_btn">立即购买</a>
+			<a href="javascript:void(0);" class="buy_btn">立即购买</a>
 			<h5 class="pay_till">您现在将支付888元人名币。</h5>
 			<h6 class="pay_care">（注意：我们不会提供退款服务）</h6>
 		</div>
 	</div>
 	<div class="modal_layer"></div>
-	<div class="modal_box recharge_modal pay_modal">
+	<div class="modal_box pay_modal fix">
 		<img src="images/close.png" class="close_img" alt="">
 		<div class="box">
 			<h4>金额合计<span>70元</span></h4>
@@ -90,8 +90,8 @@
 				<label for="zfb_pay"><input type="radio" name="pay[]" id="zfb_pay"><img src="images/zfb_icon.png" alt="">支付宝</label>
 			</div>
 			<ul style="padding: 0 .3rem;">
-				<li><a href="javascript:void(0);">确认</a></li>
-				<li><a href="javascript:void(0);" class="last">取消</a></li>
+				<li><a href="javascript:void(0);" class="modal_confirm_btn">确认</a></li>
+				<li><a href="javascript:void(0);" class="modal_cancle_btn last">取消</a></li>
 			</ul>
 		</div>
 	</div>
@@ -99,7 +99,14 @@
 </body>
 <script>
 	$(function(){
-		
+		var modal = new LModal();
+		$(".buy_btn").on("click",function(){
+			modal.showModal(".pay_modal");
+		})
+		$(".modal_confirm_btn").click(function(){
+			alert("ok");
+			modal.cancleModal(".pay_modal")
+		})
 	})
 </script>
 </html>
