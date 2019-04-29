@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>首页</title>
+	<title>个人中心</title>
 	<meta name="keywords" content="关键词">
 	<meta name="description" content="网站描述">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
@@ -27,8 +27,8 @@
 				<p>寻找梦中的白马王子</p>
 			</div>
 			<ul class="vip_look">
-				<li><a href="">查看我的邀约</a></li>
-				<li class="active"><a href="">修改我的简介</a></li>
+				<li><a href="my_invite.php">查看我的邀约</a></li>
+				<li class="active"><a href="basic_info.php">修改我的简介</a></li>
 			</ul>
 		</div>
 	</div>

@@ -328,7 +328,7 @@
 			index = $(this).parents(".message_item").index();
 			modal.showModal(".del_modal");
 		})
-		$(".message_box").on("click",".screen_a",function(){
+		$(".message_box").on("click",".report_a",function(){
 			index = $(this).parents(".message_item").index();
 			modal.showModal(".report_modal");
 		})

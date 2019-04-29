@@ -17,6 +17,14 @@
 	<script src="js/jquery-2.1.4.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="js/pick-pcc.js"></script>
+	<style>
+		.pick-show span{
+			overflow: hidden;
+			text-overflow: ellipsis;
+			white-space: nowrap;
+			max-width: .9rem !important;
+		}
+	</style>
 </head>
 <body>
 	<?php include 'header_nav.php'; ?>
@@ -275,12 +283,18 @@
 	
 	// select选中事件筛选条件
 	var filter_arr = [];
+	var num = [];
+	for(var i=0;i<$(".search_left select").length;i++){
+		num[i] = 0;
+	}
+	console.log(num)
 	$(".search_left").on("change","select",function(){
 		var idx = $(this).parents(".search_item").index();
 		var select_title = $(this).parents(".search_item").find("span").html();
 		var select_val = $(this).parents(".search_item").find("select option:selected").html();
+		
 		var str = "<div class='filter_item'><span>"+select_title+"："+select_val+"</span><img src='images/close.png' class='close_select' alt=''></div>";
-		filter_arr[idx] = str;
+		filter_arr.push(str);
 		$(".filter_ul").html(filter_arr);
 		console.log(filter_arr);
 	})
@@ -288,7 +302,7 @@
 	// 删除筛选条件
 	$(".filter_ul").on("click",".close_select",function(){
 		var s_idx = $(this).parents(".filter_item").index();
-		filter_arr[s_idx] = "";
+		filter_arr.splice(s_idx,1);
 		$(".filter_ul").html(filter_arr);
 	})
 </script>

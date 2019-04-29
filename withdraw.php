@@ -51,7 +51,7 @@
 			<p>您将提现8000元到微信账号245*669</p>
 			<h6>(手续费xxx元)</h6>
 			<ul>
-				<li><a href="javascript:void(0);" class="modal_confirm_btn">确认</a></li>
+				<li><a href="javascript:void(0);" class="modal_confirm_btn modal_withdraw_btn">确认</a></li>
 				<li><a href="javascript:void(0);" class="modal_cancle_btn last">取消</a></li>
 			</ul>
 		</div>
@@ -64,7 +64,7 @@
 		$(".recharge_a").click(function(){
 			modal.showModal(".recharge_modal");
 		})
-		$(".modal_confirm_btn").click(function(){
+		$(".modal_withdraw_btn").click(function(){
 			alert("ok");
 			modal.cancleModal(".recharge_modal")
 		})

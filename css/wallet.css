@@ -1,4 +1,4 @@
-.recharge_box,.withdraw_box,.record_box{
+.recharge_box,.withdraw_box,.record_box,.binding_box{
 	padding: .4rem .5rem 1rem;
 	background: #fff;
 	border-top: 1px solid #D0D0D0;
@@ -247,4 +247,100 @@
 	overflow: hidden;
 	text-overflow: ellipsis;
 	white-space: nowrap;
+}
+
+
+.binding_box ul{
+	overflow: hidden;
+}
+.binding_box ul li{
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	overflow: hidden;
+	color: #242424;
+	font-size: .18rem;
+	padding-bottom: .15rem;
+	border-bottom: 1px solid #F6F6F6;
+	margin-bottom: .5rem;
+}
+.binding_box ul li:last-child{
+	margin-bottom: 0;
+	border-bottom: 0;
+}
+.binding_box ul li .img{
+	width: 1rem;
+	padding: 0 .1rem;
+	box-sizing: border-box;
+	margin-right: .2rem;
+	text-align: center;
+}
+.binding_box ul li .img h5{
+	color: #242424;
+	font-size: .18rem;
+	margin-top: .15rem;
+}
+.binding_box ul li span{
+	display: block;
+	margin-right: .6rem;
+}
+.binding_box ul li p{
+	width: 3rem;
+	margin-right: 1rem;
+}
+.binding_box ul li a{
+	display: block;
+	width: 1.35rem;
+	height: .5rem;
+	line-height: .5rem;
+	color: #fff;
+	font-size: .18rem;
+	text-align: center;
+	background: #8d8d8d;
+	border-radius: .05rem;
+}
+.binding_box ul li a.bind_btn{
+	background: #BE0020;
+}
+
+
+.bind_modal .form{
+	margin-top: .35rem;
+}
+.bind_modal .input_item{
+	background: #eee;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	overflow: hidden;
+	padding: .2rem .25rem;
+	margin-bottom: .15rem;
+	border-radius: .05rem;
+}
+.bind_modal .input_item.nomargin{
+	margin-bottom: 0;
+}
+.bind_modal .form h4{
+	color: #be0020;
+	font-size: .16rem;
+	margin: .1rem 0 .15rem;
+	text-align: left;
+}
+.bind_modal .input_item span{
+	width: 1.8rem;
+	text-align: left;
+}
+.bind_modal .input_item input{
+	border: 0;
+	background: none;
+	color: #2a2a2a;
+	font-size: .16rem;
+	outline: none;
+}
+.bind_modal .input_item input[type='text']{
+	display: block;
+	width: 2.2rem;
+}
+.bind_modal .input_item input[type='button']{
+	margin-left: .2rem;
 }

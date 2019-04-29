@@ -72,7 +72,7 @@
 		<div class="box">
 			<p>确定要删除该图片？</p>
 			<ul>
-				<li><a href="javascript:void(0);" class="modal_confirm_btn">确认</a></li>
+				<li><a href="javascript:void(0);" class="modal_confirm_btn modal_pic_btn">确认</a></li>
 				<li><a href="javascript:void(0);" class="modal_cancle_btn last">取消</a></li>
 			</ul>
 		</div>
@@ -80,7 +80,6 @@
 	<?php include 'footer.php'; ?>
 </body>
 <link rel="stylesheet" href="css/photo.css">
-<script src="js/jquery-2.1.4.min.js"></script>
 <script src="js/LocalResizeIMG.js"></script>
 <script>
 $(function(){
@@ -89,7 +88,7 @@ $(function(){
 		modal.showModal(".feedback_modal");
 		return false;
 	})
-	$(".modal_confirm_btn").click(function(){
+	$(".modal_pic_btn").click(function(){
 		alert("ok");
 		modal.cancleModal(".photo_modal")
 	})

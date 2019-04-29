@@ -99,7 +99,7 @@
 		<div class="box">
 			<p>您确定要删除该消息吗？</p>
 			<ul>
-				<li><a href="javascript:void(0);" class="modal_confirm_btn">确认</a></li>
+				<li><a href="javascript:void(0);" class="modal_confirm_btn modal_love_btn">确认</a></li>
 				<li><a href="javascript:void(0);" class="modal_cancle_btn last">取消</a></li>
 			</ul>
 		</div>
@@ -114,7 +114,7 @@
 			index = $(this).parents(".window_item").index();
 			modal.showModal(".del_modal");
 		})
-		$(".modal_confirm_btn").click(function(){
+		$(".modal_love_btn").click(function(){
 			alert("ok"+index);
 			modal.cancleModal(".del_modal")
 		})

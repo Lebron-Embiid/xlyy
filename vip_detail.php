@@ -15,6 +15,19 @@
 	<script src="js/rem.js"></script>
 	<script src="js/jquery-2.1.4.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
+	<script src="js/common.js"></script>
+	<style>
+		.modal_box a{
+			width: 2rem;
+		}
+		.modal_letter_box{
+			text-align: left;
+			padding: .25rem .3rem .6rem !important;
+		}
+		.modal_box .box{
+			padding: 0 !important;
+		}
+	</style>
 </head>
 <body>
 	<?php include 'header_nav.php'; ?>
@@ -27,8 +40,8 @@
 			</div>
 			<ul>
 				<li><a href="" title="关注"><img src="images/person_icon1.png" alt=""></a></li>
-				<li><a href="" title="转发"><img src="images/person_icon2.png" alt=""></a></li>
-				<li><a href="" title="私信"><img src="images/person_icon3.png" alt=""></a></li>
+				<li><a href="" title="评论"><img src="images/person_icon2.png" alt=""></a></li>
+				<li class="letter_btn"><a href="javascript:void(0);" title="私信"><img src="images/person_icon3.png" alt=""></a></li>
 				<li><a href="" title="红包"><img src="images/person_icon4.png" alt=""></a></li>
 			</ul>
 		</div>
@@ -75,6 +88,7 @@
 								<div class="layer">
 									<p>照片(10)</p>
 									<img src="images/lock.png" class="lock" alt="">
+									<a href="" class="see">申请查看</a>
 								</div>
 							</div>
 						</li>
@@ -169,6 +183,10 @@
 				<div class="her_self_introduce">
 					<h5>自我介绍</h5>
 					<p>我是××号选手XXX。我来自陕西，西北的山城，北方的江南。我喜欢旅行、喜欢运动、更喜欢阅读。在我看来做主持人与做教师无异.</p>
+				</div>
+				<div class="her_self_introduce her_self_find">
+					<h5>寻找</h5>
+					<p>他很懒，没有填写任何内容<a href="">请求他填写</a></p>
 				</div>
 				<div class="her_comment_box">
 					<h5>邀约评论</h5>
@@ -303,10 +321,33 @@
 			</div>
 		</div>
 	</div>
+	<div class="modal_layer"></div>
+	<div class="modal_box modal_letter_box">
+		<img src="images/close.png" class="close_img" alt="">
+		<div class="box">
+			<div class="letter_box">
+				<img src="images/avatar_img1.jpg" class="img" alt="">
+				<h5>林总</h5>
+				<h6><img src="images/address4.png" alt="">上海市普陀区</h6>
+				<p>全球商务精英</p>
+			</div>
+			<textarea name="letter" id="" cols="30" placeholder="请输入私信内容" rows="10"></textarea>
+			<a href="javascript:void(0);" class="modal_confirm_btn modal_letter_btn">发送</a>
+		</div>
+	</div>
 	<?php include 'footer.php'; ?>
 </body>
 <script>
 	$(function(){
+		var modal = new LModal();
+		$(".letter_btn").click(function(){
+			modal.showModal(".modal_letter_box");
+		})
+		$(".modal_letter_btn").click(function(){
+			alert("ok");
+			modal.cancleModal(".modal_letter_box")
+		})
+		
 		$(".comment_ul").on("click",".down_icon",function(){
 			if($(this).parent().parent().parent().hasClass("active")){
 				$(this).parent().parent().parent().removeClass("active");

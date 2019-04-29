@@ -170,10 +170,10 @@
 			modal.showModal(".invite_modal");
 			return false;
 		})
-		$(".modal_confirm_btn").click(function(){
-			alert("ok");
-			modal.cancleModal(".invite_modal")
-		})
+		// $(".modal_confirm_btn").click(function(){
+		// 	alert("ok");
+		// 	modal.cancleModal(".invite_modal")
+		// })
 		
 		var price = $(".price_input").val()
 		$(".minus").click(function(){

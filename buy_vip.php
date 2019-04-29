@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>关注</title>
+	<title>购买会员</title>
 	<meta name="keywords" content="关键词">
 	<meta name="description" content="网站描述">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
@@ -90,7 +90,7 @@
 				<label for="zfb_pay"><input type="radio" name="pay[]" id="zfb_pay"><img src="images/zfb_icon.png" alt="">支付宝</label>
 			</div>
 			<ul style="padding: 0 .3rem;">
-				<li><a href="javascript:void(0);" class="modal_confirm_btn">确认</a></li>
+				<li><a href="javascript:void(0);" class="modal_confirm_btn modal_buy_vip">确认</a></li>
 				<li><a href="javascript:void(0);" class="modal_cancle_btn last">取消</a></li>
 			</ul>
 		</div>
@@ -103,7 +103,7 @@
 		$(".buy_btn").on("click",function(){
 			modal.showModal(".pay_modal");
 		})
-		$(".modal_confirm_btn").click(function(){
+		$(".modal_buy_vip").click(function(){
 			alert("ok");
 			modal.cancleModal(".pay_modal")
 		})

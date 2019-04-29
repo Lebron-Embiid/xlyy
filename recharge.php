@@ -50,7 +50,7 @@
 		<div class="box">
 			<p>您确认从微信账号245-689充值8000元吗？</p>
 			<ul>
-				<li><a href="javascript:void(0);" class="modal_confirm_btn">确认</a></li>
+				<li><a href="javascript:void(0);" class="modal_confirm_btn modal_recharge_btn">确认</a></li>
 				<li><a href="javascript:void(0);" class="modal_cancle_btn last">取消</a></li>
 			</ul>
 		</div>
@@ -63,7 +63,7 @@
 		$(".recharge_a").click(function(){
 			modal.showModal(".recharge_modal");
 		})
-		$(".modal_confirm_btn").click(function(){
+		$(".modal_recharge_btn").click(function(){
 			alert("ok");
 			modal.cancleModal(".recharge_modal")
 		})

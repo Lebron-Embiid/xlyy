@@ -6,7 +6,7 @@
 			<li><a href="search.php"><span class="icon"></span>搜索</a></li>
 			<li><a href="message.php"><span class="icon"><span class="badge">7</span></span>消息</a></li>
 			<li><a href="attention.php"><span class="icon"></span>关注</a></li>
-			<li><a href="person.php"><span class="icon"></span>我的</a></li>
+			<li><a href="basic_info.php"><span class="icon"></span>我的</a></li>
 		</ul>
 		<div class="vip_box">
 			<div class="info">
@@ -16,7 +16,7 @@
 				<a href="buy_vip.php">升级会员</a>
 			</div>
 			<div class="my_vip">
-				<a href="person.php" class="avatar_nav_img">
+				<a href="basic_photo.php" class="avatar_nav_img">
 					<img src="images/avatar_default1.jpg" alt="">
 				</a>
 				<ul>
@@ -38,7 +38,7 @@
 		<p>退出登录</p>
 		<h6 style="color: #aaa;font-size: .14rem;">您确定要退出登录吗？</h6>
 		<ul>
-			<li><a href="javascript:void(0);" class="modal_confirm_btn">确认</a></li>
+			<li><a href="javascript:void(0);" class="modal_confirm_btn modal_login_out">确认</a></li>
 			<li><a href="javascript:void(0);" class="modal_cancle_btn last">取消</a></li>
 		</ul>
 	</div>
@@ -51,6 +51,10 @@
 		var modal = new LModal();
 		$(".login_out_btn").click(function(){
 			modal.showModal(".login_modal");
+		})
+		$(".modal_login_out").click(function(){
+			alert("ok");
+			modal.cancleModal(".login_modal");
 		})
 	
 		$(".my_vip").mouseover(function(){

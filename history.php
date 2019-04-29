@@ -229,7 +229,7 @@
 		<div class="box">
 			<p>您将要删除此条邀请记录，确认吗？</p>
 			<ul>
-				<li><a href="javascript:void(0);" class="modal_confirm_btn">确认</a></li>
+				<li><a href="javascript:void(0);" class="modal_confirm_btn modal_history_btn">确认</a></li>
 				<li><a href="javascript:void(0);" class="modal_cancle_btn last">取消</a></li>
 			</ul>
 		</div>
@@ -244,7 +244,7 @@
 			index = $(this).parents(".history_item").index();
 			modal.showModal(".history_modal");
 		})
-		$(".modal_confirm_btn").click(function(){
+		$(".modal_history_btn").click(function(){
 			alert("ok"+index);
 			modal.cancleModal(".history_modal")
 		})

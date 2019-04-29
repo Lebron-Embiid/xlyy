@@ -85,7 +85,7 @@
 		<div class="box">
 			<p>您将取消给会员“小青”查看您隐私照片的权限，您确定吗？</p>
 			<ul>
-				<li><a href="javascript:void(0);" class="modal_confirm_btn">确认</a></li>
+				<li><a href="javascript:void(0);" class="modal_confirm_btn modal_serect_btn">确认</a></li>
 				<li><a href="javascript:void(0);" class="modal_cancle_btn last">取消</a></li>
 			</ul>
 		</div>
@@ -100,7 +100,7 @@
 			index = $(this).parents("li").index();
 			modal.showModal(".cancle_modal");
 		})
-		$(".modal_confirm_btn").click(function(){
+		$(".modal_serect_btn").click(function(){
 			alert("ok"+index);
 			modal.cancleModal(".cancle_modal")
 		})

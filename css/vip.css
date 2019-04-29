@@ -435,8 +435,13 @@
 	margin: .5rem 0 .1rem;
 }
 .her_photo_box .img .layer .lock{
-	display: inline-block;
+	display: block;
 	width: .45rem;
+	margin: 0 auto .1rem;
+}
+.her_photo_box .img .layer .see{
+	color: #fec928;
+	font-size: .16rem;
 }
 .her_photo_box .word{
 	padding: .5rem .4rem .4rem .3rem;
@@ -576,6 +581,10 @@
 	margin-bottom: .2rem;
 	color: #3d3d3d;
 	font-size: .16rem;
+}
+.her_self_find a{
+	color: #be0020;
+	margin-left: .2rem;
 }
 
 
@@ -773,4 +782,52 @@
 	border-radius: .05rem;
 	border: 0;
 	outline: none;
+}
+
+
+
+.letter_box{
+	overflow: hidden;
+	margin-bottom: .2rem;
+}
+.letter_box .img{
+	display: block;
+	width: 1.8rem;
+	height: 2.16rem;
+	float: left;
+	margin-right: .3rem;
+}
+.letter_box h5{
+	color: #424242;
+	font-size: .24rem;
+	margin: .15rem 0 .2rem;
+}
+.letter_box h6{
+	color: #424242;
+	font-size: .16rem;
+	margin: 0 0 .2rem;
+	overflow: hidden;
+}
+.letter_box h6 img{
+	display: inline-block;
+	width: .15rem;
+	height: .25rem;
+	vertical-align: middle;
+	margin: 0 .1rem .03rem 0;
+}
+.letter_box p{
+	text-align: left;
+	font-size: .2rem;
+}
+.modal_letter_box textarea{
+	display: block;
+	width: 100%;
+	height: 1.5rem;
+	background: #eee;
+	outline: none;
+	resize: none;
+	padding: .1rem;
+	box-sizing: border-box;
+	border-radius: .05rem;
+	border: 0;
 }

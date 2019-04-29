@@ -45,7 +45,8 @@
 							<li>发色：黑色</li>
 							<li>职业：美容师</li>
 						</ul>
-						<div class="btn_box active"><a href="javascript:void(0);" class="btn_a">取消屏蔽</a></div>
+						<!-- <div class="btn_box active"><a href="javascript:void(0);" class="a btn_a">取消屏蔽</a></div> -->
+						<div class="btn_box active"><a href="javascript:void(0);" class="a atten_a">取消关注</a></div>
 					</div>
 					<div class="atten_item">
 						<div class="img"><img src="images/attention_img2.jpg" alt=""></div>
@@ -63,7 +64,7 @@
 							<li>发色：黑色</li>
 							<li>职业：美容师</li>
 						</ul>
-						<div class="btn_box active"><a href="javascript:void(0);" class="btn_a">取消屏蔽</a></div>
+						<div class="btn_box active"><a href="javascript:void(0);" class="a btn_a">取消屏蔽</a></div>
 					</div>
 					<div class="please_vip">
 						<p>普通用户只能看到一位，如果您希望查看更多，请升级</p><a href="">升级</a>
@@ -95,7 +96,18 @@
 		<div class="box">
 			<p>您确认取消对会员“小罗”的屏蔽？</p>
 			<ul>
-				<li><a href="javascript:void(0);" class="modal_confirm_btn">确认</a></li>
+				<li><a href="javascript:void(0);" class="modal_confirm_btn modal_screen_btn">确认</a></li>
+				<li><a href="javascript:void(0);" class="modal_cancle_btn last">取消</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="modal_layer"></div>
+	<div class="modal_box attention_modal fix">
+		<img src="images/close.png" class="close_img" alt="">
+		<div class="box">
+			<p>您是否确认不再关注此会员？</p>
+			<ul>
+				<li><a href="javascript:void(0);" class="modal_confirm_btn modal_attention_btn">确认</a></li>
 				<li><a href="javascript:void(0);" class="modal_cancle_btn last">取消</a></li>
 			</ul>
 		</div>
@@ -110,9 +122,17 @@
 			index = $(this).parents(".atten_item").index();
 			modal.showModal(".screen_modal");
 		})
-		$(".modal_confirm_btn").click(function(){
+		$(".atten_list").on("click",".atten_a",function(){
+			index = $(this).parents(".atten_item").index();
+			modal.showModal(".attention_modal");
+		})
+		$(".modal_screen_btn").click(function(){
 			alert("ok"+index);
 			modal.cancleModal(".screen_modal")
+		})
+		$(".modal_attention_btn").click(function(){
+			alert("ok"+index);
+			modal.cancleModal(".attention_modal")
 		})
 	})
 </script>
