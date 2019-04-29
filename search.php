@@ -284,26 +284,42 @@
 	// select选中事件筛选条件
 	var filter_arr = [];
 	var num = [];
+	var idx = "";
+	var str = "";
 	for(var i=0;i<$(".search_left select").length;i++){
 		num[i] = 0;
 	}
-	console.log(num)
 	$(".search_left").on("change","select",function(){
-		var idx = $(this).parents(".search_item").index();
+		idx = $(this).parents(".search_item").index();
+		var i = $(this).get(0).selectedIndex;
 		var select_title = $(this).parents(".search_item").find("span").html();
 		var select_val = $(this).parents(".search_item").find("select option:selected").html();
+		// console.log(select_val)
+		if(i != 0){
+			str = "<div class='filter_item'><span>"+select_title+"："+select_val+"</span><img src='images/close.png' class='close_select' alt=''></div>";
 		
-		var str = "<div class='filter_item'><span>"+select_title+"："+select_val+"</span><img src='images/close.png' class='close_select' alt=''></div>";
-		filter_arr.push(str);
+			if(num[idx-1] == 0){
+				filter_arr.push(str);
+			}else{
+				// filter_arr[i] = str;
+			}
+		}
+		
+		console.log(i,filter_arr)
 		$(".filter_ul").html(filter_arr);
-		console.log(filter_arr);
+		num[idx-1]++;
 	})
+	
+	
 	
 	// 删除筛选条件
 	$(".filter_ul").on("click",".close_select",function(){
 		var s_idx = $(this).parents(".filter_item").index();
 		filter_arr.splice(s_idx,1);
 		$(".filter_ul").html(filter_arr);
+		// $(this).parents(".search_item").find("select option").eq(idx).prop("selected", true);
+		// $(this).parents(".search_item").find("select option:selected").focus();
+		num[idx-1] = 0;
 	})
 </script>
 </html>
