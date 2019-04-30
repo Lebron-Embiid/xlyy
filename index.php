@@ -25,8 +25,8 @@
 				<h3>颜值就是财富!</h3>
 				<h6>Beauty is wealth!</h6>
 				<ul>
-					<li>我是：<a href="">男性</a>我要<span>寻找颜值服务</span></li>
-					<li>我是：<a href="">女性</a>我要<span>提供颜值服务</span></li>
+					<li>我是：<a href="register.php?sex=0">男性</a>我要<span>寻找颜值服务</span></li>
+					<li>我是：<a href="register.php?sex=1">女性</a>我要<span>提供颜值服务</span></li>
 				</ul>
 			</div>
 		</div>

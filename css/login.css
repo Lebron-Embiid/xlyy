@@ -113,6 +113,11 @@
 	cursor: pointer;
 	display: none;
 }
+.input_box .right_eye2{
+	width: .31rem;
+	height: .21rem;
+	margin-top: .15rem;
+}
 .input_box .right_icon.active,.input_box .right_eye.active{
 	display: block;
 }

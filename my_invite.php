@@ -481,6 +481,9 @@
 		
 		// 报价金额 加减
 		var price = parseInt($(".reply_price").val());
+		$("body").on("input",".reply_price",function(){
+			price = parseInt($(this).val());
+		})
 		$('.pm_minus').click(function(){
 			price-=10;
 			if(price<=0){

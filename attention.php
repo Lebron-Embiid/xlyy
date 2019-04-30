@@ -67,7 +67,7 @@
 						<div class="btn_box active"><a href="javascript:void(0);" class="a btn_a">取消屏蔽</a></div>
 					</div>
 					<div class="please_vip">
-						<p>普通用户只能看到一位，如果您希望查看更多，请升级</p><a href="">升级</a>
+						<p>普通用户只能看到一位，如果您希望查看更多，请升级</p><a href="buy_vip.php">升级</a>
 					</div>
 					<div class="atten_item">
 						<div class="img"><img src="images/attention_img2.jpg" alt=""></div>

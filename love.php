@@ -34,7 +34,7 @@
 							<p>茹茹</p>
 						</div>
 						<div class="w_right">
-							<p>会员“小倩”关注了你。<a href="">点击查看他的详情</a></p>
+							<p>会员“小倩”关注了你。<a href="vip_detail.php">点击查看他的详情</a></p>
 							<div class="w_new">
 								<span>2019-03-07 18:33</span>
 								<div>
@@ -49,7 +49,7 @@
 							<img src="images/message_img4.jpg" class="img" alt="">
 						</div>
 						<div class="w_right">
-							<p>您关注了会员“倩倩”。<a href="">点击查看他的详情</a></p>
+							<p>您关注了会员“倩倩”。<a href="vip_detail.php">点击查看他的详情</a></p>
 							<div class="w_new">
 								<span>2019-03-07 18:33</span>
 								<div>
@@ -64,7 +64,7 @@
 							<img src="images/message_img5.jpg" class="img" alt="">
 						</div>
 						<div class="w_right">
-							<p>会员“小倩”关注了你。<a href="">点击查看他的详情</a></p>
+							<p>会员“小倩”关注了你。<a href="vip_detail.php">点击查看他的详情</a></p>
 							<div class="w_new">
 								<span>2019-03-07 18:33</span>
 								<div>
@@ -79,7 +79,7 @@
 							<img src="images/message_img6.jpg" class="img" alt="">
 						</div>
 						<div class="w_right">
-							<p>您关注了会员“倩倩”。<a href="">点击查看他的详情</a></p>
+							<p>您关注了会员“倩倩”。<a href="vip_detail.php">点击查看他的详情</a></p>
 							<div class="w_new">
 								<span>2019-03-07 18:33</span>
 								<div>

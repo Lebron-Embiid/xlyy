@@ -53,8 +53,8 @@
 			modal.showModal(".login_modal");
 		})
 		$(".modal_login_out").click(function(){
-			alert("ok");
 			modal.cancleModal(".login_modal");
+			window.location = "login.php";
 		})
 	
 		$(".my_vip").mouseover(function(){

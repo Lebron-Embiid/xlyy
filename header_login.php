@@ -6,7 +6,7 @@
 			<li><a href="about.php"><img src="images/head_icon2.png" alt="">关于我们</a></li>
 		</ul>
 		<ul class="login_box">
-			<li><a href="register.php">注册</a></li>
+			<li><a href="register.php?sex=0">注册</a></li>
 			<li class="active"><a href="login.php">登录</a></li>
 		</ul>
 	</div>

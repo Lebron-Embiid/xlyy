@@ -16,6 +16,7 @@
 	<script src="js/jquery-2.1.4.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/code.js"></script>
+	<script src="js/common.js"></script>
 	<style>
 		.login_form_box .container{
 			padding-bottom: .8rem;
@@ -32,7 +33,7 @@
 			<form action="vip_index.php">
 				<div class="input_box white">
 					<img src="images/form_icon2.png" class="left_icon" alt="">
-					<input type="text" class="input phone_txt" placeholder="手机号码" name="phone">
+					<input type="text" class="input show_text phone_txt" placeholder="手机号码" name="phone">
 					<img src="images/close.png" class="right_icon right_close" alt="">
 				</div>
 				<div class="input_box white">

@@ -130,6 +130,11 @@
 	color: #2e2e2e;
 	font-size: .16rem;
 }
+.filter_ul .filter_item span{
+	overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
 .filter_ul .filter_item img{
 	display: block;
 	width: .14rem;
@@ -171,15 +176,26 @@
 .result_item .info{
 	color: #2c2c2c;
 	width: 65%;
+	position: relative;
 }
 .result_item .info h4{
 	font-size: .2rem;
 	overflow: hidden;
 	margin: .05rem 0 .1rem;
 }
-.result_item .info h4 img{
-	float: right;
-	margin-right: .2rem;
+.result_item .info .collect_img{
+	position: absolute;
+	width: .28rem;
+	height: .24rem;
+	background: url(../images/collect.png) center center no-repeat;
+	background-size: 100%;
+	right: .2rem;
+	top: .05rem;
+	z-index: 5;
+}
+.result_item .info .collect_img.active{
+	background: url(../images/collect1.png) center center no-repeat;
+	background-size: 100%;
 }
 .result_item .info h5{
 	color: #515151;

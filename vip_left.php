@@ -18,5 +18,5 @@
 		<li><p>会员 “蓝”关注了她</p><span>2018-10-11</span></li>
 		<li><p>会员 “蓝”关注了她</p><span>2018-10-11</span></li>
 	</ul>
-	<a href="" class="more">显示更多</a>
+	<a href="javascript:void(0);" class="more">显示更多</a>
 </div>

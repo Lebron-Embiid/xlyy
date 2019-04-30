@@ -33,7 +33,7 @@
 							<img src="images/vip_mess1.jpg" class="img" alt="">
 						</div>
 						<div class="w_right">
-							<p>您的关注人数已经达到上限！请升级会员！<a href="">请点击此处</a></p>
+							<p>您的关注人数已经达到上限！请升级会员！<a href="buy_vip.php">请点击此处</a></p>
 							<div class="w_new">
 								<span>2019-03-07 18:33</span>
 								<div>
@@ -48,7 +48,7 @@
 							<img src="images/vip_mess2.jpg" class="img" alt="">
 						</div>
 						<div class="w_right">
-							<p>您的头像没通过审核，请重新上传！<a href="">请点击此处</a></p>
+							<p>您的头像没通过审核，请重新上传！<a href="basic_photo.php">请点击此处</a></p>
 							<div class="w_new">
 								<span>2019-03-07 18:33</span>
 								<div>
@@ -63,7 +63,7 @@
 							<img src="images/vip_mess3.jpg" class="img" alt="">
 						</div>
 						<div class="w_right">
-							<p>您已经成功购买“初级会员”，为期3个月！<a href="">请点击此处查看会员等级</a></p>
+							<p>您已经成功购买“初级会员”，为期3个月！<a href="buy_vip.php">请点击此处查看会员等级</a></p>
 							<div class="w_new">
 								<span>2019-03-07 18:33</span>
 								<div>

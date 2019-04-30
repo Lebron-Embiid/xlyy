@@ -17,6 +17,11 @@
 	<script src="js/jquery-2.1.4.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="js/pick-pcc.js"></script>
+	<style>
+		.pick-show span{
+			max-width: 2.5rem !important;
+		}
+	</style>
 </head>
 <body>
 	<?php include 'header_nav.php'; ?>
@@ -297,24 +302,40 @@
 	<?php include 'footer.php'; ?>
 </body>
 <script>
-	$(".pick-area2").pickArea({
-	    "format":"province/city", //格式
-	    "width":"300",
-	    "borderColor":"#E3E3E3",//文本边框的色值
-	    "arrowColor":"#E3E3E3",//箭头颜色
-	    "listBdColor":"#E3E3E3",//下拉框父元素ul的border色值
-	    "color":"#E3E3E3",//字体颜色
-	    "fontSize":"16px",//字体大小
-	    "hoverColor":"#E3E3E3",
-	    "paddingLeft":"10px",
-	    "arrowRight":"10px",
-	    "getVal":function(){
-	        //console.log($(".pick-area-hidden").val())
-	        //console.log($(".pick-area-dom").val())
-	        var thisdom = $("."+$(".pick-area-dom").val());
-	        thisdom.next().val($(".pick-area-hidden").val());
-			console.log($(".pick-area-hidden").val());
-	    }
-	});
+	$(function(){
+		var sel_arr = [];
+		$(".label_ul").on("click","li",function(){
+			var idx = $(this).index();
+			if($(this).hasClass("active")){
+				$(this).removeClass("active");
+				sel_arr.pop();
+			}else{
+				if(sel_arr.length < 3){
+					sel_arr.push(idx);
+					$(this).addClass("active");
+				}
+			}
+		})
+		
+		$(".pick-area2").pickArea({
+		    "format":"province/city", //格式
+		    "width":"300",
+		    "borderColor":"#E3E3E3",//文本边框的色值
+		    "arrowColor":"#E3E3E3",//箭头颜色
+		    "listBdColor":"#E3E3E3",//下拉框父元素ul的border色值
+		    "color":"#E3E3E3",//字体颜色
+		    "fontSize":"16px",//字体大小
+		    "hoverColor":"#E3E3E3",
+		    "paddingLeft":"10px",
+		    "arrowRight":"10px",
+		    "getVal":function(){
+		        //console.log($(".pick-area-hidden").val())
+		        //console.log($(".pick-area-dom").val())
+		        var thisdom = $("."+$(".pick-area-dom").val());
+		        thisdom.next().val($(".pick-area-hidden").val());
+				console.log($(".pick-area-hidden").val());
+		    }
+		});
+	})
 </script>
 </html>

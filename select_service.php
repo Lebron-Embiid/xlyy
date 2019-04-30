@@ -160,4 +160,29 @@
 	</div>
 	<?php include 'footer.php'; ?>
 </body>
+<script>
+	$(function(){
+		$(".select_service_box").on("click",".s_minus",function(){
+			var m_price = parseInt($(this).siblings().find(".s_price").val());
+			m_price-=10;
+			if(m_price <= 0){
+				m_price = 0;
+			}
+			$(this).siblings().find(".s_price").val(m_price);
+		})
+		
+		$(".select_service_box").on("input",".s_price",function(){
+			price = parseInt($(this).val());
+		})
+		
+		$(".select_service_box").on("click",".s_plus",function(){
+			var m_price = parseInt($(this).siblings().find(".s_price").val());
+			m_price+=10;
+			// if(m_price >= 10000){
+			// 	m_price = 10000;
+			// }
+			$(this).siblings().find(".s_price").val(m_price);
+		})
+	})
+</script>
 </html>

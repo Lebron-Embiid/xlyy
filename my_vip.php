@@ -43,8 +43,8 @@
 							</div>
 						</div>
 						<ul class="card_nav">
-							<li class="red"><a href="">会员续费</a></li>
-							<li class="orange"><a href="">会员升级</a></li>
+							<li class="red"><a href="buy_vip.php">会员续费</a></li>
+							<li class="orange"><a href="buy_vip.php">会员升级</a></li>
 							<li><a href="wallet.php">我的钱包</a></li>
 						</ul>
 					</div>

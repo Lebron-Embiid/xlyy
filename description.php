@@ -57,7 +57,7 @@
 						</div>
 						<div class="desc_item">
 							<h5>性格标签（请选择最符合您性格的三项)</h5>
-							<ul>
+							<ul class="label_sel_ul">
 								<li><a href="javascript:void(0);">温柔和婉</a></li>
 								<li><a href="javascript:void(0);">活泼可爱</a></li>
 								<li><a href="javascript:void(0);">善解人意</a></li>
@@ -82,4 +82,21 @@
 	</div>
 	<?php include 'footer.php'; ?>
 </body>
+<script>
+	$(function(){
+		var sel_arr = [];
+		$(".label_sel_ul").on("click","li",function(){
+			var idx = $(this).index();
+			if($(this).hasClass("active")){
+				$(this).removeClass("active");
+				sel_arr.pop();
+			}else{
+				if(sel_arr.length < 3){
+					sel_arr.push(idx);
+					$(this).addClass("active");
+				}
+			}
+		})
+	})
+</script>
 </html>

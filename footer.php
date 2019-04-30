@@ -4,11 +4,11 @@
 			<ul class="footer_left_ul">
 				<li><a href="privacy_policy.php">隐私声明</a></li>
 				<li><a href="help_document.php">帮助文档</a></li>
-				<li><a href="">用户反馈</a></li>
+				<li><a href="javascript:void(0);">用户反馈</a></li>
 				<li><a href="job_chance.php">工作机会</a></li>
 			</ul>
 			<ul class="footer_right_ul">
-				<li><a href="">网站地图</a></li>
+				<li><a href="javascript:void(0);">网站地图</a></li>
 				<li><a href="platform_agreement.php">平台协议</a></li>
 			</ul>
 		</div>

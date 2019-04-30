@@ -19,12 +19,17 @@ $(function(){
 		}
 	}
 	$(".getCode").click(function(){
-		if($(".phone_txt").val() != ""){
-			setTimeout(function(){
-				invokeSettime(".getCode");
-			},500)
-		}else{
-			alert("请输入手机号！")
+		var phone = $(".phone_txt").val();
+		if(phone == ""){
+			alert("请输入手机号！");
+			return false;
 		}
+		if(!(/^1[34578]\d{9}$/.test(phone))){
+			alert("请输入有效的手机号！");
+			return false;
+		}
+		setTimeout(function(){
+			invokeSettime(".getCode");
+		},500)
 	})
 })

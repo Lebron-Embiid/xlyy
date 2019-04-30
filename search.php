@@ -47,6 +47,7 @@
 							<select name="" id="">
 								<option value="">请选择年龄</option>
 								<option value="">18</option>
+								<option value="">20</option>
 							</select>
 						</div>
 					</div>
@@ -77,7 +78,9 @@
 						<div class="box">
 							<select name="" id="">
 								<option value="">请选择身材</option>
-								<option value=""></option>
+								<option value="">偏瘦</option>
+								<option value="">普通</option>
+								<option value="">偏胖</option>
 							</select>
 						</div>
 					</div>
@@ -96,7 +99,7 @@
 						<div class="box">
 							<select name="" id="">
 								<option value="">请选择体重</option>
-								<option value=""></option>
+								<option value="">50kg</option>
 							</select>
 						</div>
 					</div>
@@ -115,7 +118,8 @@
 						<div class="box">
 							<select name="" id="">
 								<option value="">请选择职业</option>
-								<option value=""></option>
+								<option value="">学生</option>
+								<option value="">老师</option>
 							</select>
 						</div>
 					</div>
@@ -124,7 +128,7 @@
 						<div class="box">
 							<select name="" id="">
 								<option value="">请选择否喝酒</option>
-								<option value=""></option>
+								<option value="">喝酒</option>
 							</select>
 						</div>
 					</div>
@@ -133,7 +137,7 @@
 						<div class="box">
 							<select name="" id="">
 								<option value="">请选择净值</option>
-								<option value=""></option>
+								<option value="">普通</option>
 							</select>
 						</div>
 					</div>
@@ -142,7 +146,7 @@
 						<div class="box">
 							<select name="" id="">
 								<option value="">请选择年收入</option>
-								<option value=""></option>
+								<option value="">100w</option>
 							</select>
 						</div>
 					</div>
@@ -187,7 +191,7 @@
 					<a href="vip_detail.php">
 						<div class="img"><img src="images/girl_img1.jpg" alt=""></div>
 						<div class="info">
-							<h4>林晓霞<img src="images/collect.png" alt=""></h4>
+							<h4>林晓霞<span class="collect_img"></span></h4>
 							<h5>26、杭州市江干区</h5>
 							<h6>期待奢华的生活方式</h6>
 							<p>身高：169CM</p>
@@ -199,7 +203,7 @@
 					<a href="vip_detail.php">
 						<div class="img"><img src="images/girl_img2.jpg" alt=""></div>
 						<div class="info">
-							<h4>林晓霞<img src="images/collect.png" alt=""></h4>
+							<h4>林晓霞<span class="collect_img"></span></h4>
 							<h5>26、杭州市江干区</h5>
 							<h6>期待奢华的生活方式</h6>
 							<p>身高：169CM</p>
@@ -211,7 +215,7 @@
 					<a href="vip_detail.php">
 						<div class="img"><img src="images/girl_img3.jpg" alt=""></div>
 						<div class="info">
-							<h4>林晓霞<img src="images/collect.png" alt=""></h4>
+							<h4>林晓霞<span class="collect_img"></span></h4>
 							<h5>26、杭州市江干区</h5>
 							<h6>期待奢华的生活方式</h6>
 							<p>身高：169CM</p>
@@ -223,7 +227,7 @@
 					<a href="vip_detail.php">
 						<div class="img"><img src="images/girl_img4.jpg" alt=""></div>
 						<div class="info">
-							<h4>林晓霞<img src="images/collect.png" alt=""></h4>
+							<h4>林晓霞<span class="collect_img"></span></h4>
 							<h5>26、杭州市江干区</h5>
 							<h6>期待奢华的生活方式</h6>
 							<p>身高：169CM</p>
@@ -235,7 +239,7 @@
 					<a href="vip_detail.php">
 						<div class="img"><img src="images/girl_img5.jpg" alt=""></div>
 						<div class="info">
-							<h4>林晓霞<img src="images/collect.png" alt=""></h4>
+							<h4>林晓霞<span class="collect_img"></span></h4>
 							<h5>26、杭州市江干区</h5>
 							<h6>期待奢华的生活方式</h6>
 							<p>身高：169CM</p>
@@ -247,7 +251,7 @@
 					<a href="vip_detail.php">
 						<div class="img"><img src="images/girl_img6.jpg" alt=""></div>
 						<div class="info">
-							<h4>林晓霞<img src="images/collect.png" alt=""></h4>
+							<h4>林晓霞<span class="collect_img"></span></h4>
 							<h5>26、杭州市江干区</h5>
 							<h6>期待奢华的生活方式</h6>
 							<p>身高：169CM</p>
@@ -261,65 +265,123 @@
 	<?php include 'footer.php'; ?>
 </body>
 <script>
-	$(".pick-area2").pickArea({
-	    "format":"province/city", //格式
-	    "width":"300",
-	    "borderColor":"#E3E3E3",//文本边框的色值
-	    "arrowColor":"#E3E3E3",//箭头颜色
-	    "listBdColor":"#E3E3E3",//下拉框父元素ul的border色值
-	    "color":"#E3E3E3",//字体颜色
-	    "fontSize":"16px",//字体大小
-	    "hoverColor":"#E3E3E3",
-	    "paddingLeft":"10px",
-	    "arrowRight":"10px",
-	    "getVal":function(){
-	        //console.log($(".pick-area-hidden").val())
-	        //console.log($(".pick-area-dom").val())
-	        var thisdom = $("."+$(".pick-area-dom").val());
-	        thisdom.next().val($(".pick-area-hidden").val());
-			console.log($(".pick-area-hidden").val());
-	    }
-	});
-	
-	// select选中事件筛选条件
-	var filter_arr = [];
-	var num = [];
-	var idx = "";
-	var str = "";
-	for(var i=0;i<$(".search_left select").length;i++){
-		num[i] = 0;
-	}
-	$(".search_left").on("change","select",function(){
-		idx = $(this).parents(".search_item").index();
-		var i = $(this).get(0).selectedIndex;
-		var select_title = $(this).parents(".search_item").find("span").html();
-		var select_val = $(this).parents(".search_item").find("select option:selected").html();
-		// console.log(select_val)
-		if(i != 0){
-			str = "<div class='filter_item'><span>"+select_title+"："+select_val+"</span><img src='images/close.png' class='close_select' alt=''></div>";
-		
-			if(num[idx-1] == 0){
-				filter_arr.push(str);
+	$(function(){
+		$(".search_bottom").on("click",".collect_img",function(e){
+			// 阻止冒泡 取消默认事件
+			e.stopPropagation();
+			e.preventDefault();
+			if($(this).hasClass("active")){
+				$(this).removeClass("active");
 			}else{
-				// filter_arr[i] = str;
+				$(this).addClass("active");
 			}
+		})
+		
+		var filter_arr = [];
+		var num = [];
+		var str = "";
+		var idx = "";
+		var d_idx = [];
+		
+		$(".pick-area2").pickArea({
+		    "format":"province/city", //格式
+		    "width":"300",
+		    "borderColor":"#E3E3E3",//文本边框的色值
+		    "arrowColor":"#E3E3E3",//箭头颜色
+		    "listBdColor":"#E3E3E3",//下拉框父元素ul的border色值
+		    "color":"#E3E3E3",//字体颜色
+		    "fontSize":"16px",//字体大小
+		    "hoverColor":"#E3E3E3",
+		    "paddingLeft":"10px",
+		    "arrowRight":"10px",
+		    "getVal":function(){
+				var address_val = $(".pick-area-hidden").val();
+				str = "<div class='filter_item'><span>所在地："+address_val+"</span><img src='images/close.png' class='close_select' alt=''></div>";
+				if(num[0].txt == 0){
+					filter_arr.push({
+						id: 0,
+						txt: str
+					});
+					num[0].txt = 1;
+					d_idx.push(num[0].id);
+					console.log(filter_arr)
+					// d_idx.push(num[0].id);
+				}else{
+					for(let s in filter_arr){
+						if(filter_arr[s].id == 0){
+							filter_arr[s].txt = str;
+						}
+					}
+				}
+				$(".filter_ul").html(arrayMap(filter_arr,'txt'));
+		        //console.log($(".pick-area-hidden").val())
+		        //console.log($(".pick-area-dom").val())
+		        // var thisdom = $("."+$(".pick-area-dom").val());
+		        // thisdom.next().val($(".pick-area-hidden").val());
+		    }
+		});
+		
+		function arrayMap(arr, key) {
+			return arr.map((item) => {
+				if (item[key]) {
+					return item[key];
+				}
+			});
 		}
 		
-		console.log(i,filter_arr)
-		$(".filter_ul").html(filter_arr);
-		num[idx-1]++;
-	})
-	
-	
-	
-	// 删除筛选条件
-	$(".filter_ul").on("click",".close_select",function(){
-		var s_idx = $(this).parents(".filter_item").index();
-		filter_arr.splice(s_idx,1);
-		$(".filter_ul").html(filter_arr);
-		// $(this).parents(".search_item").find("select option").eq(idx).prop("selected", true);
-		// $(this).parents(".search_item").find("select option:selected").focus();
-		num[idx-1] = 0;
+		// select选中事件筛选条件
+		for(var i=1;i<=$(".search_left .search_item").length;i++){
+			num.push({
+				id: i,
+				txt: 0
+			});
+		}
+		$(".search_left").on("click","select",function(){
+			$(this).find("option").eq(0).prop("disabled",true);
+		})
+		$(".search_left").on("change","select",function(){
+			idx = $(this).parents(".search_item").index();
+			var select_title = $(this).parents(".search_item").find("span").html();
+			var select_val = $(this).parents(".search_item").find("select option:selected").html();
+			
+			str = "<div class='filter_item'><span>"+select_title+"："+select_val+"</span><img src='images/close.png' class='close_select' alt=''></div>";
+			if(num[idx].txt == 0){
+				filter_arr.push({
+					id: idx,
+					txt: str
+				});
+				num[idx].txt = 1;
+				d_idx.push(num[idx].id);
+			}else{
+				for(let s in filter_arr){
+					if(filter_arr[s].id == idx){
+						filter_arr[s].txt = str;
+					}
+				}
+			}
+			$(".filter_ul").html(arrayMap(filter_arr,'txt'));
+		})
+		
+		
+		
+		// 删除筛选条件
+		$(".filter_ul").on("click",".close_select",function(){
+			var s_idx = $(this).parents(".filter_item").index();
+			
+			var s = d_idx[s_idx];
+			num[s-1].txt = 0;
+			filter_arr.splice(s_idx,1);
+			d_idx.splice(s_idx,1);
+			$(".filter_ul").html(arrayMap(filter_arr,'txt'));
+			
+			$(".search_left").find(".search_item").eq(s-1).find(".pick-province").html("请选择省");
+			$(".search_left").find(".search_item").eq(s-1).find(".pick-city").html("请选择市");
+			$(".search_left").find(".search_item").eq(s-1).find(".pick-area").val("");
+			$(".search_left").find(".search_item").eq(s-1).find(".pick-area").attr("data-areacode","");
+			$(".search_left").find(".search_item").eq(s-1).find("select option").eq(0).prop("selected", true);
+			$(".search_left").find(".search_item").eq(s-1).find("select option").eq(0).prop("disabled",true);
+			
+		})
 	})
 </script>
 </html>

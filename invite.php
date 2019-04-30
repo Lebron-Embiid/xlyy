@@ -19,6 +19,11 @@
 	<script src="js/laydate.js"></script>
 	<script src="js/pick-pcc.js"></script>
 	<script src="js/common.js"></script>
+	<style>
+		.pick-show span{
+			max-width: 1.5rem !important;
+		}
+	</style>
 </head>
 <body>
 	<?php include 'header_nav.php'; ?>
@@ -175,13 +180,16 @@
 		// 	modal.cancleModal(".invite_modal")
 		// })
 		
-		var price = $(".price_input").val()
+		var price = parseInt($(".price_input").val());
 		$(".minus").click(function(){
 			price-=100;
 			if(price<=0){
 				price=0;
 			}
 			$(".price_input").val(price);
+		})
+		$("body").on("input",".price_input",function(){
+			price = parseInt($(this).val());
 		})
 		$(".plus").click(function(){
 			price+=100;

@@ -34,7 +34,7 @@
 							<p>红包</p>
 						</div>
 						<div class="w_right">
-							<p>收到会员“美罗”红包800元<a href="">请点击此处查看</a></p>
+							<p>收到会员“美罗”红包800元<a href="record.php">请点击此处查看</a></p>
 							<div class="w_new">
 								<span>2019-03-07 18:33</span>
 								<div>
@@ -50,7 +50,7 @@
 							<p>客服</p>
 						</div>
 						<div class="w_right">
-							<p>客服“笑笑”向您发送消息：你好，刘总，您还没有绑定微信/支付宝账号，您无法使用提现服务。建议您尽快绑定。<a href="">请点击此处去绑定</a></p>
+							<p>客服“笑笑”向您发送消息：你好，刘总，您还没有绑定微信/支付宝账号，您无法使用提现服务。建议您尽快绑定。<a href="binding.php">请点击此处去绑定</a></p>
 							<div class="w_new">
 								<span>2019-03-07 18:33</span>
 								<div>
@@ -66,7 +66,7 @@
 							<p>红包</p>
 						</div>
 						<div class="w_right">
-							<p>收到会员“美罗”红包800元<a href="">请点击此处查看</a></p>
+							<p>收到会员“美罗”红包800元<a href="record.php">请点击此处查看</a></p>
 							<div class="w_new">
 								<span>2019-03-07 18:33</span>
 								<div>

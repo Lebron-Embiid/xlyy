@@ -27,7 +27,7 @@
 						<h5>当前用户</h5>
 						<h6>洪左岭老板</h6>
 						<p>登记：初级登记</p>
-						<a href="">升级会员</a>
+						<a href="buy_vip.php">升级会员</a>
 					</div>
 				</div>
 				<div class="state_box">

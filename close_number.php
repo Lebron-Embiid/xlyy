@@ -38,7 +38,7 @@
 						<span>手机号码</span>
 						<div class="input_box mb20">
 							<img src="images/form_icon2.png" class="left_icon" alt="">
-							<input type="text" class="input" placeholder="手机号" name="phone">
+							<input type="text" class="input show_text phone_txt" placeholder="手机号" name="phone">
 							<img src="images/close.png" class="right_icon right_close" alt="">
 						</div>
 						<p>*为了您帐号的安全，请使用注册时的手机号码</p>
@@ -51,9 +51,9 @@
 						<span>密码</span>
 						<div class="input_box mb20">
 							<img src="images/form_icon4.png" class="left_icon" alt="">
-							<input type="password" class="input" placeholder="6-16位字母/数字" name="password">
-							<img src="images/eye.png" class="right_eye active" alt="">
-							<img src="images/eye1.png" class="right_eye" alt="">
+							<input type="password" class="input pwd_input" placeholder="6-16位字母/数字" name="password">
+							<img src="images/eye.png" class="right_eye right_eye1 active" alt="">
+							<img src="images/eye1.png" class="right_eye right_eye2" alt="">
 						</div>
 						<div class="form_btn">
 							<input type="submit" class="submit_btn" value="确定">
