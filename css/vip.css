@@ -100,7 +100,7 @@
 
 
 .data_box{
-	padding: .4rem .4rem .52rem;
+	padding: .4rem;
 	box-sizing: border-box;
 	overflow: hidden;
 	background: #fff;
@@ -311,6 +311,9 @@
 .over_money div p{
 	color: #c10021;
 	font-size: .3rem;
+}
+.over_rate{
+	text-align: center;
 }
 .over_rate p{
 	color: #353535;
@@ -832,4 +835,55 @@
 	box-sizing: border-box;
 	border-radius: .05rem;
 	border: 0;
+}
+
+
+.pc_process_box{
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+.pc_process_box p{
+	color: #242424;
+	font-size: .16rem;
+	margin: 0;
+}
+.pc_process_box li{
+	width: 25%;
+	position: relative;
+}
+.pc_process_box li:after{
+	content: "";
+	width: 100%;
+	height: .05rem;
+	background: #6c6c6c;
+	position: absolute;
+	left: 0;
+	top: .12rem;
+}
+.pc_process_box li:last-child:after{
+	display: none;
+}
+.pc_process_box li span{
+	display: block;
+	width: .41rem;
+	height: .41rem;
+	margin-bottom: .1rem;
+	position: relative;
+	z-index: 3;
+}
+.pc_process_box li:last-child span{
+	background: url(../images/cert_write.png) center center no-repeat;
+	background-size: 100%;	
+}
+.pc_process_box li.active span{
+	display: block;
+	width: .28rem;
+	height: .28rem;
+	background: url(../images/ok2.png) center center no-repeat;
+	background-size: 100%;
+	border-radius: 50%;
+}
+.pc_process_box li.active:after{
+	background: #be0020;
 }

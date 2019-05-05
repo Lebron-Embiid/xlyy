@@ -1,4 +1,4 @@
-<h4>填写完您的简介</h4>
+<h4>个人信息</h4>
 <div class="basic_profile">
 	<div class="progress">
 		<div class="progress-bar" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%;"></div>

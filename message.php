@@ -80,7 +80,7 @@
 							<div class="reply_mess_box">
 								<form action="">
 									<textarea name="message" id="" placeholder="请在此填入您的消息" cols="30" rows="10"></textarea>
-									<input type="submit" class="submit_btn" value="回复">
+									<input type="submit" class="submit_btn" value="发送">
 								</form>
 							</div>
 						</div>
@@ -137,7 +137,7 @@
 							<div class="reply_mess_box">
 								<form action="">
 									<textarea name="message" id="" placeholder="请在此填入您的消息" cols="30" rows="10"></textarea>
-									<input type="submit" class="submit_btn" value="回复">
+									<input type="submit" class="submit_btn" value="发送">
 								</form>
 							</div>
 						</div>
@@ -194,7 +194,7 @@
 							<div class="reply_mess_box">
 								<form action="">
 									<textarea name="message" id="" placeholder="请在此填入您的消息" cols="30" rows="10"></textarea>
-									<input type="submit" class="submit_btn" value="回复">
+									<input type="submit" class="submit_btn" value="发送">
 								</form>
 							</div>
 						</div>
@@ -251,7 +251,7 @@
 							<div class="reply_mess_box">
 								<form action="">
 									<textarea name="message" id="" placeholder="请在此填入您的消息" cols="30" rows="10"></textarea>
-									<input type="submit" class="submit_btn" value="回复">
+									<input type="submit" class="submit_btn" value="发送">
 								</form>
 							</div>
 						</div>

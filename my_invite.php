@@ -198,10 +198,10 @@
 								</div>
 							</div>
 							<div class="reply_mess_box">
-								<p>您的邀约发出已经超过24小时，任然没有回复，现在可以发消息催促对方。系统会自动发送短信到对方手机提醒。</p>
+								<p>您的邀约发出已经超过24小时，任然没有发送，现在可以发消息催促对方。系统会自动发送短信到对方手机提醒。</p>
 								<form action="">
 									<textarea name="message" id="" placeholder="请在此填入您的消息" cols="30" rows="10"></textarea>
-									<input type="submit" class="submit_btn" value="回复">
+									<input type="submit" class="submit_btn" value="发送">
 								</form>
 							</div>
 							<div class="reply_mess_box evaluation_box">
@@ -295,7 +295,7 @@
 								<div class="info">
 									<h5><span class="name">茹茹</span><span>27</span><span><img src="images/address3.png" alt="">上海</span></h5>
 									<p>奢华的生活爱好者</p>
-									<h6><img src="images/my_invite_icon3.png" alt="">闹钟邀约-收到回复</h6>
+									<h6><img src="images/my_invite_icon3.png" alt="">闹钟邀约-收到发送</h6>
 									<div class="progress">
 										<div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%"></div>
 									</div>
@@ -354,7 +354,7 @@
 								<form action="">
 									<textarea name="message" id="" placeholder="请在此填入您的消息" cols="30" rows="10"></textarea>
 									<div class="price_btn_box">
-										<a href="" class="submit_btn">回复</a>
+										<a href="" class="submit_btn">发送</a>
 										<a href="" class="submit_btn cancle_btn">拒绝</a>
 									</div>
 								</form>

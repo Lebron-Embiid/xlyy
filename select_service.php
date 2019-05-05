@@ -38,7 +38,7 @@
 						<span>选择</span>
 						<span>可前往异地</span>
 						<span>报价</span>
-						<span>收款方式</span>
+						<span>付款方式</span>
 					</div>
 					<div class="s_table_tr">
 						<div class="s_table_td">叫醒服务</div>

@@ -36,7 +36,7 @@
 					</div>
 					<div class="over_rate">
 						<input class="knob" data-fgColor="#be0020" style="outline: none;" data-thickness=".05" data-readOnly="true" value="70">
-						<p>超过70%的平台用户</p>
+						<p>您的当前余额超过70%的平台用户</p>
 					</div>
 				</div>
 			</div>

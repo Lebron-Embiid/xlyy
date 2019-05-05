@@ -54,7 +54,25 @@
 				<div class="data_box">
 					<h3>请完整填写您的个人资料，让其他会员可以查看到您</h3>
 					<p>根据我们的统计，资料完整的会员发出的邀约被接受的概率是信息不完整会员的三倍以上。</p>
-					<img src="images/process1.jpg" alt="">
+					<!-- <img src="images/process1.jpg" alt=""> -->
+					<ul class="pc_process_box">
+						<li class="active">
+							<span></span>
+							<p>基本信息</p>
+						</li>
+						<li class="active">
+							<span></span>
+							<p>照片</p>
+						</li>
+						<li class="active">
+							<span></span>
+							<p>描述</p>
+						</li>
+						<li>
+							<span></span>
+							<p>实名认证</p>
+						</li>
+					</ul>
 				</div>
 				<div class="vip_list">
 					<ul class="list_nav">

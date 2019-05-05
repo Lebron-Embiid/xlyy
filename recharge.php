@@ -37,8 +37,8 @@
 						<div class="rb_right"><a href="javascript:void(0);" class="recharge_a">充值</a></div>
 					</div>
 					<div class="account_box">
-						<p class="active"><span>使用账户</span><img src="images/wechat.png" alt=""><span>微信到账</span><span>(9851*235)</span><a href="javascript:void(0);" class="acc_btn">换成支付宝充值</a></p>
-						<p><span>使用账户</span><img src="images/wechat.png" alt=""><span>支付宝到账</span><span>(9851*235)</span><a href="javascript:void(0);" class="acc_btn">换成微信充值</a></p>
+						<p class="active"><span>使用账户</span><img src="images/wechat.png" alt=""><span>微信支付</span><span>(9851*235)</span><a href="javascript:void(0);" class="acc_btn">换成支付宝充值</a></p>
+						<p><span>使用账户</span><img src="images/wechat.png" alt=""><span>支付宝支付</span><span>(9851*235)</span><a href="javascript:void(0);" class="acc_btn">换成微信充值</a></p>
 					</div>
 				</div>
 			</div>
