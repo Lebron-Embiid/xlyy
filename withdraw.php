@@ -29,8 +29,8 @@
 				<h4><a href="wallet.php">我的钱包</a>&gt;&gt;<span>提现</span></h4>
 				<div class="withdraw_box">
 					<div class="withdraw_type">
-						<p class="active"><span>到账</span><img src="images/wechat.png" alt=""><span>微信到账</span><span>(9851*235)</span><span class="till">最多2小时到账</span><a href="javascript:void(0);" class="acc_btn">换成支付宝充值</a></p>
-						<p><span>到账</span><img src="images/wechat.png" alt=""><span>支付宝到账</span><span>(9851*235)</span><span class="till">最多2小时到账</span><a href="javascript:void(0);" class="acc_btn">换成微信充值</a></p>
+						<p class="active"><span>到账</span><img src="images/wechat.png" alt=""><span>微信到账</span><span>(9851*235)</span><span class="till">最多2小时到账</span><a href="javascript:void(0);" class="acc_btn">换成支付宝提现</a></p>
+						<p><span>到账</span><img src="images/wechat.png" alt=""><span>支付宝到账</span><span>(9851*235)</span><span class="till">最多2小时到账</span><a href="javascript:void(0);" class="acc_btn">换成微信提现</a></p>
 					</div>
 					<h6>提现金额</h6>
 					<div class="price_box">
@@ -65,7 +65,7 @@
 			modal.showModal(".recharge_modal");
 		})
 		$(".modal_withdraw_btn").click(function(){
-			alert("ok");
+			// alert("ok");
 			modal.cancleModal(".recharge_modal")
 		})
 		

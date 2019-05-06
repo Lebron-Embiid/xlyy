@@ -46,6 +46,7 @@
 					</div>
 				</div>
 			</div>
+			<!-- 需开通过会员才显示 -->
 			<div class="vip_buy high">
 				<div class="box">
 					<div class="vip">
@@ -104,7 +105,7 @@
 			modal.showModal(".pay_modal");
 		})
 		$(".modal_buy_vip").click(function(){
-			alert("ok");
+			// alert("ok");
 			modal.cancleModal(".pay_modal")
 		})
 	})

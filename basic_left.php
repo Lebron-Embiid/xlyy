@@ -8,6 +8,7 @@
 		<li><a href="basic_info.php">基本信息</a></li>
 		<li><a href="basic_photo.php">照片</a></li>
 		<li><a href="description.php">描述</a></li>
+		<!-- 男会员没有“选择服务类型”这个页面 -->
 		<li><a href="select_service.php">选择服务类型</a></li>
 		<li><a href="verified.php">实名认证</a></li>
 	</ul>

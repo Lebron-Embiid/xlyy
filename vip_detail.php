@@ -24,7 +24,7 @@
 			text-align: left;
 			padding: .25rem .3rem .6rem !important;
 		}
-		.modal_box .box{
+		.modal_letter_box .box{
 			padding: 0 !important;
 		}
 	</style>
@@ -39,10 +39,12 @@
 				<p>寻找梦中的白马王子</p>
 			</div>
 			<ul>
-				<li><a href="" title="关注"><img src="images/person_icon1.png" alt=""></a></li>
-				<li><a href="" title="评论"><img src="images/person_icon2.png" alt=""></a></li>
+				<li class="toLevelVip"><a href="javascript:void(0);" title="关注"><img src="images/person_icon1.png" alt=""></a></li>
+				<li class="toLevelVip"><a href="javascript:void(0);" title="评论"><img src="images/person_icon2.png" alt=""></a></li>
+				<!-- <li class="toLevelVip"><a href="javascript:void(0);" title="私信"><img src="images/person_icon3.png" alt=""></a></li> -->
+				 <!-- 成为会员后，才可以私信 -->
 				<li class="letter_btn"><a href="javascript:void(0);" title="私信"><img src="images/person_icon3.png" alt=""></a></li>
-				<li><a href="" title="红包"><img src="images/person_icon4.png" alt=""></a></li>
+				<li class="toLevelVip"><a href="javascript:void(0);" title="红包"><img src="images/person_icon4.png" alt=""></a></li>
 			</ul>
 		</div>
 	</div>
@@ -63,7 +65,7 @@
 				</div>
 			</div>
 			<div class="vip_right">
-				<!-- <div class="her_photo_box">
+				<div class="her_photo_box">
 					<div class="img">
 						<img src="images/level_img.jpg" class="photo" alt="">
 						<div class="layer">
@@ -73,9 +75,9 @@
 					</div>
 					<div class="word">
 						<p>您目前不能查看“阿妹”的照片，同时您也无法使用“私信”、“转发”、“关注”和“红包”功能，请升级成为会员。</p>
-						<a href="" class="up_level">缴费升级</a>
+						<a href="buy_vip.php" class="up_level">立刻升级</a>
 					</div>
-				</div> -->
+				</div>
 				<div class="her_photo_box member">
 					<ul>
 						<li><img src="images/lock_img1.jpg" alt=""></li>
@@ -94,7 +96,7 @@
 						</li>
 					</ul>
 				</div>
-				<!-- <div class="offter_service_box">
+				<div class="offter_service_box">
 					<h5>提供服务</h5>
 					<ul>
 						<li>
@@ -112,9 +114,9 @@
 							<h6>更多服务</h6>
 						</li>
 					</ul>
-				</div> -->
+				</div>
 				<div class="offter_service_box member">
-					<h5><span>提供服务</span><span>可前往异地</span><span>收款方式</span><span>报价</span></h5>
+					<h5><span>提供服务</span><span>可前往异地</span><span>付款方式</span><span>报价</span></h5>
 					<div class="service_table">
 						<div class="table_item">
 							<div class="box"><img src="images/offer_icon1.png" alt=""><div><span>叫醒服务</span></div></div>
@@ -365,6 +367,16 @@
 			<a href="javascript:void(0);" class="modal_confirm_btn modal_letter_btn">发送</a>
 		</div>
 	</div>
+	<div class="modal_box level_vip_modal fix">
+		<img src="images/close.png" class="close_img" alt="">
+		<div class="box">
+			<p>请升级成为会员，您才能使用此项功能。</p>
+			<ul>
+				<li><a href="javascript:void(0);" class="modal_confirm_btn level_vip_btn">确认</a></li>
+				<li><a href="javascript:void(0);" class="modal_cancle_btn last">取消</a></li>
+			</ul>
+		</div>
+	</div>
 	<?php include 'footer.php'; ?>
 </body>
 <script>
@@ -374,8 +386,17 @@
 			modal.showModal(".modal_letter_box");
 		})
 		$(".modal_letter_btn").click(function(){
-			alert("ok");
+			// alert("ok");
 			modal.cancleModal(".modal_letter_box")
+		})
+		
+		
+		$(".toLevelVip").click(function(){
+			modal.showModal(".level_vip_modal");
+		})
+		$(".level_vip_btn").click(function(){
+			// alert("ok");
+			modal.cancleModal(".level_vip_modal")
 		})
 		
 		$(".comment_ul").on("click",".down_icon",function(){

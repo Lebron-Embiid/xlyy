@@ -101,7 +101,7 @@
 			modal.showModal(".cancle_modal");
 		})
 		$(".modal_serect_btn").click(function(){
-			alert("ok"+index);
+			// alert("ok"+index);
 			modal.cancleModal(".cancle_modal")
 		})
 	})

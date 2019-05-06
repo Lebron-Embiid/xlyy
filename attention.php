@@ -127,11 +127,11 @@
 			modal.showModal(".attention_modal");
 		})
 		$(".modal_screen_btn").click(function(){
-			alert("ok"+index);
+			// alert("ok"+index);
 			modal.cancleModal(".screen_modal")
 		})
 		$(".modal_attention_btn").click(function(){
-			alert("ok"+index);
+			// alert("ok"+index);
 			modal.cancleModal(".attention_modal")
 		})
 	})

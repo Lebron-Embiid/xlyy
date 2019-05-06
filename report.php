@@ -63,7 +63,9 @@
 	<div class="modal_box feedback_modal fix">
 		<img src="images/close.png" class="close_img" alt="">
 		<div class="box">
-			<p>感谢您的宝贵意见，如有需要，我们可能会与您联系，再次感谢！</p>
+			<img src="images/kefu.png" style="margin-bottom: .2rem;" alt="">
+			<p>我们已收到您的举报，我们将尽快核实，如果有需要，</p>
+			<p>我们有可能会联系您获取更多信息。</p>
 			<a href="javascript:void(0);" class="modal_cancle_btn">确认</a>
 		</div>
 	</div>
@@ -89,7 +91,7 @@ $(function(){
 		return false;
 	})
 	$(".modal_pic_btn").click(function(){
-		alert("ok");
+		// alert("ok");
 		modal.cancleModal(".photo_modal")
 	})
 	

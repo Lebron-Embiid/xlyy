@@ -49,7 +49,25 @@
 				</div>
 				<div class="write_data_box">
 					<p>请完整填写您的个人资料，让其他会员可以查看到您</p>
-					<img src="images/process2.jpg" alt="">
+					<!-- <img src="images/process2.jpg" alt=""> -->
+					<ul class="pc_process_box">
+						<li class="active">
+							<span></span>
+							<p>基本信息</p>
+						</li>
+						<li class="active">
+							<span></span>
+							<p>照片</p>
+						</li>
+						<li class="active">
+							<span></span>
+							<p>描述</p>
+						</li>
+						<li>
+							<span></span>
+							<p>实名认证</p>
+						</li>
+					</ul>
 				</div>
 				<div class="my_person_info">
 					<h5>林总的个人信息</h5>

@@ -1,6 +1,6 @@
 .search_box{
 	background: #eee;
-	padding: .3rem 0 .1rem;
+	padding: .3rem 0 .5rem;
 }
 .search_top{
 	background: #fff;
@@ -213,4 +213,23 @@
 }
 .result_item .info p span{
 	float: right;
+}
+
+
+.load_more{
+	display: block;
+	background: #dcdcdc;
+	padding: .2rem 0;
+	text-align: center;
+	color: #414141;
+	font-size: .16rem;
+	outline: none;
+}
+.load_more img{
+	display: inline-block;
+	width: .26rem;
+	margin-left: .1rem;
+}
+.load_more:focus,.load_more:hover{
+	color: #414141;
 }

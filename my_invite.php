@@ -439,22 +439,22 @@
 		})
 		// 屏蔽确定
 		$(".modal_screen_btn").click(function(){
-			alert("ok"+index);
+			// alert("ok"+index);
 			modal.cancleModal(".screen_modal")
 		})
 		// 删除她确定
 		$(".modal_delete_btn").click(function(){
-			alert("ok"+index);
+			// alert("ok"+index);
 			modal.cancleModal(".del_modal")
 		})
 		// 举报确定
 		$(".modal_report_btn").click(function(){
-			alert("ok"+index);
+			// alert("ok"+index);
 			modal.cancleModal(".report_modal")
 		})
 		// 取消邀约确定
 		$(".modal_no_btn").click(function(){
-			alert("ok"+index);
+			// alert("ok"+index);
 			modal.cancleModal(".cancle_modal")
 		})
 		

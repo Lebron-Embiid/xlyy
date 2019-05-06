@@ -4,7 +4,8 @@
 			<ul class="footer_left_ul">
 				<li><a href="privacy_policy.php">隐私声明</a></li>
 				<li><a href="help_document.php">帮助文档</a></li>
-				<li><a href="javascript:void(0);">用户反馈</a></li>
+				<!-- 未登陆--联系我们   登录后--用户反馈 -->
+				<li><a href="javascript:void(0);">联系我们</a><!-- <a href="javascript:void(0);">用户反馈</a> --></li>
 				<li><a href="job_chance.php">工作机会</a></li>
 			</ul>
 			<ul class="footer_right_ul">

@@ -87,7 +87,7 @@
 			modal.showModal(".bind_modal");
 		})
 		$(".modal_confirm_btn").click(function(){
-			alert("ok");
+			// alert("ok");
 			modal.cancleModal(".bind_modal")
 		})
 	})

@@ -260,12 +260,47 @@
 					</a>
 				</div>
 			</div>
+			<a href="javascript:void(0);" class="load_more">加载更多<img src="images/down2.png" alt=""></a>
 		</div>
 	</div>
 	<?php include 'footer.php'; ?>
 </body>
 <script>
 	$(function(){
+		var _content = []; //临时存储li循环内容
+		var jq22 = {
+			_default:6, //默认显示图片个数
+			_loading:6,  //每次点击按钮后加载的个数
+			init:function(){
+				var lis = $(".search_bottom .result_item");
+				$(".search_bottom").html("");
+				for(var n=0;n<jq22._default;n++){
+					lis.eq(n).appendTo(".search_bottom");
+				}
+				for(var i=jq22._default;i<lis.length;i++){
+					_content.push(lis.eq(i));
+				}
+				$(".search_bottom.hidden").html("");
+			},
+			loadMore:function(){
+				var mLis = $(".search_bottom .result_item").length;
+				for(var i =0;i<jq22._loading;i++){
+					var target = _content.shift();
+					if(!target){
+						$('.load_more').html("全部加载完毕...");
+						break;
+					}
+					$(".search_bottom").append(target);
+				}
+			}
+		}
+		jq22.init();
+		
+		$(".load_more").click(function(){
+			jq22.loadMore();
+		})
+		
+		
 		$(".search_bottom").on("click",".collect_img",function(e){
 			// 阻止冒泡 取消默认事件
 			e.stopPropagation();

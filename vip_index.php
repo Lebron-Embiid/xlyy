@@ -81,6 +81,7 @@
 						<li><a href="">同城</a></li>
 					</ul>
 					<ul class="list_content">
+						<!-- 同城没有该等级会员 -->
 						<li>
 							<a href="vip_detail.php">
 								<div class="img"><img src="images/girl_img1.jpg" alt=""></div>

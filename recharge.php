@@ -64,7 +64,7 @@
 			modal.showModal(".recharge_modal");
 		})
 		$(".modal_recharge_btn").click(function(){
-			alert("ok");
+			// alert("ok");
 			modal.cancleModal(".recharge_modal")
 		})
 		

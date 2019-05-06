@@ -245,7 +245,7 @@
 			modal.showModal(".history_modal");
 		})
 		$(".modal_history_btn").click(function(){
-			alert("ok"+index);
+			// alert("ok"+index);
 			modal.cancleModal(".history_modal")
 		})
 				

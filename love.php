@@ -115,7 +115,7 @@
 			modal.showModal(".del_modal");
 		})
 		$(".modal_love_btn").click(function(){
-			alert("ok"+index);
+			// alert("ok"+index);
 			modal.cancleModal(".del_modal")
 		})
 	})
