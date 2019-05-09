@@ -35,11 +35,11 @@
 				</div>
 				<div class="remember_box">
 					<label for="remember"><input type="checkbox" name="remember" id="remember">记住我</label>
-					<span>上次登录方式：手机登录</span>
+					<a href="register.php?sex=0" style="color: #777;"><span>新用户注册</span></a>
 				</div>
 				<input type="submit" value="登录" class="login_btn">
 				<p class="forget"><a href="">忘记密码</a><a href="login_phone.php">短信验证码登录</a></p>
-				<p class="new"><a href="register.php?sex=0">新用户注册</a><span>|</span><a href="">社交帐号登录</a></p>
+				<!-- <p class="new"><a href="register.php?sex=0">新用户注册</a><span>|</span><a href="">社交帐号登录</a></p> -->
 			</form>
 		</div>
 	</div>	
