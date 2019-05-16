@@ -42,8 +42,10 @@
 					</div>
 					<div class="s_table_tr">
 						<div class="s_table_td">叫醒服务</div>
-						<div class="s_table_td"><img src="images/selected.png" alt=""></div>
-						<div class="s_table_td"></div>
+						<div class="s_table_td"><span class="span active"><input type="checkbox" class="checkbox" checked name="service[]" id=""></span></div>
+						<div class="s_table_td"><span class="span"><input type="checkbox" class="checkbox" name="land[]" id=""></span></div>
+						<!-- <div class="s_table_td"><img src="images/selected.png" alt=""></div>
+						<div class="s_table_td"></div> -->
 						<div class="s_table_td">
 							<div class="s_math_box">
 								<span class="s_minus">-</span>
@@ -55,8 +57,8 @@
 					</div>
 					<div class="s_table_tr">
 						<div class="s_table_td">假扮女友</div>
-						<div class="s_table_td"><img src="images/selected.png" alt=""></div>
-						<div class="s_table_td"><img src="images/selected.png" alt=""></div>
+						<div class="s_table_td"><span class="span active"><input type="checkbox" class="checkbox" checked name="service[]" id=""></span></div>
+						<div class="s_table_td"><span class="span active"><input type="checkbox" class="checkbox" checked name="land[]" id=""></span></div>
 						<div class="s_table_td">
 							<div class="s_math_box">
 								<span class="s_minus">-</span>
@@ -81,8 +83,8 @@
 					</div>
 					<div class="s_table_tr">
 						<div class="s_table_td">叫醒服务</div>
-						<div class="s_table_td"><img src="images/selected.png" alt=""></div>
-						<div class="s_table_td"><img src="images/selected.png" alt=""></div>
+						<div class="s_table_td"><span class="span active"><input type="checkbox" class="checkbox" checked name="service[]" id=""></span></div>
+						<div class="s_table_td"><span class="span active"><input type="checkbox" class="checkbox" checked name="land[]" id=""></span></div>
 						<div class="s_table_td">
 							<div class="s_math_box">
 								<span class="s_minus">-</span>
@@ -94,8 +96,8 @@
 					</div>
 					<div class="s_table_tr">
 						<div class="s_table_td">假扮女友</div>
-						<div class="s_table_td"><img src="images/selected.png" alt=""></div>
-						<div class="s_table_td"><img src="images/selected.png" alt=""></div>
+						<div class="s_table_td"><span class="span active"><input type="checkbox" class="checkbox" checked name="service[]" id=""></span></div>
+						<div class="s_table_td"><span class="span active"><input type="checkbox" class="checkbox" checked name="land[]" id=""></span></div>
 						<div class="s_table_td">
 							<div class="s_math_box">
 								<span class="s_minus">-</span>
@@ -110,8 +112,8 @@
 					</div>
 					<div class="s_table_tr">
 						<div class="s_table_td">旅游陪伴</div>
-						<div class="s_table_td"><img src="images/selected.png" alt=""></div>
-						<div class="s_table_td"><img src="images/selected.png" alt=""></div>
+						<div class="s_table_td"><span class="span active"><input type="checkbox" class="checkbox" checked name="service[]" id=""></span></div>
+						<div class="s_table_td"><span class="span active"><input type="checkbox" class="checkbox" checked name="land[]" id=""></span></div>
 						<div class="s_table_td">
 							<div class="s_math_box">
 								<span class="s_minus">-</span>
@@ -126,8 +128,8 @@
 					</div>
 					<div class="s_table_tr">
 						<div class="s_table_td">出席商务场合</div>
-						<div class="s_table_td"><img src="images/selected.png" alt=""></div>
-						<div class="s_table_td"><img src="images/selected.png" alt=""></div>
+						<div class="s_table_td"><span class="span active"><input type="checkbox" class="checkbox" checked name="service[]" id=""></span></div>
+						<div class="s_table_td"><span class="span active"><input type="checkbox" class="checkbox" checked name="land[]" id=""></span></div>
 						<div class="s_table_td">
 							<div class="s_math_box">
 								<span class="s_minus">-</span>
@@ -169,6 +171,14 @@
 				m_price = 0;
 			}
 			$(this).siblings().find(".s_price").val(m_price);
+		})
+		
+		$(".select_service_box").on("click",".checkbox",function(){
+			if($(this).prop("checked") == true){
+				$(this).parent(".span").addClass("active");
+			}else{
+				$(this).parent(".span").removeClass("active");
+			}
 		})
 		
 		$(".select_service_box").on("input",".s_price",function(){
