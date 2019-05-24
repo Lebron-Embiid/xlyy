@@ -422,7 +422,7 @@
 	width: 100%;
 	height: 100%;
 }
-.her_photo_box .img .layer{
+.her_photo_box .img .layer,.photo_preview_modal .swiper-slide .lock_box .lock_layer{
 	position: absolute;
 	left: 0;
 	top: 0;
@@ -434,15 +434,15 @@
 	font-size: .16rem;
 	text-align: center;
 }
-.her_photo_box .img .layer p{
+.her_photo_box .img .layer p,.photo_preview_modal .swiper-slide .lock_box .lock_layer p{
 	margin: .5rem 0 .1rem;
 }
-.her_photo_box .img .layer .lock{
+.her_photo_box .img .layer .lock,.photo_preview_modal .swiper-slide .lock_box .lock_layer .lock{
 	display: block;
 	width: .45rem;
 	margin: 0 auto .1rem;
 }
-.her_photo_box .img .layer .see{
+.her_photo_box .img .layer .see,.photo_preview_modal .swiper-slide .lock_box .lock_layer .see{
 	color: #fec928;
 	font-size: .16rem;
 }
@@ -474,6 +474,10 @@
 	width: 1.72rem;
 	height: 2.06rem;
 	margin-right: .135rem;
+	cursor: pointer;
+}
+.her_photo_box.member ul li.nocur{
+	cursor: inherit;
 }
 .her_photo_box.member ul li:last-child{
 	margin-right: 0;

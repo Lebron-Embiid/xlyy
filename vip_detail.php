@@ -8,6 +8,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
 	<meta name="renderer" content="webkit">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/swiper.min.css">
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/common.css">
 	<link rel="stylesheet" href="css/header.css">
@@ -15,6 +16,7 @@
 	<script src="js/rem.js"></script>
 	<script src="js/jquery-2.1.4.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
+	<script src="js/swiper.min.js"></script>
 	<script src="js/common.js"></script>
 	<style>
 		.modal_box a{
@@ -26,6 +28,77 @@
 		}
 		.modal_letter_box .box{
 			padding: 0 !important;
+		}
+		.photo_preview_modal{
+			display: block;
+			top: -100%;
+		}
+		.photo_preview_modal.active{
+			top: 20%;
+		}
+		.photo_preview_modal .swiper-slide .lock_box{
+			position: relative;
+			width: 4.72rem;
+			height: 5.06rem;
+			margin: 0 auto;
+		}
+		.photo_preview_modal .swiper-slide .lock_box .v_img{
+			display: block;
+			width: 100%;
+			height: 100%;
+		}
+		.photo_preview_modal .swiper-slide .lock_box .lock_layer{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-wrap: wrap;
+			padding: 20% 0;
+		}
+		.photo_preview_modal .swiper-slide .lock_box .love_layer{
+			position: absolute;
+			width: 100%;
+			height: .65rem;
+			background: rgba(0,0,0,.5);
+			color: #fff;
+			left: 0;
+			bottom: 0;
+			display: flex;
+			align-items: center;
+			justify-content: flex-end;
+			padding: 0 .2rem;
+			box-sizing: border-box;
+		}
+		.photo_preview_modal .swiper-slide .lock_box .love_layer a{
+			display: inline-block;
+			overflow: hidden;
+			margin: 0 .1rem .03rem 0;
+			width: auto;
+			height: auto;
+			line-height: 0;
+			background: none;
+		}
+		.photo_preview_modal .swiper-slide .lock_box .love_layer a span{
+			display: inline-block;
+			width: .38rem;
+			height: .32rem;
+			background: url(images/love.png) center center no-repeat;
+			background-size: 100% 100%;
+		}
+		.photo_preview_modal .swiper-slide .lock_box .love_layer a.active span{
+			background: url(images/love1.png) center center no-repeat;
+			background-size: 100% 100%;
+		}
+		.photo_preview_modal .swiper-slide .lock_box .lock_layer p{
+			width: 100%;
+			margin: 0 0 .1rem;
+		}
+		.photo_preview_modal .swiper-slide .lock_box .lock_layer .see{
+			display: block;
+			width: 100%;
+			height: auto;
+			line-height: 1.5;
+			background: none;
+			margin: 0;
 		}
 	</style>
 </head>
@@ -79,12 +152,12 @@
 					</div>
 				</div>
 				<div class="her_photo_box member">
-					<ul>
+					<ul class="her_photo_box_ul">
 						<li><img src="images/lock_img1.jpg" alt=""></li>
 						<li><img src="images/lock_img2.jpg" alt=""></li>
 						<li><img src="images/lock_img3.jpg" alt=""></li>
 						<li><img src="images/lock_img4.jpg" alt=""></li>
-						<li>
+						<li class="nocur">
 							<div class="img">
 								<img src="images/level_img.jpg" class="photo" alt="">
 								<div class="layer">
@@ -377,11 +450,82 @@
 			</ul>
 		</div>
 	</div>
+	<!-- 图片预览 弹窗 -->
+	<div class="modal_box photo_preview_modal fix">
+		<div class="swiper-container preview_container">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide">
+					<div class="lock_box">
+						<img src="images/lock_img1.jpg" alt="" class="v_img">
+						<div class="love_layer">
+							<a href="" class="active"><span></span></a>320
+						</div>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<div class="lock_box">
+						<img src="images/lock_img2.jpg" alt="" class="v_img">
+						<div class="love_layer">
+							<a href=""><span></span></a>320
+						</div>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<div class="lock_box">
+						<img src="images/lock_img3.jpg" alt="" class="v_img">
+						<div class="love_layer">
+							<a href=""><span></span></a>320
+						</div>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<div class="lock_box">
+						<img src="images/lock_img4.jpg" alt="" class="v_img">
+						<div class="love_layer">
+							<a href=""><span></span></a>320
+						</div>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<div class="lock_box">
+						<img src="images/level_img.jpg" alt="" class="v_img">
+						<div class="lock_layer">
+							<p>隐私照片(10)</p>
+							<img src="images/lock.png" class="lock" alt="">
+							<a href="" class="see">申请查看隐私照片</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="swiper-button-prev"></div>
+			<div class="swiper-button-next"></div>
+		</div>
+	</div>
 	<?php include 'footer.php'; ?>
 </body>
 <script>
 	$(function(){
 		var modal = new LModal();
+		
+		var swiper = new Swiper('.preview_container',{
+			initialSlide: 0,		//默认第1个显示
+			loop: false,			//swiper循环
+			speed: 300,			//轮播滑动开始到结束的时间
+			nextButton: '.swiper-button-next',
+			prevButton: '.swiper-button-prev',
+		});
+		
+		$(".her_photo_box_ul").on("click","li",function(e){
+			var index = $(this).index();
+			$(".photo_preview_modal").addClass("active");
+			modal.showModal(".photo_preview_modal");
+			swiper.slideTo(index);
+			console.log(index);
+		})
+		$(".her_photo_box_ul li").on("click","a",function(e){
+			e.stopPropagation();
+		})
+		
 		$(".letter_btn").click(function(){
 			modal.showModal(".modal_letter_box");
 		})

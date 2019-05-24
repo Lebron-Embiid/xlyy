@@ -44,6 +44,11 @@
 	color: #555;
 	font-size: .14rem;
 }
+.price_box .rb_code{
+	display: block;
+	width: 1.2rem;
+	height: 1.2rem;
+}
 
 .price_box .rb_right a{
 	display: block;

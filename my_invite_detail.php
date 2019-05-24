@@ -63,7 +63,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="open_mess_box">
+						<div class="open_mess_box active">
 							<div class="mess_scroll">
 								<div class="mess_item">
 									<p class="time">2019-03-15  14:50</p>
@@ -222,145 +222,6 @@
 							</div>
 						</div>
 					</div>
-					<div class="message_item">
-						<div class="mess_default">
-							<div class="h_left">
-								<img src="images/message_img2.jpg" class="img" alt="">
-								<div class="info">
-									<h5><span class="name">美丽</span><span>27</span><span><img src="images/address3.png" alt="">上海</span></h5>
-									<p>奢华的生活爱好者</p>
-									<h6><img src="images/my_invite_icon2.png" alt="">商务场合服务邀约-收到新报价</h6>
-									<div class="progress">
-										<div class="progress-bar" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%"></div>
-									</div>
-								</div>
-							</div>
-							<div class="h_right">
-								<div class="cancle"><a href="">取消屏蔽</a></div>
-								<div class="set_box">
-									<span class="set_img"></span>
-									<div class="setting_layer">
-										<div class="screen_a"><a href="javascript:void(0);">屏蔽她</a></div>
-										<div class="del_ta"><a href="javascript:void(0);">删除她</a></div>
-										<div class="del_img"><a href="javascript:void(0);">删除此消息</a></div>
-									</div>
-								</div>
-								<div class="h_down">
-									<img src="images/down3.png" alt="">
-								</div>
-								<div class="h_new">
-									<span>2019-03-07 18:33</span>
-									<div>
-										<span class="new">新</span>
-										<!-- <img src="images/delete.png" class="del_img" alt=""> -->
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="open_mess_box">
-							<div class="mess_scroll">
-								<div class="mess_item">
-									<p class="time">2019-03-15  14:50</p>
-									<div class="send_mess">
-										<img src="images/message_img1.jpg" class="head" alt="">
-										<p class="content">我想约你在深圳世界之窗门口，这周日见面，你看怎么样？</p>
-									</div>
-								</div>
-								<div class="mess_item me">
-									<p class="time">2019-03-15  15:20</p>
-									<h6>我的投诉</h6>
-									<div class="send_mess">
-										<img src="images/message_img2.jpg" class="head" alt="">
-										<p class="content">我想约你在深圳世界之窗门口，这周日见面，你看怎么样？</p>
-									</div>
-								</div>
-							</div>
-							<div class="wee_pay_box">
-								<div class="wp_left">
-									<h5>支付总金额：70元</h5>
-									<p>您支付的金额不可以退还。</p>
-									<label for=""><input type="checkbox" name="" id="">支付即表示同意《XXX平台网络服务邀约协议》</label>
-								</div>
-								<div class="wp_right">
-									<a href="" class="submit_btn">立即支付</a>
-									<a href="" class="submit_btn cancle_btn">取消</a>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="message_item finish">
-						<div class="mess_default">
-							<div class="h_left">
-								<img src="images/message_img4.jpg" class="img" alt="">
-								<div class="info">
-									<h5><span class="name">茹茹</span><span>27</span><span><img src="images/address3.png" alt="">上海</span></h5>
-									<p>奢华的生活爱好者</p>
-									<h6><img src="images/my_invite_icon3.png" alt="">闹钟邀约-收到发送</h6>
-									<div class="progress">
-										<div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%"></div>
-									</div>
-								</div>
-							</div>
-							<div class="h_right">
-								<div class="cancle"><a href="">取消屏蔽</a></div>
-								<div class="set_box">
-									<span class="set_img"></span>
-									<div class="setting_layer">
-										<div class="screen_a"><a href="javascript:void(0);">屏蔽她</a></div>
-										<div class="del_ta"><a href="javascript:void(0);">删除她</a></div>
-										<div class="del_img"><a href="javascript:void(0);">删除此消息</a></div>
-									</div>
-								</div>
-								<div class="h_down">
-									<img src="images/down3.png" alt="">
-								</div>
-								<div class="h_new">
-									<span>2019-03-07 18:33</span>
-									<div>
-										<!-- <span class="new">新</span> -->
-										<img src="images/delete.png" class="del_img" alt="">
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="open_mess_box">
-							<div class="mess_scroll">
-								<div class="mess_item">
-									<p class="time">2019-03-15  14:50</p>
-									<div class="send_mess">
-										<img src="images/message_img1.jpg" class="head" alt="">
-										<p class="content">我想约你在深圳世界之窗门口，这周日见面，你看怎么样？</p>
-									</div>
-								</div>
-								<div class="mess_item me">
-									<p class="time">2019-03-15  15:20</p>
-									<h6>我的投诉</h6>
-									<div class="send_mess">
-										<img src="images/message_img2.jpg" class="head" alt="">
-										<p class="content">我想约你在深圳世界之窗门口，这周日见面，你看怎么样？</p>
-									</div>
-								</div>
-							</div>
-							<div class="reply_mess_box">
-								<div class="price_box">
-									<span class="title">报价：</span>
-									<div class="price_math">
-										<span class="pm_minus">-</span>
-										<div><input type="text" name="price" value="10" class="reply_price" placeholder="请输入报价金额">元/次</div>
-										<span class="pm_plus">+</span>
-									</div>
-								</div>
-								<p>您可以接受对方的报价或者修改对方提出的报价，再等待对方的确认。</p>
-								<form action="">
-									<textarea name="message" id="" placeholder="请在此填入您的消息" cols="30" rows="10"></textarea>
-									<div class="price_btn_box">
-										<a href="" class="submit_btn">发送</a>
-										<a href="" class="submit_btn cancle_btn">拒绝</a>
-									</div>
-								</form>
-							</div>
-						</div>
-					</div>
 				</div>
 			</div>
 		</div>
@@ -458,24 +319,20 @@
 			modal.cancleModal(".cancle_modal")
 		})
 		
-		// $(".message_item").on("click",".h_down",function(e){
-		// 	if($(this).hasClass("active")){
-		// 		// 隐藏
-		// 		$(this).removeClass("active");
-		// 		$(this).siblings(".h_new").show();
-		// 		$(this).siblings(".set_box").hide();				
-		// 		$(this).parent().parent().siblings().hide();
-		// 	}else{
-		// 		// 展开
-		// 		$(this).addClass("active");
-		// 		$(this).siblings(".h_new").hide();
-		// 		$(this).siblings(".set_box").show();
-		// 		$(this).parent().parent().siblings().show();
-		// 	}
-		// })
-		
-		$(".my_invite_box").on("click",".message_item",function(){
-			window.location = "my_invite_detail.php";
+		$(".message_item").on("click",".h_down",function(e){
+			if($(this).hasClass("active")){
+				// 隐藏
+				$(this).removeClass("active");
+				$(this).siblings(".h_new").show();
+				$(this).siblings(".set_box").hide();				
+				$(this).parent().parent().siblings().hide();
+			}else{
+				// 展开
+				$(this).addClass("active");
+				$(this).siblings(".h_new").hide();
+				$(this).siblings(".set_box").show();
+				$(this).parent().parent().siblings().show();
+			}
 		})
 		
 		// 举报弹框

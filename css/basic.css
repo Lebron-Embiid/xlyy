@@ -519,9 +519,12 @@
 	height: .26rem;
 	margin: 0 auto;
 	position: relative;
+	background: url(../images/selected.png) center center no-repeat;
+	background-size: 100%;	
+	border-radius: 50%;
 }
 .s_table_tr .s_table_td .span.active{
-	background: url(../images/selected.png) center center no-repeat;
+	background: url(../images/selected1.png) center center no-repeat;
 	background-size: 100%;	
 }
 .s_table_tr .s_table_td .span .checkbox{

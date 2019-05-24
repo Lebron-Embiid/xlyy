@@ -184,10 +184,31 @@
 							</select>
 						</div>
 					</div>
+					<h5>财务状况</h5>
+					<div class="info_item down">
+						<div class="left_box">
+							<p>净资产<span>*</span></p>
+						</div>
+						<div class="right_box">
+							<select name="" id="">
+								<option value="">100w</option>
+							</select>
+						</div>
+					</div>
+					<div class="info_item down">
+						<div class="left_box">
+							<p>年收入<span>*</span></p>
+						</div>
+						<div class="right_box">
+							<select name="" id="">
+								<option value="">100w</option>
+							</select>
+						</div>
+					</div>
 					<a href="" class="save_btn">保存</a>
 				</div>
 				<!-- 基本信息-男 -->
-				<div class="basic_info_content basic_info_boy">
+				<!-- <div class="basic_info_content basic_info_boy">
 					<div class="info_item">
 						<div class="left_box">
 							<p>会员名<span>*</span></p>
@@ -295,7 +316,7 @@
 						</div>
 					</div>
 					<a href="" class="save_btn">保存</a>
-				</div>
+				</div> -->
 			</div>
 		</div>
 	</div>

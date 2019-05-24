@@ -70,9 +70,9 @@
 	word-wrap: break-word;
 	word-break: break-all;
 }
-.mess_default .set_box{
+/* .mess_default .set_box{
 	display: none;
-}
+} */
 .mess_default .set_box.active{
 	display: block;
 }
@@ -100,9 +100,12 @@
 }
 .mess_default .h_down{
 	margin: .7rem 0 .4rem;
+	opacity: 0;
+	filter: alpha(opacity=0);
+	visibility: hidden;
 }
 .mess_default .h_down img{
-	cursor: pointer;
+	/* cursor: pointer; */
 	transition: all .3s ease;
 }
 .mess_default .h_down.active img{
@@ -485,6 +488,7 @@
 .my_invite_box .message_item{
 	position: relative;
 	z-index: 1;
+	cursor: pointer;
 }
 .my_invite_box .message_item.pay:after{
 	content: "";
